@@ -2,6 +2,7 @@
 .DS_Store
  
 # Xcode
+*/xcuserdata/*
 build/
 DerivedData/*
 *.pbxuser
