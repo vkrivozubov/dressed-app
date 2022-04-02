@@ -1,0 +1,10 @@
+workflows:
+    dressed-workflow:
+        name: dressed-ios-client
+        triggering:
+            events:
+              - push
+              - pull_request
+        scripts: 
+          - name: build
+            script: xcodebuild clean build -project Dressed/Dressed.xcodeproj -scheme "Dressed" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=15.0,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO

@@ -3,6 +3,7 @@
  
 # Xcode
 */xcuserdata/*
+Dressed/Dressed.xcodeproj/project.xcworkspace/xcuserdata/*
 build/
 DerivedData/*
 *.pbxuser
