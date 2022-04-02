@@ -12,6 +12,14 @@
 		2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F627EFAFFB00765112 /* ViewController.swift */; };
 		2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */; };
 		2B8CF10727EFB37700765112 /* Splashscreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF10627EFB37700765112 /* Splashscreen.xib */; };
+		2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DF327F8CFA400499828 /* LoginContainer.swift */; };
+		2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DF527F8CFCF00499828 /* LoginViewController.swift */; };
+		2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DF727F8D02B00499828 /* LoginInteractor.swift */; };
+		2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DF927F8D07C00499828 /* LoginProtocols.swift */; };
+		2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFB27F8D0A000499828 /* LoginRouter.swift */; };
+		2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFD27F8D0DE00499828 /* LoginModels.swift */; };
+		2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFF27F8D14300499828 /* LoginPresenter.swift */; };
+		2BA04E0327F8D2AC00499828 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E0227F8D2AC00499828 /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,13 @@
 		2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8CF10027EFAFFE00765112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B8CF10627EFB37700765112 /* Splashscreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Splashscreen.xib; sourceTree = "<group>"; };
+		2BA04DF327F8CFA400499828 /* LoginContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainer.swift; sourceTree = "<group>"; };
+		2BA04DF527F8CFCF00499828 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2BA04DF727F8D02B00499828 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		2BA04DF927F8D07C00499828 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		2BA04DFB27F8D0A000499828 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		2BA04DFD27F8D0DE00499828 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		2BA04DFF27F8D14300499828 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA04E0327F8D2AC00499828 /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +70,7 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04DEB27F8CF2500499828 /* Login */,
 				2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */,
 				2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */,
 				2B8CF0F627EFAFFB00765112 /* ViewController.swift */,
@@ -62,6 +79,76 @@
 				2B8CF10627EFB37700765112 /* Splashscreen.xib */,
 			);
 			path = Dressed;
+			sourceTree = "<group>";
+		};
+		2BA04DEB27F8CF2500499828 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DF227F8CF8E00499828 /* Models */,
+				2BA04DF127F8CF7400499828 /* View */,
+				2BA04DF027F8CF6500499828 /* Router */,
+				2BA04DEF27F8CF5E00499828 /* Protocols */,
+				2BA04DEE27F8CF5000499828 /* Presenter */,
+				2BA04DED27F8CF4300499828 /* Interactor */,
+				2BA04DEC27F8CF3200499828 /* Container */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2BA04DEC27F8CF3200499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DF327F8CFA400499828 /* LoginContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04DED27F8CF4300499828 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DF727F8D02B00499828 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2BA04DEE27F8CF5000499828 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DFF27F8D14300499828 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2BA04DEF27F8CF5E00499828 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DF927F8D07C00499828 /* LoginProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2BA04DF027F8CF6500499828 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DFB27F8D0A000499828 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2BA04DF127F8CF7400499828 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DF527F8CFCF00499828 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA04DF227F8CF8E00499828 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04DFD27F8D0DE00499828 /* LoginModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +167,9 @@
 			dependencies = (
 			);
 			name = Dressed;
+			packageProductDependencies = (
+				2BA04E0227F8D2AC00499828 /* PinLayout */,
+			);
 			productName = Dressed;
 			productReference = 2B8CF0EF27EFAFFB00765112 /* Dressed.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 2B8CF0E627EFAFFB00765112;
+			packageReferences = (
+				2BA04E0127F8D2AC00499828 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = 2B8CF0F027EFAFFB00765112 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,8 +228,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */,
+				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
+				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
+				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
+				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
+				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
+				2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2BA04E0127F8D2AC00499828 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2BA04E0227F8D2AC00499828 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BA04E0127F8D2AC00499828 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B8CF0E727EFAFFB00765112 /* Project object */;
 }
