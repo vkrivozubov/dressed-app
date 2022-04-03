@@ -15,6 +15,10 @@
 		2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E0927F8D68A00499828 /* NetworkService.swift */; };
 		2BA04E0D27F8D73900499828 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E0C27F8D73900499828 /* Alamofire */; };
 		2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E0E27F8D7FD00499828 /* NetworkProtocols.swift */; };
+		2BA04E1127F8D90000499828 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1027F8D90000499828 /* AuthService.swift */; };
+		2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1327F8D9CE00499828 /* AuthRawModels.swift */; };
+		2BA04E1827F8DA0100499828 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1727F8DA0100499828 /* Result.swift */; };
+		2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1927F8DA2600499828 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		2B8CF10627EFB37700765112 /* Splashscreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Splashscreen.xib; sourceTree = "<group>"; };
 		2BA04E0927F8D68A00499828 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2BA04E0E27F8D7FD00499828 /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		2BA04E1027F8D90000499828 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2BA04E1327F8D9CE00499828 /* AuthRawModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRawModels.swift; sourceTree = "<group>"; };
+		2BA04E1727F8DA0100499828 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2BA04E1927F8DA2600499828 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 		2BA04E0727F8D63700499828 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04E1227F8D9A500499828 /* RawModels */,
+				2BA04E1027F8D90000499828 /* AuthService.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -107,9 +117,35 @@
 		2BA04E0827F8D64900499828 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04E1627F8D9F100499828 /* Result */,
+				2BA04E1527F8D9EC00499828 /* Errors */,
 				2BA04E0927F8D68A00499828 /* NetworkService.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		2BA04E1227F8D9A500499828 /* RawModels */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1327F8D9CE00499828 /* AuthRawModels.swift */,
+			);
+			path = RawModels;
+			sourceTree = "<group>";
+		};
+		2BA04E1527F8D9EC00499828 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1927F8DA2600499828 /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		2BA04E1627F8D9F100499828 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1727F8DA0100499828 /* Result.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +226,12 @@
 			files = (
 				2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
+				2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */,
 				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
+				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
+				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
