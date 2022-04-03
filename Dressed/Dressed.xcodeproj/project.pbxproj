@@ -19,6 +19,15 @@
 		2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFB27F8D0A000499828 /* LoginRouter.swift */; };
 		2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFD27F8D0DE00499828 /* LoginModels.swift */; };
 		2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFF27F8D14300499828 /* LoginPresenter.swift */; };
+		2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E0927F8D68A00499828 /* NetworkService.swift */; };
+		2BA04E0D27F8D73900499828 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E0C27F8D73900499828 /* Alamofire */; };
+		2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E0E27F8D7FD00499828 /* NetworkProtocols.swift */; };
+		2BA04E1127F8D90000499828 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1027F8D90000499828 /* AuthService.swift */; };
+		2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1327F8D9CE00499828 /* AuthRawModels.swift */; };
+		2BA04E1827F8DA0100499828 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1727F8DA0100499828 /* Result.swift */; };
+		2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1927F8DA2600499828 /* Errors.swift */; };
+		2BA04E1D27F9EFEE00499828 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E1C27F9EFEE00499828 /* PinLayout */; };
+		2BA04E2027F9F0A000499828 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1F27F9F0A000499828 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,13 @@
 		2BA04DFB27F8D0A000499828 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		2BA04DFD27F8D0DE00499828 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		2BA04DFF27F8D14300499828 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		2BA04E0927F8D68A00499828 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2BA04E0E27F8D7FD00499828 /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		2BA04E1027F8D90000499828 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2BA04E1327F8D9CE00499828 /* AuthRawModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRawModels.swift; sourceTree = "<group>"; };
+		2BA04E1727F8DA0100499828 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2BA04E1927F8DA2600499828 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		2BA04E1F27F9F0A000499828 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA04E1D27F9EFEE00499828 /* PinLayout in Frameworks */,
+				2BA04E0D27F8D73900499828 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +86,9 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04E1E27F9F09000499828 /* Shared */,
 				2BA04DEB27F8CF2500499828 /* Login */,
+				2BA04E0427F8D61300499828 /* Services */,
 				2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */,
 				2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */,
 				2B8CF0F627EFAFFB00765112 /* ViewController.swift */,
@@ -149,6 +169,91 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		2BA04E0427F8D61300499828 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E0527F8D62B00499828 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2BA04E0527F8D62B00499828 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E0827F8D64900499828 /* Common */,
+				2BA04E0727F8D63700499828 /* Auth */,
+				2BA04E0627F8D63100499828 /* Protocols */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2BA04E0627F8D63100499828 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E0E27F8D7FD00499828 /* NetworkProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2BA04E0727F8D63700499828 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1227F8D9A500499828 /* RawModels */,
+				2BA04E1027F8D90000499828 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2BA04E0827F8D64900499828 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1627F8D9F100499828 /* Result */,
+				2BA04E1527F8D9EC00499828 /* Errors */,
+				2BA04E0927F8D68A00499828 /* NetworkService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2BA04E1227F8D9A500499828 /* RawModels */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1327F8D9CE00499828 /* AuthRawModels.swift */,
+			);
+			path = RawModels;
+			sourceTree = "<group>";
+		};
+		2BA04E1527F8D9EC00499828 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1927F8DA2600499828 /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		2BA04E1627F8D9F100499828 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1727F8DA0100499828 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		2BA04E1E27F9F09000499828 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2127F9F0A800499828 /* Colors */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2BA04E2127F9F0A800499828 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E1F27F9F0A000499828 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +271,8 @@
 			);
 			name = Dressed;
 			packageProductDependencies = (
+				2BA04E0C27F8D73900499828 /* Alamofire */,
+				2BA04E1C27F9EFEE00499828 /* PinLayout */,
 			);
 			productName = Dressed;
 			productReference = 2B8CF0EF27EFAFFB00765112 /* Dressed.app */;
@@ -196,6 +303,8 @@
 			);
 			mainGroup = 2B8CF0E627EFAFFB00765112;
 			packageReferences = (
+				2BA04E0B27F8D73900499828 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2BA04E1B27F9EFEE00499828 /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 2B8CF0F027EFAFFB00765112 /* Products */;
 			projectDirPath = "";
@@ -224,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */,
+				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
@@ -233,6 +343,13 @@
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */,
+				2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */,
+				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
+				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
+				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
+				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
+				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +550,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2BA04E0B27F8D73900499828 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		2BA04E1B27F9EFEE00499828 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2BA04E0C27F8D73900499828 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BA04E0B27F8D73900499828 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2BA04E1C27F9EFEE00499828 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BA04E1B27F9EFEE00499828 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B8CF0E727EFAFFB00765112 /* Project object */;
 }
