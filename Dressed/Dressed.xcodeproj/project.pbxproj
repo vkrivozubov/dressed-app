@@ -19,7 +19,6 @@
 		2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFB27F8D0A000499828 /* LoginRouter.swift */; };
 		2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFD27F8D0DE00499828 /* LoginModels.swift */; };
 		2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DFF27F8D14300499828 /* LoginPresenter.swift */; };
-		2BA04E0327F8D2AC00499828 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E0227F8D2AC00499828 /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA04E0327F8D2AC00499828 /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +166,6 @@
 			);
 			name = Dressed;
 			packageProductDependencies = (
-				2BA04E0227F8D2AC00499828 /* PinLayout */,
 			);
 			productName = Dressed;
 			productReference = 2B8CF0EF27EFAFFB00765112 /* Dressed.app */;
@@ -199,7 +196,6 @@
 			);
 			mainGroup = 2B8CF0E627EFAFFB00765112;
 			packageReferences = (
-				2BA04E0127F8D2AC00499828 /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 2B8CF0F027EFAFFB00765112 /* Products */;
 			projectDirPath = "";
@@ -437,25 +433,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		2BA04E0127F8D2AC00499828 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/layoutBox/PinLayout";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2BA04E0227F8D2AC00499828 /* PinLayout */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2BA04E0127F8D2AC00499828 /* XCRemoteSwiftPackageReference "PinLayout" */;
-			productName = PinLayout;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B8CF0E727EFAFFB00765112 /* Project object */;
 }
