@@ -28,6 +28,7 @@
 		2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1927F8DA2600499828 /* Errors.swift */; };
 		2BA04E1D27F9EFEE00499828 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E1C27F9EFEE00499828 /* PinLayout */; };
 		2BA04E2027F9F0A000499828 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1F27F9F0A000499828 /* Colors.swift */; };
+		2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		2BA04E1727F8DA0100499828 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2BA04E1927F8DA2600499828 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		2BA04E1F27F9F0A000499828 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		2BA04E1E27F9F09000499828 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04E2227F9F1CE00499828 /* Extensions */,
 				2BA04E2127F9F0A800499828 /* Colors */,
 			);
 			path = Shared;
@@ -252,6 +255,14 @@
 				2BA04E1F27F9F0A000499828 /* Colors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		2BA04E2227F9F1CE00499828 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +361,7 @@
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
+				2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
