@@ -35,6 +35,7 @@
 		2BA04E362800BEF000499828 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E352800BEF000499828 /* RegisterProtocols.swift */; };
 		2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E372800BF3D00499828 /* RegisterRouter.swift */; };
 		2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E392800BF7A00499828 /* RegisterViewController.swift */; };
+		2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		2BA04E352800BEF000499828 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		2BA04E372800BF3D00499828 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		2BA04E392800BF7A00499828 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 			children = (
 				2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */,
 				2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */,
+				2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
 				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
 				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
+				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
 				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
