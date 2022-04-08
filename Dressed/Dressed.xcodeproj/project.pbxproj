@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */; };
-		2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */; };
 		2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F627EFAFFB00765112 /* ViewController.swift */; };
 		2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */; };
 		2B8CF10727EFB37700765112 /* Splashscreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF10627EFB37700765112 /* Splashscreen.xib */; };
@@ -353,7 +352,6 @@
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
-				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
@@ -361,7 +359,6 @@
 				2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */,
 				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
 				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
-				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
