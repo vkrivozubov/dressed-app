@@ -14,4 +14,11 @@ enum GlobalColors {
         blue: 62 / 255,
         alpha: 1
     )
+
+    static let tintColor = UIColor(
+        red: 249 / 255,
+        green: 249 / 255,
+        blue: 249 / 255,
+        alpha: 1
+    )
 }

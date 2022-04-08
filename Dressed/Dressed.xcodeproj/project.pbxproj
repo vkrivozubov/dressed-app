@@ -36,6 +36,10 @@
 		2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E372800BF3D00499828 /* RegisterRouter.swift */; };
 		2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E392800BF7A00499828 /* RegisterViewController.swift */; };
 		2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */; };
+		2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E402800CA6300499828 /* MainTabBar.swift */; };
+		2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E422800CA8600499828 /* MainTabBarContainer.swift */; };
+		2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E462800CBCF00499828 /* AllClothesContainer.swift */; };
+		2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,10 @@
 		2BA04E372800BF3D00499828 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		2BA04E392800BF7A00499828 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2BA04E402800CA6300499828 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		2BA04E422800CA8600499828 /* MainTabBarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarContainer.swift; sourceTree = "<group>"; };
+		2BA04E462800CBCF00499828 /* AllClothesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClothesContainer.swift; sourceTree = "<group>"; };
+		2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,9 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04E482800CC8E00499828 /* Wardrobe */,
+				2BA04E442800CBAF00499828 /* AllClothes */,
+				2BA04E3E2800CA4600499828 /* TabBar */,
 				2BA04E3B2800C70600499828 /* Application */,
 				2BA04E252800BDB900499828 /* Register */,
 				2BA04E1E27F9F09000499828 /* Shared */,
@@ -358,6 +369,55 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		2BA04E3E2800CA4600499828 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E3F2800CA5700499828 /* Container */,
+				2BA04E402800CA6300499828 /* MainTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2BA04E3F2800CA5700499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E422800CA8600499828 /* MainTabBarContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04E442800CBAF00499828 /* AllClothes */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E452800CBB800499828 /* Container */,
+			);
+			path = AllClothes;
+			sourceTree = "<group>";
+		};
+		2BA04E452800CBB800499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E462800CBCF00499828 /* AllClothesContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04E482800CC8E00499828 /* Wardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E4A2800CCA000499828 /* Container */,
+			);
+			path = Wardrobe;
+			sourceTree = "<group>";
+		};
+		2BA04E4A2800CCA000499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */,
 				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
@@ -455,10 +516,13 @@
 				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
 				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
+				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
+				2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */,
 				2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
 				2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */,
