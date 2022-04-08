@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Dressed
-//
-//  Created by Vladislav Krivozubov on 26.03.2022.
-//
-
 import UIKit
 
 @main
