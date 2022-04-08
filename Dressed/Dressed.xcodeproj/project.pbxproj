@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */; };
-		2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */; };
 		2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F627EFAFFB00765112 /* ViewController.swift */; };
 		2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */; };
 		2B8CF10727EFB37700765112 /* Splashscreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF10627EFB37700765112 /* Splashscreen.xib */; };
@@ -29,6 +28,7 @@
 		2BA04E1D27F9EFEE00499828 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E1C27F9EFEE00499828 /* PinLayout */; };
 		2BA04E2027F9F0A000499828 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1F27F9F0A000499828 /* Colors.swift */; };
 		2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */; };
+		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */,
 				2BA04E1D27F9EFEE00499828 /* PinLayout in Frameworks */,
 				2BA04E0D27F8D73900499828 /* Alamofire in Frameworks */,
 			);
@@ -284,6 +285,7 @@
 			packageProductDependencies = (
 				2BA04E0C27F8D73900499828 /* Alamofire */,
 				2BA04E1C27F9EFEE00499828 /* PinLayout */,
+				6BC526F12800C8710019BE5D /* Kingfisher */,
 			);
 			productName = Dressed;
 			productReference = 2B8CF0EF27EFAFFB00765112 /* Dressed.app */;
@@ -316,6 +318,7 @@
 			packageReferences = (
 				2BA04E0B27F8D73900499828 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2BA04E1B27F9EFEE00499828 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				6BC526F02800C8710019BE5D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 2B8CF0F027EFAFFB00765112 /* Products */;
 			projectDirPath = "";
@@ -349,7 +352,6 @@
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
-				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
@@ -357,7 +359,6 @@
 				2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */,
 				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
 				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
-				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
@@ -580,6 +581,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		6BC526F02800C8710019BE5D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -592,6 +601,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2BA04E1B27F9EFEE00499828 /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		6BC526F12800C8710019BE5D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BC526F02800C8710019BE5D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
