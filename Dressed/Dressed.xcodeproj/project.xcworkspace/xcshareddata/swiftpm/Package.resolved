@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": null,
+          "revision": "32e4acdf6971f58f5ad552389cf2d7d016334eaf",
+          "version": "7.2.0"
+        }
+      },
+      {
         "package": "PinLayout",
         "repositoryURL": "https://github.com/layoutBox/PinLayout",
         "state": {
