@@ -1,7 +1,7 @@
 import UIKit
 
 final class LoginRouter {
-    weak var viewController: UIViewController?
+   weak var viewController: UIViewController?
 }
 
 extension LoginRouter: LoginRouterInput {
@@ -13,26 +13,18 @@ extension LoginRouter: LoginRouterInput {
     }
 
     func showWardrobeScreen(model: LoginData) {
-        let wardrobeContext = MainScreenContext(
-            login: model.login,
-            umageURL: model.imageURL
-        )
+        let wardrobeContext = MainScreenContext(login: model.login,
+                                                umageURL: model.imageURL)
 
-        let allClothesContext = AllClothesContext(
-            login: model.login,
-            imageURL: model.imageURL
-        )
+        let allClothesContext = AllClothesContext(login: model.login,
+                                                  imageURL: model.imageURL)
 
-        let tabBarVC = MainTabBarContainer.assemble(
-            wardrobeContext: wardrobeContext,
-            allClothContext: allClothesContext
-        ).viewController
+        let tabBarVC = MainTabBarContainer.assemble(wardrobeContext: wardrobeContext,
+                                                    allClothContext: allClothesContext).viewController
 
         tabBarVC.modalPresentationStyle = .fullScreen
 
-        guard
-            let sceneDelegate = viewController?.view.window?.windowScene?.delegate as? SceneDelegate
-        else {
+        guard let sceneDelegate = viewController?.view.window?.windowScene?.delegate as? SceneDelegate else {
             return
         }
 

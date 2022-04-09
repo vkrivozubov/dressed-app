@@ -6,17 +6,13 @@ final class LoginInteractor {
     private func convertToLoginData(with rawData: LoginResponse) -> LoginData {
         return LoginData(
             login: rawData.login,
-            userName: rawData.userName,
             imageURL: rawData.imageURL
         )
     }
 }
 
 extension LoginInteractor: LoginInteractorInput {
-    func login(
-        login: String,
-        password: String
-    ) {
+    func login(login: String, password: String) {
         guard password.count >= Constants.minPasswordSymbs else {
             output?.showAlert(title: "Ошибка", message: "Пользователь не найден")
             return
@@ -32,7 +28,7 @@ extension LoginInteractor: LoginInteractorInput {
                 case .networkNotReachable:
                     self?.output?.showAlert(title: "Ошибка", message: "Не удается подключиться")
                 case .userNotExist:
-                    self?.output?.showAlert(title: "Ошибка", message: "Пользователь не найден")
+                    self?.output?.showAlert(title: "Ошибка", message: "Неверный логин или пароль")
                 default:
                     self?.output?.showAlert(title: "Ошибка", message: "Мы скоро все починим")
                 }
@@ -53,6 +49,6 @@ extension LoginInteractor: LoginInteractorInput {
 
 extension LoginInteractor {
     private struct Constants {
-        static let minPasswordSymbs: Int = 8
+        static let minPasswordSymbs: Int = 6
     }
 }

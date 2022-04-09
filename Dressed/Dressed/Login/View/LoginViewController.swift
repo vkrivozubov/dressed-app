@@ -4,21 +4,21 @@ import PinLayout
 final class LoginViewController: UIViewController {
     var output: LoginViewOutput?
 
-    private var backgroundView: UIView!
+    private weak var backgroundView: UIView!
 
-    private var welcomeLabel: UILabel!
+    private weak var welcomeLabel: UILabel!
 
-    private var loginTextField: UITextField!
+    private weak var loginTextField: UITextField!
 
-    private var passwordTextField: UITextField!
+    private weak var passwordTextField: UITextField!
 
-    private var loginButton: UIButton!
+    private weak var loginButton: UIButton!
 
-    private var accountQuestionLabel: UILabel!
+    private weak var accountQuestionLabel: UILabel!
 
-    private var registerLabel: UILabel!
+    private weak var registerLabel: UILabel!
 
-    private var underscoreView: UIView!
+    private weak var underscoreView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,10 +88,12 @@ final class LoginViewController: UIViewController {
     }
 
     private func setupLoginTextField() {
-        let textField = UITextField.customTextField(placeholder: "Логин")
+        let textField = UITextField.customTextField(placeholder: "Имя пользователя")
 
         loginTextField = textField
         backgroundView.addSubview(loginTextField)
+
+        loginTextField.keyboardType = .asciiCapable
     }
 
     private func setupPasswordTextField() {
@@ -101,6 +103,8 @@ final class LoginViewController: UIViewController {
         backgroundView.addSubview(passwordTextField)
 
         passwordTextField.isSecureTextEntry = true
+        passwordTextField.keyboardType = .asciiCapable
+        passwordTextField.autocorrectionType = .no
     }
 
     private func setupLoginButton() {
