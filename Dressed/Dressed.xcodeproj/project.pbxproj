@@ -28,6 +28,13 @@
 		2BA04E1D27F9EFEE00499828 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA04E1C27F9EFEE00499828 /* PinLayout */; };
 		2BA04E2027F9F0A000499828 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1F27F9F0A000499828 /* Colors.swift */; };
 		2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */; };
+		2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */; };
+		2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */; };
+		2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E312800BEA500499828 /* RegisterModels.swift */; };
+		2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E332800BECE00499828 /* RegisterPresenter.swift */; };
+		2BA04E362800BEF000499828 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E352800BEF000499828 /* RegisterProtocols.swift */; };
+		2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E372800BF3D00499828 /* RegisterRouter.swift */; };
+		2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E392800BF7A00499828 /* RegisterViewController.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -96,6 +103,13 @@
 		6BC52768280111280019BE5D /* LookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookService.swift; sourceTree = "<group>"; };
 		6BC5276C280112BB0019BE5D /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		6BC5276D280112BB0019BE5D /* DropTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropTableCell.swift; sourceTree = "<group>"; };
+		2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContainer.swift; sourceTree = "<group>"; };
+		2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		2BA04E312800BEA500499828 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
+		2BA04E332800BECE00499828 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		2BA04E352800BEF000499828 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		2BA04E372800BF3D00499828 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		2BA04E392800BF7A00499828 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				6BC52735280110140019BE5D /* Look */,
+				2BA04E252800BDB900499828 /* Register */,
 				2BA04E1E27F9F09000499828 /* Shared */,
 				2BA04DEB27F8CF2500499828 /* Login */,
 				2BA04E0427F8D61300499828 /* Services */,
@@ -513,6 +528,76 @@
 			path = WardrobeCell;
 			sourceTree = "<group>";
 		};
+		2BA04E252800BDB900499828 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2C2800BE1900499828 /* Container */,
+				2BA04E2B2800BE0500499828 /* Interactor */,
+				2BA04E2A2800BDFF00499828 /* Models */,
+				2BA04E292800BDF100499828 /* Presenter */,
+				2BA04E282800BDE400499828 /* Protocols */,
+				2BA04E272800BDDA00499828 /* Router */,
+				2BA04E262800BDD100499828 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2BA04E262800BDD100499828 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E392800BF7A00499828 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA04E272800BDDA00499828 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E372800BF3D00499828 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2BA04E282800BDE400499828 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E352800BEF000499828 /* RegisterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2BA04E292800BDF100499828 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E332800BECE00499828 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2BA04E2A2800BDFF00499828 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E312800BEA500499828 /* RegisterModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BA04E2B2800BE0500499828 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2BA04E2C2800BE1900499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -607,12 +692,14 @@
 				6BC5276F280112BB0019BE5D /* DropTableCell.swift in Sources */,
 				6BC5275C280110140019BE5D /* LookTableViewCellPresenter.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
+				2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */,
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				6BC52769280111280019BE5D /* LookService.swift in Sources */,
 				6BC52761280110140019BE5D /* LookRouter.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
 				2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */,
+				2BA04E362800BEF000499828 /* RegisterProtocols.swift in Sources */,
 				2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */,
 				6BC5275E280110140019BE5D /* LookSettingsMenuView.swift in Sources */,
 				6BC52756280110140019BE5D /* LookContainer.swift in Sources */,
@@ -622,7 +709,14 @@
 				6BC5275A280110140019BE5D /* ItemCollectionVIewCellPresenter.swift in Sources */,
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				6BC52767280110870019BE5D /* Item.swift in Sources */,
+				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
+				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
+				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
+				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
+				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
+				2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
 				2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */,
 				6BC5275F280110140019BE5D /* LookProtocols.swift in Sources */,
