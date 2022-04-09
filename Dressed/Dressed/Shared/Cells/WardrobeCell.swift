@@ -5,13 +5,12 @@ class WardrobeCell: UICollectionViewCell {
     static let identifier = "WardrobeCell"
     
     // MARK: - Public properties
-    weak var imageView: UIImageView!
-    weak var titleLable: UILabel!
+    var imageView = UIImageView()
+    var titleLable = UILabel()
 
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-
         setupViews()
     }
 
@@ -43,19 +42,13 @@ class WardrobeCell: UICollectionViewCell {
     }
 
     private func setupImageView() {
-        let imgView = UIImageView()
-        imageView = imgView
-        imageView.image = UIImage(named: "morz")
-        imageView.contentMode = .scaleToFill// .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
         imageView.isUserInteractionEnabled = true
         contentView.addSubview(imageView)
     }
 
     private func setupTitleLabel() {
-        let label = UILabel()
-        titleLable = label
-        titleLable.text = "Тест"
         titleLable.textColor = GlobalColors.darkColor
         titleLable.font = UIFont(name: "DMSans-Bold", size: 15)
         titleLable.adjustsFontSizeToFitWidth = true
