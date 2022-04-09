@@ -16,7 +16,7 @@ final class MainScreenViewController: UIViewController {
 
     private let screenBounds = UIScreen.main.bounds
 
-    private var activityIndicatorView: UIActivityIndicatorView!
+    private var activityIndicatorView: UIActivityIndicatorView = .init()
 
     private var isReloadDataNeed: Bool = false
 
