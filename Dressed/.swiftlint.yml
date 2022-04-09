@@ -2,6 +2,7 @@ disabled_rules:
     - type_name
     - function_body_length
     - function_parameter_count
+    - todo
 
 opt_in_rules:
     - empty_count
@@ -17,7 +18,7 @@ opt_in_rules:
     - fatal_error_message
     - force_unwrapping
 
-warning_threshold: 20
+warning_threshold: 1
 force_cast: warning # implicitly
 force_try:
   severity: warning # explicitly
