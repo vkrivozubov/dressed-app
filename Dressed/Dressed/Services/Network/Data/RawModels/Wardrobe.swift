@@ -1,10 +1,3 @@
-//
-//  Wardrobe.swift
-//  Dressed
-//
-//  Created by  Alexandr Zakharov on 09.04.2022.
-//
-
 import Foundation
 
 struct WardrobeRaw: Decodable {
