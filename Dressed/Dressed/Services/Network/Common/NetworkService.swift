@@ -12,7 +12,12 @@ class NetworkService {
     }
 
     private func setApiKey() {
-        guard let filePath = Bundle.main.path(forResource: Constants.securePlistFilename, ofType: "plist") else {
+        guard
+            let filePath = Bundle.main.path(
+                forResource: Constants.commonPlistFilename,
+                ofType: "plist"
+            )
+        else {
             apiKey = nil
             return
         }
@@ -75,8 +80,6 @@ extension NetworkService: Service {
 
 extension NetworkService {
     struct Constants {
-        static let securePlistFilename: String = "Wardrobe-Info"
-
         static let commonPlistFilename: String = "Info"
 
         static let apiKey: String = "API_KEY"
