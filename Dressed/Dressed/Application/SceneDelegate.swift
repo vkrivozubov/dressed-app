@@ -4,15 +4,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    func scene(
-        _ scene: UIScene,
-        willConnectTo session: UISceneSession,
-        options connectionOptions: UIScene.ConnectionOptions
-    ) {
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let scene = (scene as? UIWindowScene) else {
             return
         }
+
+        //DataService.shared.cleanCache()
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = scene
@@ -55,19 +53,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 extension SceneDelegate {
     func getInitalViewController(isAuthorized: Bool) -> UIViewController {
         if isAuthorized {
-            guard let login = AuthService.shared.getUserLogin(),
-                  let userName = AuthService.shared.getUserName() else {
+            guard let login = AuthService.shared.getUserLogin() else {
                 return UINavigationController(rootViewController: LoginContainer.assemble(with: LoginContext()).viewController)
             }
 
             let imageURL = AuthService.shared.getUserImageURL()
 
             let wardrobeContext = MainScreenContext(login: login,
-                                                    userName: userName,
                                                     umageURL: imageURL)
 
             let allClothesContext = AllClothesContext(login: login,
-                                                      userName: userName,
                                                       imageURL: imageURL)
 
             let tabBar = MainTabBarContainer.assemble(wardrobeContext: wardrobeContext,

@@ -11,16 +11,17 @@ final class RegisterPresenter {
 
     private var userImageIsSet = false
 
-    init(
-        router: RegisterRouterInput,
-        interactor: RegisterInteractorInput
-    ) {
+    init(router: RegisterRouterInput, interactor: RegisterInteractorInput) {
         self.router = router
         self.interactor = interactor
     }
 }
 
 extension RegisterPresenter: RegisterViewOutput {
+    func didTapConditionsLabel() {
+        router.showTermsAndConditions()
+    }
+
     func didTapCheckBox() {
         interactor.toggleTermsState()
         interactor.termsAreAccepted() ? view?.setCheckBoxChecked() : view?.setCheckBoxUnchecked()
@@ -41,13 +42,13 @@ extension RegisterPresenter: RegisterViewOutput {
 
         guard let login = (userCredentials["login"] ?? ""),
               !login.isEmpty else {
-            view?.showAlert(title: "Ошибка", message: "Введите логин")
+            view?.showAlert(title: "Ошибка", message: "Введите имя пользователя")
             return
         }
 
-        guard let fio = (userCredentials["fio"] ?? ""),
-              !fio.isEmpty else {
-            view?.showAlert(title: "Ошибка", message: "Введите ФИО")
+        guard login.isValidString() else {
+            let msg = "Возможны только строчные и заглавные буквы латинского алфавита (a-z, A-Z) и цифры от 0 до 9"
+            self.showAlert(title: "Недопустимые символы в поле ввода пароля!", message: msg)
             return
         }
 
@@ -57,9 +58,21 @@ extension RegisterPresenter: RegisterViewOutput {
             return
         }
 
+        guard password.isValidString() else {
+            let msg = "Возможны только строчные и заглавные буквы латинского алфавита (a-z, A-Z) и цифры от 0 до 9"
+            self.showAlert(title: "Недопустимые символы в поле ввода пароля!", message: msg)
+            return
+        }
+
         guard let repeatPassword = (userCredentials["repeatPassword"] ?? ""),
               !repeatPassword.isEmpty else {
             view?.showAlert(title: "Ошибка", message: "Повторите пароль")
+            return
+        }
+
+        guard repeatPassword.isValidString() else {
+            let msg = "Возможны только строчные и заглавные буквы латинского алфавита (a-z, A-Z) и цифры от 0 до 9"
+            self.showAlert(title: "Недопустимые символы в поле ввода пароля!", message: msg)
             return
         }
 
@@ -71,7 +84,6 @@ extension RegisterPresenter: RegisterViewOutput {
         let imageData = userImageIsSet ? view?.getUserImage() : nil
 
         interactor.register(login: login,
-                            fio: fio,
                             password: password,
                             imageData: imageData)
     }
@@ -91,10 +103,7 @@ extension RegisterPresenter: RegisterViewOutput {
 }
 
 extension RegisterPresenter: RegisterInteractorOutput {
-    func showAlert(
-        title: String,
-        message: String
-    ) {
+    func showAlert(title: String, message: String) {
         view?.showAlert(title: title, message: message)
     }
 

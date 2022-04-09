@@ -6,25 +6,20 @@ final class LoginRouter {
 
 extension LoginRouter: LoginRouterInput {
     func showRegistrationScreen() {
-        /*
         let registerVC = RegisterContainer.assemble(with: RegisterContext(termsAccepted: false)).viewController
 
         registerVC.modalPresentationStyle = .fullScreen
         viewController?.navigationController?.setViewControllers([registerVC], animated: true)
-         */
     }
 
     func showWardrobeScreen(model: LoginData) {
-        /*
         let wardrobeContext = MainScreenContext(
             login: model.login,
-            userName: model.userName,
             umageURL: model.imageURL
         )
 
         let allClothesContext = AllClothesContext(
             login: model.login,
-            userName: model.userName,
             imageURL: model.imageURL
         )
 
@@ -42,6 +37,5 @@ extension LoginRouter: LoginRouterInput {
         }
 
         sceneDelegate.setRootViewController(controller: tabBarVC)
-         */
     }
 }

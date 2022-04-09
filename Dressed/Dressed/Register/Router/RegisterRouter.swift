@@ -1,10 +1,15 @@
 import UIKit
+import SafariServices
 
 final class RegisterRouter {
     weak var viewController: UIViewController?
 }
 
 extension RegisterRouter: RegisterRouterInput {
+    func showTermsAndConditions() {
+        // TODO: show terms and confitions
+    }
+
     func showLoginScreen() {
         let loginVC = LoginContainer.assemble(with: LoginContext()).viewController
 
@@ -13,13 +18,10 @@ extension RegisterRouter: RegisterRouterInput {
     }
 
     func showWardrobeScreen(model: RegisterData) {
-        /*
         let wardrobeContext = MainScreenContext(login: model.login,
-                                                userName: model.userName,
                                                 umageURL: model.imageURL)
 
         let allClothesContext = AllClothesContext(login: model.login,
-                                                  userName: model.userName,
                                                   imageURL: model.imageURL)
 
         let tabBarVC = MainTabBarContainer.assemble(wardrobeContext: wardrobeContext,
@@ -32,6 +34,5 @@ extension RegisterRouter: RegisterRouterInput {
         }
 
         sceneDelegate.setRootViewController(controller: tabBarVC)
-         */
     }
 }

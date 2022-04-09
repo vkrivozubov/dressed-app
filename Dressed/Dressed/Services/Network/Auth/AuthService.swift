@@ -12,7 +12,6 @@ final class AuthService: NetworkService {
     private func saveUser(
         login: String,
         password: String,
-        userName: String?,
         imageURL: String?,
         imageId: Int?
     ) {
@@ -20,12 +19,6 @@ final class AuthService: NetworkService {
 
         UserDefaults.standard.setValue(login, forKey: Constants.loginKey)
         UserDefaults.standard.setValue(password, forKey: Constants.passwordKey)
-
-        guard let userName = userName else {
-            return
-        }
-
-        UserDefaults.standard.setValue(userName, forKey: Constants.userNameKey)
 
         guard let imageURL = imageURL else {
             return
@@ -128,18 +121,18 @@ extension AuthService: AuthServiceInput {
                 completion(result)
             }
 
-            self.saveUser(login: login,
-                          password: password,
-                          userName: result.data?.userName,
-                          imageURL: result.data?.imageURL,
-                          imageId: result.data?.imageId)
+            self.saveUser(
+                login: login,
+                password: password,
+                imageURL: result.data?.imageURL,
+                imageId: result.data?.imageId
+            )
             completion(result)
         }
     }
 
     func register(
         login: String,
-        fio: String,
         password: String,
         imageData: Data?,
         completion: @escaping (Result<LoginResponse, NetworkError>) -> Void
@@ -154,7 +147,6 @@ extension AuthService: AuthServiceInput {
 
           let parameters = [
             "login": login,
-            "username": fio,
             "password": password,
             "apikey": getApiKey()
           ]
@@ -203,11 +195,12 @@ extension AuthService: AuthServiceInput {
                   return
               }
 
-              self.saveUser(login: login,
-                            password: password,
-                            userName: result.data?.userName,
-                            imageURL: result.data?.imageURL,
-                            imageId: result.data?.imageId)
+              self.saveUser(
+                login: login,
+                password: password,
+                imageURL: result.data?.imageURL,
+                imageId: result.data?.imageId
+              )
               completion(result)
           }
       }
