@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */; };
+		13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */; };
+		13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFE2801DBD90045A6F2 /* WardrobeData.swift */; };
+		13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */; };
+		13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B022801DBDA0045A6F2 /* MainScreenCell.swift */; };
+		13900B0C2801DBDA0045A6F2 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B032801DBDA0045A6F2 /* MainScreenViewController.swift */; };
+		13900B0D2801DBDA0045A6F2 /* MainScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B052801DBDA0045A6F2 /* MainScreenProtocols.swift */; };
+		13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B072801DBDA0045A6F2 /* MainScreenRouter.swift */; };
+		13900B102801DDB90045A6F2 /* Wardrobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B0F2801DDB90045A6F2 /* Wardrobe.swift */; };
+		13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B112801DE690045A6F2 /* AddWardrobeCell.swift */; };
+		13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B152801DF1E0045A6F2 /* WardrobeService.swift */; };
 		2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */; };
 		2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F627EFAFFB00765112 /* ViewController.swift */; };
 		2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */; };
@@ -60,6 +71,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenContainer.swift; sourceTree = "<group>"; };
+		13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		13900AFE2801DBD90045A6F2 /* WardrobeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeData.swift; sourceTree = "<group>"; };
+		13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		13900B022801DBDA0045A6F2 /* MainScreenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenCell.swift; sourceTree = "<group>"; };
+		13900B032801DBDA0045A6F2 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		13900B052801DBDA0045A6F2 /* MainScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenProtocols.swift; sourceTree = "<group>"; };
+		13900B072801DBDA0045A6F2 /* MainScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		13900B0F2801DDB90045A6F2 /* Wardrobe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wardrobe.swift; sourceTree = "<group>"; };
+		13900B112801DE690045A6F2 /* AddWardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWardrobeCell.swift; sourceTree = "<group>"; };
+		13900B152801DF1E0045A6F2 /* WardrobeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeService.swift; sourceTree = "<group>"; };
 		2B8CF0EF27EFAFFB00765112 /* Dressed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dressed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +104,13 @@
 		2BA04E1927F8DA2600499828 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		2BA04E1F27F9F0A000499828 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeExtensions.swift; sourceTree = "<group>"; };
+		2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContainer.swift; sourceTree = "<group>"; };
+		2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		2BA04E312800BEA500499828 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
+		2BA04E332800BECE00499828 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		2BA04E352800BEF000499828 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		2BA04E372800BF3D00499828 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		2BA04E392800BF7A00499828 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -103,13 +132,6 @@
 		6BC52768280111280019BE5D /* LookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookService.swift; sourceTree = "<group>"; };
 		6BC5276C280112BB0019BE5D /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		6BC5276D280112BB0019BE5D /* DropTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropTableCell.swift; sourceTree = "<group>"; };
-		2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContainer.swift; sourceTree = "<group>"; };
-		2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
-		2BA04E312800BEA500499828 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
-		2BA04E332800BECE00499828 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
-		2BA04E352800BEF000499828 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
-		2BA04E372800BF3D00499828 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
-		2BA04E392800BF7A00499828 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +148,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13900AF72801DBB40045A6F2 /* Wardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				13900AFB2801DBD90045A6F2 /* Interactor */,
+				13900AFD2801DBD90045A6F2 /* Model */,
+				13900AFF2801DBD90045A6F2 /* Presenter */,
+				13900B042801DBDA0045A6F2 /* Protocols */,
+				13900B062801DBDA0045A6F2 /* Router */,
+				13900B012801DBDA0045A6F2 /* View */,
+				13900AF82801DBD30045A6F2 /* Container */,
+			);
+			path = Wardrobe;
+			sourceTree = "<group>";
+		};
+		13900AF82801DBD30045A6F2 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		13900AFB2801DBD90045A6F2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		13900AFD2801DBD90045A6F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13900AFE2801DBD90045A6F2 /* WardrobeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13900AFF2801DBD90045A6F2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		13900B012801DBDA0045A6F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13900B112801DE690045A6F2 /* AddWardrobeCell.swift */,
+				13900B022801DBDA0045A6F2 /* MainScreenCell.swift */,
+				13900B032801DBDA0045A6F2 /* MainScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13900B042801DBDA0045A6F2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				13900B052801DBDA0045A6F2 /* MainScreenProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		13900B062801DBDA0045A6F2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				13900B072801DBDA0045A6F2 /* MainScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		2B8CF0E627EFAFFB00765112 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				6BC52735280110140019BE5D /* Look */,
+				13900AF72801DBB40045A6F2 /* Wardrobe */,
 				2BA04E252800BDB900499828 /* Register */,
 				2BA04E1E27F9F09000499828 /* Shared */,
 				2BA04DEB27F8CF2500499828 /* Login */,
@@ -327,6 +422,76 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2BA04E252800BDB900499828 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2C2800BE1900499828 /* Container */,
+				2BA04E2B2800BE0500499828 /* Interactor */,
+				2BA04E2A2800BDFF00499828 /* Models */,
+				2BA04E292800BDF100499828 /* Presenter */,
+				2BA04E282800BDE400499828 /* Protocols */,
+				2BA04E272800BDDA00499828 /* Router */,
+				2BA04E262800BDD100499828 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2BA04E262800BDD100499828 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E392800BF7A00499828 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA04E272800BDDA00499828 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E372800BF3D00499828 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2BA04E282800BDE400499828 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E352800BEF000499828 /* RegisterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2BA04E292800BDF100499828 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E332800BECE00499828 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2BA04E2A2800BDFF00499828 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E312800BEA500499828 /* RegisterModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BA04E2B2800BE0500499828 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2BA04E2C2800BE1900499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		6BC52732280105050019BE5D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +654,7 @@
 			children = (
 				6BC52763280110450019BE5D /* RawModels */,
 				6BC52768280111280019BE5D /* LookService.swift */,
+				13900B152801DF1E0045A6F2 /* WardrobeService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -498,6 +664,7 @@
 			children = (
 				6BC52764280110660019BE5D /* Look.swift */,
 				6BC52766280110870019BE5D /* Item.swift */,
+				13900B0F2801DDB90045A6F2 /* Wardrobe.swift */,
 			);
 			path = RawModels;
 			sourceTree = "<group>";
@@ -526,76 +693,6 @@
 				6BC5272E280104F00019BE5D /* WardrobeCell.swift */,
 			);
 			path = WardrobeCell;
-			sourceTree = "<group>";
-		};
-		2BA04E252800BDB900499828 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E2C2800BE1900499828 /* Container */,
-				2BA04E2B2800BE0500499828 /* Interactor */,
-				2BA04E2A2800BDFF00499828 /* Models */,
-				2BA04E292800BDF100499828 /* Presenter */,
-				2BA04E282800BDE400499828 /* Protocols */,
-				2BA04E272800BDDA00499828 /* Router */,
-				2BA04E262800BDD100499828 /* View */,
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		2BA04E262800BDD100499828 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E392800BF7A00499828 /* RegisterViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2BA04E272800BDDA00499828 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E372800BF3D00499828 /* RegisterRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		2BA04E282800BDE400499828 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E352800BEF000499828 /* RegisterProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		2BA04E292800BDF100499828 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E332800BECE00499828 /* RegisterPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		2BA04E2A2800BDFF00499828 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E312800BEA500499828 /* RegisterModels.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2BA04E2B2800BE0500499828 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		2BA04E2C2800BE1900499828 /* Container */ = {
-			isa = PBXGroup;
-			children = (
-				2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */,
-			);
-			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,24 +777,32 @@
 			files = (
 				6BC52765280110660019BE5D /* Look.swift in Sources */,
 				2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */,
+				13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */,
+				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
 				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
 				6BC52755280110140019BE5D /* LookModels.swift in Sources */,
 				6BC5275B280110140019BE5D /* ItemCollectionViewCell.swift in Sources */,
 				6BC52759280110140019BE5D /* ItemCollectionViewCellViewModel.swift in Sources */,
 				6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
+				13900B0C2801DBDA0045A6F2 /* MainScreenViewController.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
 				6BC5276F280112BB0019BE5D /* DropTableCell.swift in Sources */,
+				13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */,
 				6BC5275C280110140019BE5D /* LookTableViewCellPresenter.swift in Sources */,
+				13900B0D2801DBDA0045A6F2 /* MainScreenProtocols.swift in Sources */,
+				13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
+				13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */,
 				2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */,
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				6BC52769280111280019BE5D /* LookService.swift in Sources */,
 				6BC52761280110140019BE5D /* LookRouter.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
+				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
 				2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */,
 				2BA04E362800BEF000499828 /* RegisterProtocols.swift in Sources */,
 				2BA04E1427F8D9CE00499828 /* AuthRawModels.swift in Sources */,
@@ -706,13 +811,14 @@
 				6BC5276E280112BB0019BE5D /* DropDownView.swift in Sources */,
 				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
 				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
+				13900B102801DDB90045A6F2 /* Wardrobe.swift in Sources */,
 				6BC5275A280110140019BE5D /* ItemCollectionVIewCellPresenter.swift in Sources */,
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				6BC52767280110870019BE5D /* Item.swift in Sources */,
 				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
+				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
 				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
-				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E1827F8DA0100499828 /* Result.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
@@ -720,6 +826,7 @@
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
 				2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */,
 				6BC5275F280110140019BE5D /* LookProtocols.swift in Sources */,
+				13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */,
 				6BC5275D280110140019BE5D /* LookTableViewCell.swift in Sources */,
 				6BC52757280110140019BE5D /* LookViewController.swift in Sources */,
 				6BC52758280110140019BE5D /* LookTableViewCellViewModel.swift in Sources */,
