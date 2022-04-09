@@ -2,9 +2,9 @@ import UIKit
 
 enum GlobalColors {
     static let mainBlueScreen = UIColor(
-        red: 128 / 255,
-        green: 161 / 255,
-        blue: 212 / 255,
+        red: 116 / 255,
+        green: 116 / 255,
+        blue: 116 / 255,
         alpha: 1
     )
 

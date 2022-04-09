@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "wardrobe.png",
+      "filename" : "dresser-3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "wardrobe-2.png",
+      "filename" : "dresser-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "wardrobe-1.png",
+      "filename" : "dresser-4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
