@@ -4,15 +4,14 @@ import PinLayout
 enum EditButtonState: Int {
     case edit = 0, accept
 }
-
 final class MainScreenViewController: UIViewController {
     var output: MainScreenViewOutput?
 
-    private weak var headerView: UIView!
-    private weak var titleLabel: UILabel!
-    private weak var settingsButton: UIButton!
-    private weak var collectionView: UICollectionView!
-    private weak var editButton: UIButton!
+    private var headerView: UIView = .init()
+    private var titleLabel: UILabel = .init()
+    private var settingsButton: UIButton = .init()
+    private var collectionView: UICollectionView = .init()
+    private var editButton: UIButton = .init()
     private let refreshControl = UIRefreshControl()
 
     private let screenBounds = UIScreen.main.bounds
@@ -66,17 +65,11 @@ final class MainScreenViewController: UIViewController {
     }
 
     private func setupHeaderView() {
-        let view = UIView()
-        headerView = view
         headerView.backgroundColor = GlobalColors.mainBlueScreen
-//        headerView.dropShadow()
-//        headerView.roundLowerCorners(40)
         self.view.addSubview(headerView)
     }
 
     private func setupSettingsButton() {
-        let button = UIButton()
-        settingsButton = button
         settingsButton.setImage(UIImage(systemName: "gearshape.fill"),
                                 for: .normal)
         settingsButton.tintColor = GlobalColors.backgroundColor
@@ -88,8 +81,6 @@ final class MainScreenViewController: UIViewController {
     }
 
     private func setupLabelView() {
-        let label = UILabel()
-        titleLabel = label
         titleLabel.text = "Гардеробы"
         titleLabel.font = UIFont(name: "DMSans-Bold", size: 25)
         titleLabel.textColor = GlobalColors.backgroundColor
@@ -98,8 +89,6 @@ final class MainScreenViewController: UIViewController {
     }
 
     private func setupCollectionView() {
-        let collView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView = collView
         collectionView.backgroundColor = .white
         collectionView.register(MainScreenCell.self,
                                 forCellWithReuseIdentifier: "MainScreenCell")
@@ -115,8 +104,6 @@ final class MainScreenViewController: UIViewController {
     }
 
     private func setupActivityIndicatorView() {
-        let activ = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        activityIndicatorView = activ
         activityIndicatorView.color = .black
         activityIndicatorView.center = CGPoint(x: UIScreen.main.bounds.size.width / 2,
                                                y: UIScreen.main.bounds.size.height / 2)
@@ -125,8 +112,6 @@ final class MainScreenViewController: UIViewController {
     }
 
     private func setupEditButton() {
-        let editBtn = UIButton()
-        editButton = editBtn
         let config = UIImage.SymbolConfiguration(pointSize: 15, weight: .semibold)
         editButton.setImage(UIImage(systemName: "square.and.pencil"),
                                 for: .normal)
