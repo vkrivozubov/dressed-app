@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-protocol MainScreenViewInput: class {
+protocol MainScreenViewInput: AnyObject {
     func reloadDataWithAnimation()
     func reloadData()
     func startActivity()
@@ -10,7 +10,7 @@ protocol MainScreenViewInput: class {
     func changeEditButton(state: EditButtonState)
 }
 
-protocol MainScreenViewOutput: class {
+protocol MainScreenViewOutput: AnyObject {
     func showDetailDidTap(at indexPath: IndexPath)
     func addWardrobeDidTap()
     func settingsButtonDidTap()
@@ -24,20 +24,20 @@ protocol MainScreenViewOutput: class {
     func didEditWardrobeTap(at indexPath: IndexPath)
 }
 
-protocol MainScreenInteractorInput: class {
+protocol MainScreenInteractorInput: AnyObject {
     func loadUserWardobes()
     func deleteWardrobe(with id: Int)
     func cleanImageCache(for models: [WardrobeData])
     func getUserLogin() -> String
 }
 
-protocol MainScreenInteractorOutput: class {
+protocol MainScreenInteractorOutput: AnyObject {
     func didReceive(with wardrobes: [WardrobeData])
     func showAlert(title: String, message: String)
     func didDelete()
 }
 
-protocol MainScreenRouterInput: class {
+protocol MainScreenRouterInput: AnyObject {
     func showDetailWardrope(id: Int, name: String, creatorLogin: String)
     func showSettings(login: String, name: String, imageUrl: String)
     func showAddWardobeScreen(for user: String)
