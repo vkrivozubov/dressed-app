@@ -28,6 +28,5 @@ final class MainScreenContainer {
 
 struct MainScreenContext {
     var login: String
-
     var umageURL: String?
 }

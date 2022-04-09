@@ -47,3 +47,16 @@ extension UIView {
         self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
 }
+
+// MARK: Stirng
+extension String {
+    func isValidString() -> Bool {
+        if self.contains(" ") {
+            return false
+        }
+        let  myCharSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+        let output: String = self.trimmingCharacters(in: myCharSet.inverted)
+        let isValid: Bool = (self == output)
+        return isValid
+    }
+}

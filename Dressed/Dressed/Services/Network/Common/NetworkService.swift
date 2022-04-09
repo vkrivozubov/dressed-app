@@ -12,7 +12,12 @@ class NetworkService {
     }
 
     private func setApiKey() {
-        guard let filePath = Bundle.main.path(forResource: Constants.securePlistFilename, ofType: "plist") else {
+        guard
+            let filePath = Bundle.main.path(
+                forResource: Constants.commonPlistFilename,
+                ofType: "plist"
+            )
+        else {
             apiKey = nil
             return
         }
@@ -61,10 +66,6 @@ extension NetworkService: Service {
         return UserDefaults.standard.string(forKey: Constants.loginKey)
     }
 
-    func getUserName() -> String? {
-        return UserDefaults.standard.string(forKey: Constants.userNameKey)
-    }
-
     func getUserImageURL() -> String? {
         return UserDefaults.standard.string(forKey: Constants.imageURLKey)
     }
@@ -72,7 +73,6 @@ extension NetworkService: Service {
     func dropUser() {
         UserDefaults.standard.removeObject(forKey: Constants.authKey)
         UserDefaults.standard.removeObject(forKey: Constants.loginKey)
-        UserDefaults.standard.removeObject(forKey: Constants.userNameKey)
         UserDefaults.standard.removeObject(forKey: Constants.passwordKey)
         UserDefaults.standard.removeObject(forKey: Constants.imageURLKey)
     }
@@ -80,8 +80,6 @@ extension NetworkService: Service {
 
 extension NetworkService {
     struct Constants {
-        static let securePlistFilename: String = "Wardrobe-Info"
-
         static let commonPlistFilename: String = "Info"
 
         static let apiKey: String = "API_KEY"
@@ -91,8 +89,6 @@ extension NetworkService {
         static let authKey: String = "isAuthorized"
 
         static let loginKey: String = "login"
-
-        static let userNameKey: String = "username"
 
         static let passwordKey: String = "password"
 
