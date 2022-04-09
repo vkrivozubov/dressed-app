@@ -4,27 +4,30 @@ import PinLayout
 final class LookViewController: UIViewController {
 	var output: LookViewOutput?
 
-    private weak var backgroundView: UIView!
-
-    private weak var lookName: UILabel!
-
-    private weak var backToWardrobe: UIButton!
-
-    private weak var lookParamsButton: UIButton!
-
-    private weak var lookTableView: UITableView!
-
-    private weak var addItemsButton: UIButton!
-
-    private weak var dropMenuView: LookSettingsMenuView!
-
+    private var backgroundView = UIView()
+    private var lookName = UILabel()
+    private var backToWardrobe = UIButton()
+    private var lookParamsButton = UIButton()
+    private var lookTableView = UITableView()
+    private var addItemsButton = UIButton()
+    private var dropMenuView = LookSettingsMenuView()
     private var lookIsEditing: Bool = false
-
     private var menuIsDropped: Bool?
+    private lazy var tapOnMainViewGestureRecognizer: UITapGestureRecognizer = {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapLookParamsButton))
+        gestureRecognizer.isEnabled = false
+        gestureRecognizer.numberOfTouchesRequired = 1
 
-    private var tapOnMainViewGestureRecognizer: UITapGestureRecognizer!
+        return gestureRecognizer
+    }()
+    
+    private lazy var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer = {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapLookParamsButton))
+        gestureRecognizer.isEnabled = false
+        gestureRecognizer.numberOfTouchesRequired = 1
 
-    private var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer!
+        return gestureRecognizer
+    }()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -70,9 +73,6 @@ final class LookViewController: UIViewController {
     }
 
     private func setupLookName() {
-        let label = UILabel()
-
-        lookName = label
         backgroundView.addSubview(lookName)
 
         lookName.font = UIFont(name: "DMSans-Bold", size: 25)
@@ -85,9 +85,6 @@ final class LookViewController: UIViewController {
     }
 
     private func setupBackToWardrobe() {
-        let button = UIButton()
-
-        backToWardrobe = button
         backgroundView.addSubview(backToWardrobe)
 
         backToWardrobe.setImage(UIImage(systemName: "chevron.backward",
@@ -100,9 +97,6 @@ final class LookViewController: UIViewController {
     }
 
     private func setupLookParamsButton() {
-        let button = UIButton()
-
-        lookParamsButton = button
         backgroundView.addSubview(lookParamsButton)
 
         lookParamsButton.setImage(UIImage(named: "more",
@@ -116,10 +110,7 @@ final class LookViewController: UIViewController {
     }
 
     private func setupLookTableView() {
-        let tableView = UITableView()
-
-        lookTableView = tableView
-        view.addSubview(tableView)
+        view.addSubview(lookTableView)
 
         lookTableView.register(LookTableViewCell.self, forCellReuseIdentifier: "LookTableViewCell")
 
@@ -143,9 +134,6 @@ final class LookViewController: UIViewController {
     }
 
     private func setupDropMenuView() {
-        let menu = LookSettingsMenuView()
-
-        dropMenuView = menu
         view.addSubview(dropMenuView)
 
         dropMenuView.output = output
@@ -154,15 +142,9 @@ final class LookViewController: UIViewController {
     }
 
     private func setupGestureRecognizers() {
-        tapOnMainViewGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapLookParamsButton))
         self.lookTableView.isUserInteractionEnabled = true
-        tapOnMainViewGestureRecognizer.isEnabled = false
-        tapOnMainViewGestureRecognizer.numberOfTouchesRequired = 1
         lookTableView.addGestureRecognizer(tapOnMainViewGestureRecognizer)
 
-        tapOnHeaderViewGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapLookParamsButton))
-        tapOnHeaderViewGestureRecognizer.isEnabled = false
-        tapOnHeaderViewGestureRecognizer.numberOfTouchesRequired = 1
         backgroundView.addGestureRecognizer(tapOnHeaderViewGestureRecognizer)
     }
 
