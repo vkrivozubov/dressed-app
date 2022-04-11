@@ -58,6 +58,9 @@
 		6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */; };
 		6B66AADE2803C00B000FFA99 /* NewItemScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */; };
 		6B66AAE12803C176000FFA99 /* NewItemScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE02803C176000FFA99 /* NewItemScreenRouter.swift */; };
+		6B66AAE42803C22D000FFA99 /* NewItemScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE32803C22D000FFA99 /* NewItemScreenInteractor.swift */; };
+		6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE52803C249000FFA99 /* UploadService.swift */; };
+		6B66AAE92803C393000FFA99 /* NewItemScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE82803C393000FFA99 /* NewItemScreenContainer.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -134,6 +137,9 @@
 		6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenViewController.swift; sourceTree = "<group>"; };
 		6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenPresenter.swift; sourceTree = "<group>"; };
 		6B66AAE02803C176000FFA99 /* NewItemScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenRouter.swift; sourceTree = "<group>"; };
+		6B66AAE32803C22D000FFA99 /* NewItemScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenInteractor.swift; sourceTree = "<group>"; };
+		6B66AAE52803C249000FFA99 /* UploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadService.swift; sourceTree = "<group>"; };
+		6B66AAE82803C393000FFA99 /* NewItemScreenContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenContainer.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -590,9 +596,11 @@
 		6B66AAD52803BD56000FFA99 /* NewItem */ = {
 			isa = PBXGroup;
 			children = (
+				6B66AAD92803BD81000FFA99 /* View */,
+				6B66AAE22803C22D000FFA99 /* Interactor */,
 				6B66AADF2803C176000FFA99 /* Router */,
 				6B66AADC2803C00A000FFA99 /* Presenter */,
-				6B66AAD92803BD81000FFA99 /* View */,
+				6B66AAE72803C393000FFA99 /* Container */,
 				6B66AAD62803BD6E000FFA99 /* Protocols */,
 			);
 			path = NewItem;
@@ -628,6 +636,22 @@
 				6B66AAE02803C176000FFA99 /* NewItemScreenRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		6B66AAE22803C22D000FFA99 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAE32803C22D000FFA99 /* NewItemScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6B66AAE72803C393000FFA99 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAE82803C393000FFA99 /* NewItemScreenContainer.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		6BC52732280105050019BE5D /* Constants */ = {
@@ -793,6 +817,7 @@
 				6BC52763280110450019BE5D /* RawModels */,
 				6BC52768280111280019BE5D /* LookService.swift */,
 				13900B152801DF1E0045A6F2 /* WardrobeService.swift */,
+				6B66AAE52803C249000FFA99 /* UploadService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -923,6 +948,7 @@
 				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
 				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
 				6BC52755280110140019BE5D /* LookModels.swift in Sources */,
+				6B66AAE92803C393000FFA99 /* NewItemScreenContainer.swift in Sources */,
 				6BC5275B280110140019BE5D /* ItemCollectionViewCell.swift in Sources */,
 				6BC52759280110140019BE5D /* ItemCollectionViewCellViewModel.swift in Sources */,
 				6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */,
@@ -933,6 +959,7 @@
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
 				6BC5276F280112BB0019BE5D /* DropTableCell.swift in Sources */,
+				6B66AAE42803C22D000FFA99 /* NewItemScreenInteractor.swift in Sources */,
 				13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */,
 				6BC5275C280110140019BE5D /* LookTableViewCellPresenter.swift in Sources */,
 				13900B0D2801DBDA0045A6F2 /* MainScreenProtocols.swift in Sources */,
@@ -943,6 +970,7 @@
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				6BC52769280111280019BE5D /* LookService.swift in Sources */,
 				6BC52761280110140019BE5D /* LookRouter.swift in Sources */,
+				6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
 				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
