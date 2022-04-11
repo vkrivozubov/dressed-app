@@ -60,3 +60,16 @@ extension String {
         return isValid
     }
 }
+
+// MARK: UIImage
+extension UIImage {
+
+    // MARK: Make image opacity
+    func alpha(_ value: CGFloat) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage ?? UIImage()
+    }
+}
