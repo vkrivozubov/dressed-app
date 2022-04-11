@@ -6,8 +6,6 @@ protocol NewItemScreenViewInput: AnyObject {
 
     func getItemImage() -> Data?
 
-    func showAlert(title: String, message: String)
-
     func turnOnButtonInteraction()
 
     func disableKeyboard()
@@ -33,4 +31,5 @@ protocol NewItemScreenInteractorOutput: AnyObject {
 
 protocol NewItemScreenRouterInput: AnyObject {
     func goBack()
+    func showAlert(title: String, message: String)
 }
