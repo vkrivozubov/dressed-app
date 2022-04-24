@@ -32,9 +32,12 @@ final class AllItemsCollectionViewCell: WardrobeCell {
     private func setupDeleteMarkImageView() {
         imageView.addSubview(stateButton)
 
-        stateButton.setImage(UIImage(systemName: "plus",
-                                        withConfiguration: UIImage.SymbolConfiguration(weight: .bold)),
-                                        for: .normal)
+        stateButton.setImage(
+            UIImage(
+                systemName: "plus",
+                withConfiguration: UIImage.SymbolConfiguration(weight: .bold)),
+                for: .normal
+        )
         stateButton.tintColor = GlobalColors.backgroundColor
         stateButton.addTarget(self, action: #selector(didTapStateButton), for: .touchUpInside)
         stateButton.backgroundColor = .systemGreen
