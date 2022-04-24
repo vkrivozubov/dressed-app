@@ -1,5 +1,6 @@
 import Alamofire
 import Foundation
+import Kingfisher
 
 class NetworkService {
 
@@ -75,6 +76,10 @@ extension NetworkService: Service {
         UserDefaults.standard.removeObject(forKey: Constants.loginKey)
         UserDefaults.standard.removeObject(forKey: Constants.passwordKey)
         UserDefaults.standard.removeObject(forKey: Constants.imageURLKey)
+    }
+
+    func cleanCache() {
+        ImageCache.default.clearCache()
     }
 }
 

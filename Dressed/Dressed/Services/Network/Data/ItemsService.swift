@@ -4,8 +4,7 @@ import Foundation
 final class ItemsService: NetworkService {
     func getAllItems(
         for login: String,
-        completion: @escaping (Result<AllItemsRaw, NetworkError>) -> Void)
-    {
+        completion: @escaping (Result<AllItemsRaw, NetworkError>) -> Void) {
         let request = AF.request(getBaseURL() + "getAllItems?login=\(login)&apikey=\(getApiKey())")
         var result = Result<AllItemsRaw, NetworkError>()
 

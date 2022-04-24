@@ -2,7 +2,7 @@ import UIKit
 
 final class MyInvitesContainer {
 	let viewController: UIViewController
-	private(set) weak var router: MyInvitesRouterInput!
+	private(set) weak var router: MyInvitesRouter!
 
 	class func assemble(with context: MyInvitesContext) -> MyInvitesContainer {
         let router = MyInvitesRouter()
@@ -17,7 +17,7 @@ final class MyInvitesContainer {
         return MyInvitesContainer(view: viewController, router: router)
 	}
 
-    private init(view: UIViewController, router: MyInvitesRouterInput) {
+    private init(view: UIViewController, router: MyInvitesRouter) {
 		self.viewController = view
 		self.router = router
 	}

@@ -146,7 +146,7 @@ final class LookService: NetworkService {
             }
         }
     }
-    
+
     func deleteLook(lookId: Int,
                     completion: @escaping (SingleResult<NetworkError>) -> Void) {
         let url = getBaseURL() + "removeLook?look_id=\(lookId)&apikey=\(getApiKey())"
@@ -190,7 +190,7 @@ final class LookService: NetworkService {
             }
         }
     }
-    
+
     func getLooks(for wardrobeId: Int,
                   completion: @escaping (Result<[WardrobeDetailLookRaw], NetworkError>) -> Void) {
         let request = AF.request(getBaseURL() + "getLookByWardrobe?" + "wardrobe_id=\(wardrobeId)" + "&apikey=\(getApiKey())")

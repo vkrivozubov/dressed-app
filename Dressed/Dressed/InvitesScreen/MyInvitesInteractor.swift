@@ -8,7 +8,7 @@ final class MyInvitesInteractor {
 	weak var output: MyInvitesInteractorOutput?
 
     private var inviteService: InviteService = InviteService()
-    
+
     private func handleError(with error: NetworkError) {
         switch error {
         case .networkNotReachable:

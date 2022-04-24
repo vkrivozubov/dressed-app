@@ -1,7 +1,6 @@
 import UIKit
 import PinLayout
 
-
 final class MainScreenViewController: UIViewController {
     var output: MainScreenViewOutput?
 
