@@ -127,6 +127,7 @@
 		6BC282DF2815EA6400B73F97 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */; };
 		6BC282E02815EA6900B73F97 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */; };
 		6BC282E12815EA6E00B73F97 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E332800BECE00499828 /* RegisterPresenter.swift */; };
+		6BC282E92816051900B73F97 /* CreateLookProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282E82816051900B73F97 /* CreateLookProtocols.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -273,6 +274,7 @@
 		6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsInteractor.swift; sourceTree = "<group>"; };
 		6BC282DA2815E77500B73F97 /* AllItemsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsRouter.swift; sourceTree = "<group>"; };
 		6BC282DD2815E77D00B73F97 /* AllItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsContainer.swift; sourceTree = "<group>"; };
+		6BC282E82816051900B73F97 /* CreateLookProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookProtocols.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				6BC282E62816050E00B73F97 /* CreateLook */,
 				2B58B8D12815F34F006A4D99 /* CreateWardrobe */,
 				138468C72815F30A007986AC /* WardrobeDetail */,
 				6BC282AE2815E57E00B73F97 /* AllItems */,
@@ -1046,6 +1049,22 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		6BC282E62816050E00B73F97 /* CreateLook */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282E72816051900B73F97 /* Protocols */,
+			);
+			path = CreateLook;
+			sourceTree = "<group>";
+		};
+		6BC282E72816051900B73F97 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282E82816051900B73F97 /* CreateLookProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		6BC52732280105050019BE5D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -1456,6 +1475,7 @@
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
 				2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */,
 				2B58B8CA2815CD04006A4D99 /* InvitePresenter.swift in Sources */,
+				6BC282E92816051900B73F97 /* CreateLookProtocols.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */,
 				138468D52815F32D007986AC /* WardrobeDetailInteractor.swift in Sources */,
