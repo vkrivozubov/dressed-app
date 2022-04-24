@@ -4,10 +4,10 @@ import PinLayout
 class WardrobeUsersCell: UICollectionViewCell {
     static let identifier = "WardrobeUsersCell"
 
-    private weak var avatarImageView: UIImageView!
-    private weak var outerView: UIView!
-    private weak var nameLabel: UILabel!
-    private weak var deleteButton: DeleteButton!
+    private var avatarImageView: UIImageView = UIImageView()
+    private var outerView: UIView = UIView()
+    private var nameLabel: UILabel = UILabel()
+    private var deleteButton: DeleteButton = DeleteButton()
 
     weak var output: WardrobeUsersViewOutput?
 
@@ -64,8 +64,6 @@ class WardrobeUsersCell: UICollectionViewCell {
     }
 
     private func setupOuterView() {
-        let out = UIView()
-        outerView = out
         outerView.isUserInteractionEnabled = false
         outerView.dropShadow()
         outerView.clipsToBounds = false
@@ -73,8 +71,6 @@ class WardrobeUsersCell: UICollectionViewCell {
     }
 
     private func setupImageView() {
-        let imgView = UIImageView()
-        avatarImageView = imgView
         avatarImageView.dropShadow()
         avatarImageView.contentMode = .scaleToFill
         avatarImageView.clipsToBounds = true
@@ -85,8 +81,6 @@ class WardrobeUsersCell: UICollectionViewCell {
     }
 
     private func setupNameLabel() {
-        let name = UILabel()
-        nameLabel = name
         nameLabel.numberOfLines = 0
         nameLabel.textColor = GlobalColors.darkColor
         nameLabel.font = UIFont(name: "DMSans-Bold", size: 15)
@@ -99,8 +93,6 @@ class WardrobeUsersCell: UICollectionViewCell {
     }
 
     private func setupDeleteButton() {
-        let btn = DeleteButton()
-        deleteButton = btn
         deleteButton.setImage(UIImage(systemName: "minus"), for: .normal)
         deleteButton.tintColor = GlobalColors.backgroundColor
         deleteButton.backgroundColor = GlobalColors.redCancelColor

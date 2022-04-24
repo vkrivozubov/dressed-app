@@ -5,8 +5,8 @@ import UIKit
 class AddUserCell: UICollectionViewCell {
     static let identifier = "AddUserCell"
 
-    private weak var outerView: UIView!
-    private weak var imageView: UIImageView!
+    private var outerView: UIView = UIView()
+    private var imageView: UIImageView = UIImageView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,8 +43,6 @@ class AddUserCell: UICollectionViewCell {
     }
 
     private func setupOuterView() {
-        let out = UIView()
-        outerView = out
         outerView.dropShadow()
         outerView.clipsToBounds = false
         outerView.backgroundColor = GlobalColors.tintColor
@@ -52,8 +50,6 @@ class AddUserCell: UICollectionViewCell {
     }
 
     private func setupImageView() {
-        let imgView = UIImageView()
-        imageView = imgView
         imageView.image = UIImage(systemName: "plus")
         imageView.tintColor = GlobalColors.darkColor
         imageView.contentMode = .scaleAspectFill

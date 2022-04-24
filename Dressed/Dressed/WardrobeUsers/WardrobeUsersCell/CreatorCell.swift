@@ -4,9 +4,9 @@ import PinLayout
 class CreatorCell: UICollectionViewCell {
     static let identifier = "CreatorCell"
 
-    private weak var avatarImageView: UIImageView!
-    private weak var outerView: UIView!
-    private weak var nameLabel: UILabel!
+    private var avatarImageView: UIImageView = UIImageView()
+    private var outerView: UIView = UIView()
+    private var nameLabel: UILabel = UILabel()
 
     weak var output: WardrobeUsersViewOutput?
 
@@ -55,8 +55,6 @@ class CreatorCell: UICollectionViewCell {
     }
 
     private func setupOuterView() {
-        let out = UIView()
-        outerView = out
         outerView.isUserInteractionEnabled = false
         outerView.dropShadow()
         outerView.clipsToBounds = false
@@ -64,8 +62,6 @@ class CreatorCell: UICollectionViewCell {
     }
 
     private func setupImageView() {
-        let imgView = UIImageView()
-        avatarImageView = imgView
         avatarImageView.dropShadow()
         avatarImageView.contentMode = .scaleToFill
         avatarImageView.clipsToBounds = true
@@ -76,8 +72,6 @@ class CreatorCell: UICollectionViewCell {
     }
 
     private func setupNameLabel() {
-        let name = UILabel()
-        nameLabel = name
         nameLabel.numberOfLines = 0
         nameLabel.textColor = GlobalColors.darkColor
         nameLabel.font = UIFont(name: "DMSans-Bold", size: 15)

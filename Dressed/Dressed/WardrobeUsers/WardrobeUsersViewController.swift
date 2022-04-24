@@ -8,11 +8,11 @@ enum EditButtonState: Int {
 final class WardrobeUsersViewController: UIViewController {
 	var output: WardrobeUsersViewOutput?
 
-    private var headerView: UIView = .init()
-    private var titleLabel: UILabel = .init()
-    private var backButton: UIButton = .init()
+    private var headerView: UIView = UIView()
+    private var titleLabel: UILabel = UILabel()
+    private var backButton: UIButton = UIButton()
     private var collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-    private var editButton: UIButton = .init()
+    private var editButton: UIButton = UIButton()
     private let refreshControl = UIRefreshControl()
 
     private let screenBounds = UIScreen.main.bounds
