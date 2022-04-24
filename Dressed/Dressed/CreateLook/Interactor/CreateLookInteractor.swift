@@ -1,7 +1,7 @@
 import Foundation
 
 final class CreateLookInteractor {
-	weak var output: CreateLookInteractorOutput?
+    weak var output: CreateLookInteractorOutput?
     private var wardrobeID: Int
     private var ownerLogin: String
     private let itemService = ItemsService()

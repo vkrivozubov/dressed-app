@@ -3,7 +3,7 @@ import PinLayout
 
 final class CreateLookCollectionViewCell: WardrobeCell {
 
-    private weak var stateButton: UIButton!
+    private let stateButton = UIButton()
 
     var output: CreateLookCollectionViewCellPresenter?
 
@@ -30,14 +30,14 @@ final class CreateLookCollectionViewCell: WardrobeCell {
     }
 
     private func setupDeleteMarkImageView() {
-        let button = UIButton()
-
-        stateButton = button
         imageView.addSubview(stateButton)
 
-        stateButton.setImage(UIImage(systemName: "plus",
-                                        withConfiguration: UIImage.SymbolConfiguration(weight: .bold)),
-                                        for: .normal)
+        stateButton.setImage(
+            UIImage(
+                systemName: "plus",
+                withConfiguration: UIImage.SymbolConfiguration(weight: .bold)),
+                for: .normal
+        )
         stateButton.tintColor = GlobalColors.backgroundColor
         stateButton.addTarget(self, action: #selector(didTapStateButton), for: .touchUpInside)
         stateButton.backgroundColor = .systemGreen
