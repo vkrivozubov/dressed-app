@@ -1,10 +1,7 @@
 struct LoginResponse: Decodable {
     let login: String
-
-    let userName: String
-
+    let userName: String?
     let imageURL: String?
-
     let imageId: Int?
 
     private enum CodingKeys: String, CodingKey {

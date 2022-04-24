@@ -20,7 +20,7 @@ final class LookViewController: UIViewController {
 
         return gestureRecognizer
     }()
-    
+
     private lazy var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer = {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapLookParamsButton))
         gestureRecognizer.isEnabled = false
