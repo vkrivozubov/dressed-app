@@ -81,21 +81,13 @@ extension NetworkService: Service {
 extension NetworkService {
     struct Constants {
         static let commonPlistFilename: String = "Info"
-
         static let apiKey: String = "API_KEY"
-
         static let baseURL: String = "PROD_HOST"
-
         static let authKey: String = "isAuthorized"
-
         static let loginKey: String = "login"
-
         static let userNameKey: String = "username"
-
         static let passwordKey: String = "password"
-
         static let imageURLKey: String = "imageURL"
-
         static let imageIdKey: String = "imageId"
     }
 }
@@ -103,6 +95,7 @@ extension NetworkService {
 enum ResponseCode {
     case success
     case error
+    case userAlreadyInvite
 }
 
 extension ResponseCode {
@@ -112,6 +105,8 @@ extension ResponseCode {
             return Codes.successCode
         case .error:
             return Codes.errorCode
+        case .userAlreadyInvite:
+            return Codes.userAlreadyInvite
         }
     }
 }
@@ -119,7 +114,7 @@ extension ResponseCode {
 extension ResponseCode {
     private struct Codes {
         static let successCode: Int = 200
-
         static let errorCode: Int = 404
+        static let userAlreadyInvite: Int = 405
     }
 }

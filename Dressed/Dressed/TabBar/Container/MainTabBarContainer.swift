@@ -18,16 +18,14 @@ final class MainTabBarContainer {
     }
 
     private static func prepareWardrobeScreen(context: MainScreenContext) -> UINavigationController {
-        /*
         let container = MainScreenContainer.assemble(with: context)
         let tabBarItem = UITabBarItem(title: Constants.HomeBarItem.title,
                                       image: Constants.HomeBarItem.image,
                                       tag: Constants.HomeBarItem.tag)
 
         container.viewController.tabBarItem = tabBarItem
-         */
 
-        let navigationVC = UINavigationController(rootViewController: UIViewController())
+        let navigationVC = UINavigationController(rootViewController: container.viewController)
 
         navigationVC.navigationBar.isHidden = true
 

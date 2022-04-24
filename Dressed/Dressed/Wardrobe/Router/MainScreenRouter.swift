@@ -22,11 +22,14 @@ extension MainScreenRouter: MainScreenRouterInput {
     }
 
     func showSettings(login: String, name: String, imageUrl: String) {
-        // TODO: Add show settings creeation
-//        let vc = SettingsContainer.assemble(with: SettingsContext(login: login,
-//                                                                  name: name,
-//                                                                  imageUrl: imageUrl)).viewController
-//        viewController?.navigationController?.pushViewController(vc, animated: true)
+        let vc = SettingsContainer.assemble(
+            with: SettingsContext(
+                login: login,
+                name: name,
+                imageUrl: imageUrl
+            )
+        ).viewController
+        viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 
     func showAddWardobeScreen(for user: String) {

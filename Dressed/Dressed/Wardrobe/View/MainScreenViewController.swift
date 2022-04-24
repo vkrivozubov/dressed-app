@@ -10,7 +10,10 @@ final class MainScreenViewController: UIViewController {
     private var headerView: UIView = .init()
     private var titleLabel: UILabel = .init()
     private var settingsButton: UIButton = .init()
-    private var collectionView: UICollectionView = .init()
+    private lazy var collectionView: UICollectionView = {
+        let collectionViewLayout = UICollectionViewFlowLayout()
+        return .init(frame: .zero, collectionViewLayout: collectionViewLayout)
+    }()
     private var editButton: UIButton = .init()
     private let refreshControl = UIRefreshControl()
 
