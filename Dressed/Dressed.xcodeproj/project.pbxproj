@@ -143,6 +143,7 @@
 		6BC283172816075F00B73F97 /* SetupLookProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2830F2816075F00B73F97 /* SetupLookProtocols.swift */; };
 		6BC283182816075F00B73F97 /* SetupLookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC283112816075F00B73F97 /* SetupLookInteractor.swift */; };
 		6BC283192816075F00B73F97 /* SetupLookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC283132816075F00B73F97 /* SetupLookRouter.swift */; };
+		6BC2831B28160FBB00B73F97 /* AllClothesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2831A28160FBB00B73F97 /* AllClothesProtocols.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -305,6 +306,7 @@
 		6BC2830F2816075F00B73F97 /* SetupLookProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupLookProtocols.swift; sourceTree = "<group>"; };
 		6BC283112816075F00B73F97 /* SetupLookInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupLookInteractor.swift; sourceTree = "<group>"; };
 		6BC283132816075F00B73F97 /* SetupLookRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupLookRouter.swift; sourceTree = "<group>"; };
+		6BC2831A28160FBB00B73F97 /* AllClothesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllClothesProtocols.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -839,17 +841,10 @@
 		2BA04E442800CBAF00499828 /* AllClothes */ = {
 			isa = PBXGroup;
 			children = (
-				2BA04E452800CBB800499828 /* Container */,
-			);
-			path = AllClothes;
-			sourceTree = "<group>";
-		};
-		2BA04E452800CBB800499828 /* Container */ = {
-			isa = PBXGroup;
-			children = (
+				6BC2831A28160FBB00B73F97 /* AllClothesProtocols.swift */,
 				2BA04E462800CBCF00499828 /* AllClothesContainer.swift */,
 			);
-			path = Container;
+			path = AllClothes;
 			sourceTree = "<group>";
 		};
 		2BA04E482800CC8E00499828 /* Wardrobe */ = {
@@ -1612,6 +1607,7 @@
 				138468A02815D5CD007986AC /* AddUserCell.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
+				6BC2831B28160FBB00B73F97 /* AllClothesProtocols.swift in Sources */,
 				138468AC2815D5FF007986AC /* WardrobeUsersRouter.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
 				6BC282C62815E5B100B73F97 /* AllItemsCollectionViewCell.swift in Sources */,
