@@ -7,7 +7,19 @@ final class RegisterRouter {
 
 extension RegisterRouter: RegisterRouterInput {
     func showTermsAndConditions() {
-        // TODO: show terms and confitions
+        guard
+            let url = URL(string: NetworkService().getBaseURL() + "/terms")
+        else { return }
+        if UIApplication.shared.canOpenURL(url) {
+            let safariViewController = SFSafariViewController(url: url)
+            safariViewController.modalPresentationStyle = .pageSheet
+            safariViewController.dismissButtonStyle = .done
+            self.viewController?.present(
+                safariViewController,
+                animated: true,
+                completion: nil
+            )
+        }
     }
 
     func showLoginScreen() {

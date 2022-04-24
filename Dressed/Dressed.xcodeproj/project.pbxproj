@@ -18,6 +18,15 @@
 		13900B102801DDB90045A6F2 /* Wardrobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B0F2801DDB90045A6F2 /* Wardrobe.swift */; };
 		13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B112801DE690045A6F2 /* AddWardrobeCell.swift */; };
 		13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B152801DF1E0045A6F2 /* WardrobeService.swift */; };
+		2B58B8B32815B4EC006A4D99 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8B22815B4EC006A4D99 /* SettingsTableViewCell.swift */; };
+		2B58B8B52815B547006A4D99 /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8B42815B547006A4D99 /* SettingsContainer.swift */; };
+		2B58B8B72815B574006A4D99 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8B62815B574006A4D99 /* SettingsInteractor.swift */; };
+		2B58B8B92815B5C8006A4D99 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8B82815B5C8006A4D99 /* SettingsPresenter.swift */; };
+		2B58B8BB2815B614006A4D99 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8BA2815B614006A4D99 /* SettingsProtocols.swift */; };
+		2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8BC2815B64A006A4D99 /* SettingsRouter.swift */; };
+		2B58B8BF2815B6A1006A4D99 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8BE2815B6A1006A4D99 /* SettingsViewController.swift */; };
+		2B58B8C12815B9CB006A4D99 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8C02815B9CB006A4D99 /* SettingsService.swift */; };
+		2B58B8C32815BDC2006A4D99 /* ResponseEditString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58B8C22815BDC2006A4D99 /* ResponseEditString.swift */; };
 		2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */; };
 		2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */; };
 		2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */; };
@@ -97,6 +106,15 @@
 		13900B0F2801DDB90045A6F2 /* Wardrobe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wardrobe.swift; sourceTree = "<group>"; };
 		13900B112801DE690045A6F2 /* AddWardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWardrobeCell.swift; sourceTree = "<group>"; };
 		13900B152801DF1E0045A6F2 /* WardrobeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeService.swift; sourceTree = "<group>"; };
+		2B58B8B22815B4EC006A4D99 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		2B58B8B42815B547006A4D99 /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
+		2B58B8B62815B574006A4D99 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		2B58B8B82815B5C8006A4D99 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		2B58B8BA2815B614006A4D99 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		2B58B8BC2815B64A006A4D99 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		2B58B8BE2815B6A1006A4D99 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2B58B8C02815B9CB006A4D99 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		2B58B8C22815BDC2006A4D99 /* ResponseEditString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEditString.swift; sourceTree = "<group>"; };
 		2B8CF0EF27EFAFFB00765112 /* Dressed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dressed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +267,28 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		2B58B8B02815B4BB006A4D99 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2B58B8B12815B4D1006A4D99 /* SettingsCell */,
+				2B58B8B42815B547006A4D99 /* SettingsContainer.swift */,
+				2B58B8B62815B574006A4D99 /* SettingsInteractor.swift */,
+				2B58B8B82815B5C8006A4D99 /* SettingsPresenter.swift */,
+				2B58B8BA2815B614006A4D99 /* SettingsProtocols.swift */,
+				2B58B8BC2815B64A006A4D99 /* SettingsRouter.swift */,
+				2B58B8BE2815B6A1006A4D99 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2B58B8B12815B4D1006A4D99 /* SettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B58B8B22815B4EC006A4D99 /* SettingsTableViewCell.swift */,
+			);
+			path = SettingsCell;
+			sourceTree = "<group>";
+		};
 		2B8CF0E627EFAFFB00765112 = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +308,7 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				2B58B8B02815B4BB006A4D99 /* Settings */,
 				6B66AAD52803BD56000FFA99 /* NewItem */,
 				2BA04E482800CC8E00499828 /* Wardrobe */,
 				2BA04E442800CBAF00499828 /* AllClothes */,
@@ -818,6 +859,7 @@
 				6BC52768280111280019BE5D /* LookService.swift */,
 				13900B152801DF1E0045A6F2 /* WardrobeService.swift */,
 				6B66AAE52803C249000FFA99 /* UploadService.swift */,
+				2B58B8C02815B9CB006A4D99 /* SettingsService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -828,6 +870,7 @@
 				6BC52764280110660019BE5D /* Look.swift */,
 				6BC52766280110870019BE5D /* Item.swift */,
 				13900B0F2801DDB90045A6F2 /* Wardrobe.swift */,
+				2B58B8C22815BDC2006A4D99 /* ResponseEditString.swift */,
 			);
 			path = RawModels;
 			sourceTree = "<group>";
@@ -964,6 +1007,7 @@
 			files = (
 				2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */,
 				6BC52765280110660019BE5D /* Look.swift in Sources */,
+				2B58B8B32815B4EC006A4D99 /* SettingsTableViewCell.swift in Sources */,
 				6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */,
 				13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */,
 				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
@@ -984,11 +1028,14 @@
 				13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */,
 				6BC5275C280110140019BE5D /* LookTableViewCellPresenter.swift in Sources */,
 				13900B0D2801DBDA0045A6F2 /* MainScreenProtocols.swift in Sources */,
+				2B58B8BF2815B6A1006A4D99 /* SettingsViewController.swift in Sources */,
 				13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
 				13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */,
 				2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */,
+				2B58B8B72815B574006A4D99 /* SettingsInteractor.swift in Sources */,
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
+				2B58B8B92815B5C8006A4D99 /* SettingsPresenter.swift in Sources */,
 				6BC52769280111280019BE5D /* LookService.swift in Sources */,
 				6BC52761280110140019BE5D /* LookRouter.swift in Sources */,
 				6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */,
@@ -1014,8 +1061,10 @@
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
+				2B58B8BB2815B614006A4D99 /* SettingsProtocols.swift in Sources */,
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
 				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
+				2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
@@ -1028,10 +1077,13 @@
 				6BC5275F280110140019BE5D /* LookProtocols.swift in Sources */,
 				13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */,
 				6BC5275D280110140019BE5D /* LookTableViewCell.swift in Sources */,
+				2B58B8B52815B547006A4D99 /* SettingsContainer.swift in Sources */,
 				6BC52757280110140019BE5D /* LookViewController.swift in Sources */,
 				6BC52758280110140019BE5D /* LookTableViewCellViewModel.swift in Sources */,
 				6BC52754280110140019BE5D /* LookPresenter.swift in Sources */,
+				2B58B8C12815B9CB006A4D99 /* SettingsService.swift in Sources */,
 				6BC52760280110140019BE5D /* LookInteractor.swift in Sources */,
+				2B58B8C32815BDC2006A4D99 /* ResponseEditString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

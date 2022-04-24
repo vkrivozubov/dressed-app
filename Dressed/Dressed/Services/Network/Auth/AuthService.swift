@@ -203,5 +203,23 @@ extension AuthService: AuthServiceInput {
               )
               completion(result)
           }
-      }
+    }
+
+    func setUserLogin(login: String?) {
+        guard let login = login else { return }
+
+        UserDefaults.standard.setValue(login, forKey: Constants.loginKey)
+    }
+
+    func setUserPassword(password: String?) {
+        guard let password = password else { return }
+
+        UserDefaults.standard.setValue(password, forKey: Constants.passwordKey)
+    }
+
+    func setImageUrl(imageUrl: String?) {
+        guard let imageUrl = imageUrl else { return }
+
+        UserDefaults.standard.setValue(imageUrl, forKey: Constants.imageURLKey)
+    }
 }
