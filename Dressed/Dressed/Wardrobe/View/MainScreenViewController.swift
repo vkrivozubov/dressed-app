@@ -1,9 +1,7 @@
 import UIKit
 import PinLayout
 
-enum EditButtonState: Int {
-    case edit = 0, accept
-}
+
 final class MainScreenViewController: UIViewController {
     var output: MainScreenViewOutput?
 
