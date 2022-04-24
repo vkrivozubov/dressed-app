@@ -1,0 +1,81 @@
+disabled_rules:
+    - type_name
+    - function_body_length
+    - function_parameter_count
+    - todo
+
+opt_in_rules:
+    - empty_count
+    - empty_string
+    - empty_xctest_method
+    - private_action
+    - private_outlet
+    - closure_end_indentation
+    - closure_spacing
+    - operator_usage_whitespace
+    - overridden_super_call
+    - explicit_init
+    - fatal_error_message
+    - force_unwrapping
+
+warning_threshold: 1
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+
+excluded:
+  - Pods
+  - vendor
+
+line_length:
+  - 300
+  - 350
+
+file_length:
+  warning: 1500
+  error: 1800
+
+type_body_length:
+  - 600 # warning
+  - 1000 # error
+
+cyclomatic_complexity:
+    warning: 18
+    error: 28
+
+identifier_name:
+    excluded:
+        - id
+        - GlobalAPIKey
+        - vc
+        - i
+        - j
+        - k
+        - m
+        - w
+        - h
+        - r
+        - g
+        - b
+        - a
+        - res
+        - url
+        - err
+        - ds
+        - at
+        - on
+        - off
+        - x
+        - y
+    max_length:
+        warning: 40
+        error: 60
+    min_length:
+        warning: 3
+        error: 2
+
+nesting:
+  type_level:
+    warning: 2
+  statement_level:
+    warning: 5

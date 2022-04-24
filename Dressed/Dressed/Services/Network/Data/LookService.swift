@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 final class LookService: NetworkService {
-    
+
     func getAllLookClothes(
         with id: Int,
         completion: @escaping (Result<LookRaw, NetworkError>) -> Void
@@ -48,7 +48,7 @@ final class LookService: NetworkService {
             completion(result)
         }
     }
-    
+
     func deleteItemFromLook(
         lookID: Int,
         itemID: Int,
@@ -96,7 +96,7 @@ final class LookService: NetworkService {
             }
         }
     }
-    
+
     func updateLook(lookID: Int,
                     itemIDs: [Int],
                     completion: @escaping (SingleResult<NetworkError>) -> Void) {

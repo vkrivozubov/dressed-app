@@ -9,7 +9,7 @@ final class LookInteractor {
     private var lookData: LookData?
 
     private var ownerLogin: String
-    
+
     private let lookService = LookService()
 
     init(lookID: Int, ownerLogin: String) {

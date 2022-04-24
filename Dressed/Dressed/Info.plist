@@ -33,7 +33,7 @@
 		</dict>
 	</dict>
 	<key>PROD_HOST</key>
-	<string>http://5.63.152.195:3000/</string>
+	<string>http://134.0.117.132:3000</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Камера будет использоваться для добавления фотографий одежды в приложение для составления наборов из них.</string>
 </dict>

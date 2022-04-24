@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 final class NewItemScreenPresenter {
-    
+
     private enum Constants {
         static let emptyItemErrorTitle = "Ошибка"
         static let emptyItemErrorMessage = "Введите название предмета"
     }
-    
+
 	weak var view: NewItemScreenViewInput?
 
 	private let router: NewItemScreenRouterInput

@@ -19,7 +19,7 @@ final class NewItemScreenViewController: UIViewController, UINavigationControlle
         gestureRecognizer.numberOfTouchesRequired = 1
         return gestureRecognizer
     }()
-    
+
     private lazy var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer = {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         gestureRecognizer.numberOfTouchesRequired = 1
