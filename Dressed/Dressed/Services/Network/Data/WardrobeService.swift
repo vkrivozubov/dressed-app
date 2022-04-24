@@ -81,21 +81,69 @@ final class WardrobeService: NetworkService {
     }
 
     func addUserToWardrobe(
-        with login: String,
-        wardobeId: Int,
+            with login: String,
+            wardobeId: Int,
+            completion: @escaping (SingleResult<NetworkError>) -> Void
+        ) {
+            guard let userLogin = getUserLogin() else { return }
+
+            let url = getBaseURL() + "sendInvite" +
+                "?my_login=\(userLogin)" +
+                "&login_to_invite=\(login)" +
+                "&wardrobe_id=\(wardobeId)" +
+                "&apikey=\(getApiKey())"
+
+            var result = SingleResult<NetworkError>()
+
+            let request = AF.request(url)
+            request.response { response in
+                switch response.result {
+                case .success:
+                    guard let statusCode = response.response?.statusCode else {
+                        result.error = .unknownError
+                        completion(result)
+                        return
+                    }
+
+                    switch statusCode {
+                    case ResponseCode.success.code:
+                        completion(result)
+                    case ResponseCode.error.code:
+                        result.error = .networkNotReachable
+                        completion(result)
+                        return
+                    case ResponseCode.userAlreadyInvite.code:
+                        result.error = .userAlreadyInvite
+                        completion(result)
+                    default:
+                        result.error = .unknownError
+                        completion(result)
+                        return
+                    }
+                case .failure(let error):
+                    if error.isInvalidURLError {
+                        result.error = .connectionToServerError
+                    } else {
+                        result.error = .unknownError
+                    }
+                }
+            }
+        }
+    
+    func deleteUserFromWardrobe(
+        wardrobeId: Int,
+        login: String,
         completion: @escaping (SingleResult<NetworkError>) -> Void
     ) {
-        guard let userLogin = getUserLogin() else { return }
-
-        let url = getBaseURL() + "sendInvite" +
-            "?my_login=\(userLogin)" +
-            "&login_to_invite=\(login)" +
-            "&wardrobe_id=\(wardobeId)" +
-            "&apikey=\(getApiKey())"
-
+        let url = getBaseURL() + "removeUserFromWardrobe"
+        + "?wardrobe_id=\(wardrobeId)"
+        + "&remove_login=\(login)"
+        + "&apikey=\(getApiKey())"
+        
         var result = SingleResult<NetworkError>()
-
+        
         let request = AF.request(url)
+        
         request.response { response in
             switch response.result {
             case .success:
@@ -104,17 +152,14 @@ final class WardrobeService: NetworkService {
                     completion(result)
                     return
                 }
-
+                
                 switch statusCode {
                 case ResponseCode.success.code:
                     completion(result)
                 case ResponseCode.error.code:
-                    result.error = .networkNotReachable
+                    result.error = .deletingOwner
                     completion(result)
                     return
-                case ResponseCode.userAlreadyInvite.code:
-                    result.error = .userAlreadyInvite
-                    completion(result)
                 default:
                     result.error = .unknownError
                     completion(result)
@@ -127,6 +172,48 @@ final class WardrobeService: NetworkService {
                     result.error = .unknownError
                 }
             }
+        }
+    }
+    
+    func getWardroeUsers(with wardrobeId: Int,
+                         completion: @escaping (Result<[WardrobeUserRaw], NetworkError>) -> Void) {
+        let url = getBaseURL() + "getWardrobeUsers"
+        + "?wardrobe_id=" + "\(wardrobeId)"
+        + "&apikey=\(getApiKey())"
+        
+        var result = Result<[WardrobeUserRaw], NetworkError>()
+        
+        let request = AF.request(url)
+        request.responseDecodable(of: [WardrobeUserRaw].self) { (response) in
+            switch response.result {
+            case .success(let data):
+                guard let statusCode = response.response?.statusCode else {
+                    result.error = .unknownError
+                    completion(result)
+                    return
+                }
+                
+                switch statusCode {
+                case ResponseCode.success.code:
+                    result.data = data
+                case ResponseCode.error.code:
+                    result.error = .lookNotExist
+                    completion(result)
+                    return
+                default:
+                    result.error = .unknownError
+                    completion(result)
+                    return
+                }
+            case .failure(let error):
+                if error.isInvalidURLError {
+                    result.error = .connectionToServerError
+                } else {
+                    result.error = .unknownError
+                }
+            }
+            
+            completion(result)
         }
     }
 }
