@@ -18,7 +18,6 @@
 		138468AC2815D5FF007986AC /* WardrobeUsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468AB2815D5FF007986AC /* WardrobeUsersRouter.swift */; };
 		138468AE2815D603007986AC /* WardrobeUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468AD2815D603007986AC /* WardrobeUsersViewController.swift */; };
 		138468B02815D725007986AC /* WardrobeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468AF2815D725007986AC /* WardrobeUser.swift */; };
-		13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */; };
 		13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */; };
 		13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFE2801DBD90045A6F2 /* WardrobeData.swift */; };
 		13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */; };
@@ -65,9 +64,7 @@
 		2BA04E2027F9F0A000499828 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1F27F9F0A000499828 /* Colors.swift */; };
 		2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2327F9F1E500499828 /* WardrobeExtensions.swift */; };
 		2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */; };
-		2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */; };
 		2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E312800BEA500499828 /* RegisterModels.swift */; };
-		2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E332800BECE00499828 /* RegisterPresenter.swift */; };
 		2BA04E362800BEF000499828 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E352800BEF000499828 /* RegisterProtocols.swift */; };
 		2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E372800BF3D00499828 /* RegisterRouter.swift */; };
 		2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E392800BF7A00499828 /* RegisterViewController.swift */; };
@@ -75,7 +72,6 @@
 		2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E402800CA6300499828 /* MainTabBar.swift */; };
 		2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E422800CA8600499828 /* MainTabBarContainer.swift */; };
 		2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E462800CBCF00499828 /* AllClothesContainer.swift */; };
-		2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */; };
 		2BA04E4F2801BE5700499828 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */; };
 		2BA04E512801BE6000499828 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E502801BE6000499828 /* DMSans-Medium.ttf */; };
 		2BA04E532801BE6700499828 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E522801BE6700499828 /* DMSans-Regular.ttf */; };
@@ -102,6 +98,9 @@
 		6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */; };
 		6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282DA2815E77500B73F97 /* AllItemsRouter.swift */; };
 		6BC282DE2815E77D00B73F97 /* AllItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282DD2815E77D00B73F97 /* AllItemsContainer.swift */; };
+		6BC282DF2815EA6400B73F97 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */; };
+		6BC282E02815EA6900B73F97 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E2F2800BE6000499828 /* RegisterInteractor.swift */; };
+		6BC282E12815EA6E00B73F97 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E332800BECE00499828 /* RegisterPresenter.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -1253,6 +1252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC282E12815EA6E00B73F97 /* RegisterPresenter.swift in Sources */,
+				6BC282E02815EA6900B73F97 /* RegisterInteractor.swift in Sources */,
+				6BC282DF2815EA6400B73F97 /* MainScreenContainer.swift in Sources */,
 				138468992815D5C7007986AC /* WardrobeUserData.swift in Sources */,
 				2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */,
 				138468B02815D725007986AC /* WardrobeUser.swift in Sources */,
@@ -1287,7 +1289,6 @@
 				6BC5275C280110140019BE5D /* LookTableViewCellPresenter.swift in Sources */,
 				13900B0D2801DBDA0045A6F2 /* MainScreenProtocols.swift in Sources */,
 				2B58B8BF2815B6A1006A4D99 /* SettingsViewController.swift in Sources */,
-				13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
 				13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */,
 				2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */,
@@ -1322,22 +1323,17 @@
 				6BC282B12815E58C00B73F97 /* AllItemsProtocols.swift in Sources */,
 				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
 				6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */,
-				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
-				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
 				2B58B8BB2815B614006A4D99 /* SettingsProtocols.swift in Sources */,
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
-				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
 				2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */,
 				2B58B8CA2815CD04006A4D99 /* InvitePresenter.swift in Sources */,
-				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */,
-				2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */,
 				6BC282C52815E5B100B73F97 /* AllItemsCollectionViewCellPresenter.swift in Sources */,
 				2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */,
 				2B58B8D02815CD50006A4D99 /* InviteViewController.swift in Sources */,
