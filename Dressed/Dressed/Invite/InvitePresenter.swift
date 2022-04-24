@@ -4,12 +4,12 @@ import UIKit
 final class InvitePresenter {
     weak var view: InviteViewInput?
 
-    private let router: InviteRouterInput
+    private let router: InviteRouter
     private let interactor: InviteInteractorInput
 
     var wardrobeId: Int?
 
-    init(router: InviteRouterInput, interactor: InviteInteractorInput) {
+    init(router: InviteRouter, interactor: InviteInteractorInput) {
         self.router = router
         self.interactor = interactor
     }

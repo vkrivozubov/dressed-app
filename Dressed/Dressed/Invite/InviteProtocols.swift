@@ -1,21 +1,18 @@
 import Foundation
 import UIKit
 
-protocol InviteViewInput: class {
+protocol InviteViewInput: AnyObject {
     func showAlert(alert: UIAlertController)
 }
 
-protocol InviteViewOutput: class {
+protocol InviteViewOutput: AnyObject {
     func didUserTapInviteButton(with login: String)
 }
 
-protocol InviteInteractorInput: class {
+protocol InviteInteractorInput: AnyObject {
     func inviteUser(login: String, wardrobeId: Int)
 }
 
-protocol InviteInteractorOutput: class {
+protocol InviteInteractorOutput: AnyObject {
     func showAlert(title: String, message: String)
-}
-
-protocol InviteRouterInput: class {
 }

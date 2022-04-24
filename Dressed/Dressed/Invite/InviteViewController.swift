@@ -3,11 +3,11 @@ import PinLayout
 
 final class InviteViewController: UIViewController {
 
-    private weak var headerView: UIView!
-    private weak var backButton: UIButton!
-    private weak var pageTitle: UILabel!
-    private weak var loginTextField: UITextField!
-    private weak var inviteButton: UIButton!
+    private var headerView = UIView()
+    private var backButton = UIButton()
+    private var pageTitle = UILabel()
+    private var loginTextField = UITextField.customTextField(placeholder: "Имя пользователя")
+    private var inviteButton = UIButton()
     private var tapOnMainViewGestureRecognizer: UITapGestureRecognizer!
     private var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer!
 
@@ -64,8 +64,6 @@ extension InviteViewController {
     }
 
     private func setupBackButton() {
-        let button = UIButton()
-        self.backButton = button
         backButton.isUserInteractionEnabled = true
         headerView.addSubview(backButton)
     }
@@ -87,8 +85,6 @@ extension InviteViewController {
     }
 
     private func setupHeaderView() {
-        let view = UIView()
-        self.headerView = view
         self.view.addSubview(headerView)
     }
 
@@ -104,8 +100,6 @@ extension InviteViewController {
     }
 
     private func setupPageTitle() {
-        let label = UILabel()
-        self.pageTitle = label
         pageTitle.numberOfLines = 2
         pageTitle.textAlignment = .center
         pageTitle.text = "Пригласить\nпользователя"
@@ -126,8 +120,6 @@ extension InviteViewController {
     }
 
     private func setupLoginTextField() {
-        let textField = UITextField.customTextField(placeholder: "Имя пользователя")
-        self.loginTextField = textField
         loginTextField.delegate = self
         headerView.addSubview(loginTextField)
     }
@@ -141,8 +133,6 @@ extension InviteViewController {
     }
 
     private func setupInviteButton() {
-        let button = UIButton()
-        self.inviteButton = button
         inviteButton.setTitle("Отправить приглашение", for: .normal)
         inviteButton.backgroundColor = GlobalColors.mainBlueScreen
         inviteButton.setTitleColor(.gray, for: .highlighted)
