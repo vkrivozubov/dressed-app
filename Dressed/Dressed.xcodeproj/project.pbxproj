@@ -18,6 +18,18 @@
 		138468AC2815D5FF007986AC /* WardrobeUsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468AB2815D5FF007986AC /* WardrobeUsersRouter.swift */; };
 		138468AE2815D603007986AC /* WardrobeUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468AD2815D603007986AC /* WardrobeUsersViewController.swift */; };
 		138468B02815D725007986AC /* WardrobeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468AF2815D725007986AC /* WardrobeUser.swift */; };
+		138468BB2815E69C007986AC /* MyInvitesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B22815E69C007986AC /* MyInvitesPresenter.swift */; };
+		138468BC2815E69C007986AC /* MyInvitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B32815E69C007986AC /* MyInvitesViewController.swift */; };
+		138468BD2815E69C007986AC /* MyInvitesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B52815E69C007986AC /* MyInvitesCell.swift */; };
+		138468BE2815E69C007986AC /* MyInvitesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B62815E69C007986AC /* MyInvitesData.swift */; };
+		138468BF2815E69C007986AC /* MyInvitesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B72815E69C007986AC /* MyInvitesContainer.swift */; };
+		138468C02815E69C007986AC /* MyInvitesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B82815E69C007986AC /* MyInvitesProtocols.swift */; };
+		138468C12815E69C007986AC /* MyInvitesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468B92815E69C007986AC /* MyInvitesRouter.swift */; };
+		138468C22815E69C007986AC /* MyInvitesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468BA2815E69C007986AC /* MyInvitesInteractor.swift */; };
+		138468C42815E735007986AC /* InviteRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C32815E735007986AC /* InviteRaw.swift */; };
+		138468C62815E75C007986AC /* InviteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C52815E75C007986AC /* InviteService.swift */; };
+		13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */; };
+>>>>>>> 72e4144 (CU-29g5qqv - pvxproj)
 		13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */; };
 		13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFE2801DBD90045A6F2 /* WardrobeData.swift */; };
 		13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */; };
@@ -137,6 +149,16 @@
 		138468AB2815D5FF007986AC /* WardrobeUsersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeUsersRouter.swift; sourceTree = "<group>"; };
 		138468AD2815D603007986AC /* WardrobeUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeUsersViewController.swift; sourceTree = "<group>"; };
 		138468AF2815D725007986AC /* WardrobeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeUser.swift; sourceTree = "<group>"; };
+		138468B22815E69C007986AC /* MyInvitesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesPresenter.swift; sourceTree = "<group>"; };
+		138468B32815E69C007986AC /* MyInvitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesViewController.swift; sourceTree = "<group>"; };
+		138468B52815E69C007986AC /* MyInvitesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesCell.swift; sourceTree = "<group>"; };
+		138468B62815E69C007986AC /* MyInvitesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesData.swift; sourceTree = "<group>"; };
+		138468B72815E69C007986AC /* MyInvitesContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesContainer.swift; sourceTree = "<group>"; };
+		138468B82815E69C007986AC /* MyInvitesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesProtocols.swift; sourceTree = "<group>"; };
+		138468B92815E69C007986AC /* MyInvitesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesRouter.swift; sourceTree = "<group>"; };
+		138468BA2815E69C007986AC /* MyInvitesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesInteractor.swift; sourceTree = "<group>"; };
+		138468C32815E735007986AC /* InviteRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRaw.swift; sourceTree = "<group>"; };
+		138468C52815E75C007986AC /* InviteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteService.swift; sourceTree = "<group>"; };
 		13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenContainer.swift; sourceTree = "<group>"; };
 		13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
 		13900AFE2801DBD90045A6F2 /* WardrobeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeData.swift; sourceTree = "<group>"; };
@@ -283,6 +305,29 @@
 			path = WardrobeUsersCell;
 			sourceTree = "<group>";
 		};
+		138468B12815E640007986AC /* InvitesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				138468B42815E69C007986AC /* MyInvitesCell */,
+				138468B72815E69C007986AC /* MyInvitesContainer.swift */,
+				138468B62815E69C007986AC /* MyInvitesData.swift */,
+				138468BA2815E69C007986AC /* MyInvitesInteractor.swift */,
+				138468B22815E69C007986AC /* MyInvitesPresenter.swift */,
+				138468B82815E69C007986AC /* MyInvitesProtocols.swift */,
+				138468B92815E69C007986AC /* MyInvitesRouter.swift */,
+				138468B32815E69C007986AC /* MyInvitesViewController.swift */,
+			);
+			path = InvitesScreen;
+			sourceTree = "<group>";
+		};
+		138468B42815E69C007986AC /* MyInvitesCell */ = {
+			isa = PBXGroup;
+			children = (
+				138468B52815E69C007986AC /* MyInvitesCell.swift */,
+			);
+			path = MyInvitesCell;
+			sourceTree = "<group>";
+		};
 		13900AF72801DBB40045A6F2 /* Wardrobe */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				6BC282AE2815E57E00B73F97 /* AllItems */,
+				138468B12815E640007986AC /* InvitesScreen */,
 				2B58B8C42815CCB9006A4D99 /* Invite */,
 				138468972815D593007986AC /* WardrobeUsers */,
 				2B58B8B02815B4BB006A4D99 /* Settings */,
@@ -1105,6 +1151,7 @@
 				6BC282D42815E69D00B73F97 /* ItemsService.swift */,
 				6B66AAE52803C249000FFA99 /* UploadService.swift */,
 				2B58B8C02815B9CB006A4D99 /* SettingsService.swift */,
+				138468C52815E75C007986AC /* InviteService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1118,6 +1165,7 @@
 				13900B0F2801DDB90045A6F2 /* Wardrobe.swift */,
 				2B58B8C22815BDC2006A4D99 /* ResponseEditString.swift */,
 				138468AF2815D725007986AC /* WardrobeUser.swift */,
+				138468C32815E735007986AC /* InviteRaw.swift */,
 			);
 			path = RawModels;
 			sourceTree = "<group>";
@@ -1264,6 +1312,7 @@
 				2B58B8B32815B4EC006A4D99 /* SettingsTableViewCell.swift in Sources */,
 				6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */,
 				6BC282D52815E69D00B73F97 /* ItemsService.swift in Sources */,
+				138468BD2815E69C007986AC /* MyInvitesCell.swift in Sources */,
 				13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */,
 				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
 				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
@@ -1277,6 +1326,7 @@
 				6B66AAE12803C176000FFA99 /* NewItemScreenRouter.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				13900B0C2801DBDA0045A6F2 /* MainScreenViewController.swift in Sources */,
+				138468BC2815E69C007986AC /* MyInvitesViewController.swift in Sources */,
 				138468A02815D5CD007986AC /* AddUserCell.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
@@ -1291,6 +1341,7 @@
 				2B58B8BF2815B6A1006A4D99 /* SettingsViewController.swift in Sources */,
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
 				13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */,
+				138468BF2815E69C007986AC /* MyInvitesContainer.swift in Sources */,
 				2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */,
 				6BC282DE2815E77D00B73F97 /* AllItemsContainer.swift in Sources */,
 				6BC282D02815E63300B73F97 /* AllItemsPresenter.swift in Sources */,
@@ -1306,6 +1357,7 @@
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
 				2B58B8CE2815CD37006A4D99 /* InviteRouter.swift in Sources */,
 				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
+				138468C42815E735007986AC /* InviteRaw.swift in Sources */,
 				2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */,
 				6BC282C82815E5B100B73F97 /* AllItemsTableViewCell.swift in Sources */,
 				2BA04E362800BEF000499828 /* RegisterProtocols.swift in Sources */,
@@ -1315,10 +1367,12 @@
 				6BC5276E280112BB0019BE5D /* DropDownView.swift in Sources */,
 				2BA04E0A27F8D68A00499828 /* NetworkService.swift in Sources */,
 				2BA04E1127F8D90000499828 /* AuthService.swift in Sources */,
+				138468C02815E69C007986AC /* MyInvitesProtocols.swift in Sources */,
 				13900B102801DDB90045A6F2 /* Wardrobe.swift in Sources */,
 				6BC5275A280110140019BE5D /* ItemCollectionVIewCellPresenter.swift in Sources */,
 				6BC52767280110870019BE5D /* Item.swift in Sources */,
 				6B66AADE2803C00B000FFA99 /* NewItemScreenPresenter.swift in Sources */,
+				138468C22815E69C007986AC /* MyInvitesInteractor.swift in Sources */,
 				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
 				6BC282B12815E58C00B73F97 /* AllItemsProtocols.swift in Sources */,
 				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
@@ -1326,6 +1380,7 @@
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
+				138468C62815E75C007986AC /* InviteService.swift in Sources */,
 				2B58B8BB2815B614006A4D99 /* SettingsProtocols.swift in Sources */,
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
 				2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */,
@@ -1333,10 +1388,12 @@
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
+				138468C12815E69C007986AC /* MyInvitesRouter.swift in Sources */,
 				6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */,
 				6BC282C52815E5B100B73F97 /* AllItemsCollectionViewCellPresenter.swift in Sources */,
 				2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */,
 				2B58B8D02815CD50006A4D99 /* InviteViewController.swift in Sources */,
+				138468BE2815E69C007986AC /* MyInvitesData.swift in Sources */,
 				2B58B8C62815CCC7006A4D99 /* InviteContainer.swift in Sources */,
 				6B66AAD42801EF67000FFA99 /* Result.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
@@ -1347,6 +1404,7 @@
 				13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */,
 				6BC282C42815E5B100B73F97 /* AllItemsCollectionViewCellViewModel.swift in Sources */,
 				6BC5275D280110140019BE5D /* LookTableViewCell.swift in Sources */,
+				138468BB2815E69C007986AC /* MyInvitesPresenter.swift in Sources */,
 				1384689E2815D5CD007986AC /* CreatorCell.swift in Sources */,
 				1384689F2815D5CD007986AC /* WardrobeUsersCell.swift in Sources */,
 				138468AA2815D5F5007986AC /* WardrobeUsersProtocols.swift in Sources */,
