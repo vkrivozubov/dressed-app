@@ -83,6 +83,8 @@
 		6BC282D02815E63300B73F97 /* AllItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282CF2815E63300B73F97 /* AllItemsPresenter.swift */; };
 		6BC282D52815E69D00B73F97 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282D42815E69D00B73F97 /* ItemsService.swift */; };
 		6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */; };
+		6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282DA2815E77500B73F97 /* AllItemsRouter.swift */; };
+		6BC282DE2815E77D00B73F97 /* AllItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282DD2815E77D00B73F97 /* AllItemsContainer.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -184,6 +186,8 @@
 		6BC282CF2815E63300B73F97 /* AllItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsPresenter.swift; sourceTree = "<group>"; };
 		6BC282D42815E69D00B73F97 /* ItemsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsService.swift; sourceTree = "<group>"; };
 		6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsInteractor.swift; sourceTree = "<group>"; };
+		6BC282DA2815E77500B73F97 /* AllItemsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsRouter.swift; sourceTree = "<group>"; };
+		6BC282DD2815E77D00B73F97 /* AllItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsContainer.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -725,6 +729,8 @@
 		6BC282AE2815E57E00B73F97 /* AllItems */ = {
 			isa = PBXGroup;
 			children = (
+				6BC282DC2815E77D00B73F97 /* Container */,
+				6BC282D92815E77500B73F97 /* Router */,
 				6BC282D62815E74B00B73F97 /* Interactor */,
 				6BC282CE2815E63300B73F97 /* Presenter */,
 				6BC282CB2815E5F600B73F97 /* Models */,
@@ -842,6 +848,22 @@
 				6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6BC282D92815E77500B73F97 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282DA2815E77500B73F97 /* AllItemsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6BC282DC2815E77D00B73F97 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282DD2815E77D00B73F97 /* AllItemsContainer.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		6BC52732280105050019BE5D /* Constants */ = {
@@ -1186,6 +1208,7 @@
 				2BA04DF627F8CFCF00499828 /* LoginViewController.swift in Sources */,
 				13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */,
 				2BA04E322800BEA500499828 /* RegisterModels.swift in Sources */,
+				6BC282DE2815E77D00B73F97 /* AllItemsContainer.swift in Sources */,
 				6BC282D02815E63300B73F97 /* AllItemsPresenter.swift in Sources */,
 				2B58B8B72815B574006A4D99 /* SettingsInteractor.swift in Sources */,
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
@@ -1225,6 +1248,7 @@
 				2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
+				6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */,
 				2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */,
