@@ -28,6 +28,15 @@
 		138468C22815E69C007986AC /* MyInvitesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468BA2815E69C007986AC /* MyInvitesInteractor.swift */; };
 		138468C42815E735007986AC /* InviteRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C32815E735007986AC /* InviteRaw.swift */; };
 		138468C62815E75C007986AC /* InviteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C52815E75C007986AC /* InviteService.swift */; };
+		138468D32815F32D007986AC /* WardrobeDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C82815F32D007986AC /* WardrobeDetailData.swift */; };
+		138468D42815F32D007986AC /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C92815F32D007986AC /* DetailViewCell.swift */; };
+		138468D52815F32D007986AC /* WardrobeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468CA2815F32D007986AC /* WardrobeDetailInteractor.swift */; };
+		138468D62815F32D007986AC /* WardrobeDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468CB2815F32D007986AC /* WardrobeDetailProtocols.swift */; };
+		138468D72815F32D007986AC /* WardrobeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468CC2815F32D007986AC /* WardrobeDetailPresenter.swift */; };
+		138468D82815F32D007986AC /* WardrobeDetailContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468CD2815F32D007986AC /* WardrobeDetailContainer.swift */; };
+		138468DB2815F32D007986AC /* WardrobeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468D12815F32D007986AC /* WardrobeDetailViewController.swift */; };
+		138468DC2815F32D007986AC /* WardrobeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468D22815F32D007986AC /* WardrobeDetailRouter.swift */; };
+		138468DE2815F467007986AC /* DetailLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468DD2815F467007986AC /* DetailLook.swift */; };
 		13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */; };
 		13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFE2801DBD90045A6F2 /* WardrobeData.swift */; };
 		13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */; };
@@ -164,6 +173,15 @@
 		138468BA2815E69C007986AC /* MyInvitesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInvitesInteractor.swift; sourceTree = "<group>"; };
 		138468C32815E735007986AC /* InviteRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRaw.swift; sourceTree = "<group>"; };
 		138468C52815E75C007986AC /* InviteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteService.swift; sourceTree = "<group>"; };
+		138468C82815F32D007986AC /* WardrobeDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailData.swift; sourceTree = "<group>"; };
+		138468C92815F32D007986AC /* DetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		138468CA2815F32D007986AC /* WardrobeDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailInteractor.swift; sourceTree = "<group>"; };
+		138468CB2815F32D007986AC /* WardrobeDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailProtocols.swift; sourceTree = "<group>"; };
+		138468CC2815F32D007986AC /* WardrobeDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailPresenter.swift; sourceTree = "<group>"; };
+		138468CD2815F32D007986AC /* WardrobeDetailContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailContainer.swift; sourceTree = "<group>"; };
+		138468D12815F32D007986AC /* WardrobeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailViewController.swift; sourceTree = "<group>"; };
+		138468D22815F32D007986AC /* WardrobeDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeDetailRouter.swift; sourceTree = "<group>"; };
+		138468DD2815F467007986AC /* DetailLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLook.swift; sourceTree = "<group>"; };
 		13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenContainer.swift; sourceTree = "<group>"; };
 		13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
 		13900AFE2801DBD90045A6F2 /* WardrobeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeData.swift; sourceTree = "<group>"; };
@@ -340,6 +358,21 @@
 			path = MyInvitesCell;
 			sourceTree = "<group>";
 		};
+		138468C72815F30A007986AC /* WardrobeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				138468C92815F32D007986AC /* DetailViewCell.swift */,
+				138468CD2815F32D007986AC /* WardrobeDetailContainer.swift */,
+				138468C82815F32D007986AC /* WardrobeDetailData.swift */,
+				138468CA2815F32D007986AC /* WardrobeDetailInteractor.swift */,
+				138468CC2815F32D007986AC /* WardrobeDetailPresenter.swift */,
+				138468CB2815F32D007986AC /* WardrobeDetailProtocols.swift */,
+				138468D22815F32D007986AC /* WardrobeDetailRouter.swift */,
+				138468D12815F32D007986AC /* WardrobeDetailViewController.swift */,
+			);
+			path = WardrobeDetail;
+			sourceTree = "<group>";
+		};
 		13900AF72801DBB40045A6F2 /* Wardrobe */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				2B58B8D12815F34F006A4D99 /* CreateWardrobe */,
+				138468C72815F30A007986AC /* WardrobeDetail */,
 				6BC282AE2815E57E00B73F97 /* AllItems */,
 				138468B12815E640007986AC /* InvitesScreen */,
 				2B58B8C42815CCB9006A4D99 /* Invite */,
@@ -1193,6 +1227,7 @@
 				2B58B8C22815BDC2006A4D99 /* ResponseEditString.swift */,
 				138468AF2815D725007986AC /* WardrobeUser.swift */,
 				138468C32815E735007986AC /* InviteRaw.swift */,
+				138468DD2815F467007986AC /* DetailLook.swift */,
 			);
 			path = RawModels;
 			sourceTree = "<group>";
@@ -1342,6 +1377,7 @@
 				2B58B8B32815B4EC006A4D99 /* SettingsTableViewCell.swift in Sources */,
 				6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */,
 				6BC282D52815E69D00B73F97 /* ItemsService.swift in Sources */,
+				138468D32815F32D007986AC /* WardrobeDetailData.swift in Sources */,
 				138468BD2815E69C007986AC /* MyInvitesCell.swift in Sources */,
 				13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */,
 				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
@@ -1349,6 +1385,7 @@
 				138468AE2815D603007986AC /* WardrobeUsersViewController.swift in Sources */,
 				6BC52755280110140019BE5D /* LookModels.swift in Sources */,
 				6B66AAE92803C393000FFA99 /* NewItemScreenContainer.swift in Sources */,
+				138468D72815F32D007986AC /* WardrobeDetailPresenter.swift in Sources */,
 				6BC5275B280110140019BE5D /* ItemCollectionViewCell.swift in Sources */,
 				2B58B8DB2815F4A8006A4D99 /* CreateWardrobeProtocols.swift in Sources */,
 				6BC52759280110140019BE5D /* ItemCollectionViewCellViewModel.swift in Sources */,
@@ -1358,6 +1395,7 @@
 				6B66AAE12803C176000FFA99 /* NewItemScreenRouter.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				13900B0C2801DBDA0045A6F2 /* MainScreenViewController.swift in Sources */,
+				138468D82815F32D007986AC /* WardrobeDetailContainer.swift in Sources */,
 				138468BC2815E69C007986AC /* MyInvitesViewController.swift in Sources */,
 				138468A02815D5CD007986AC /* AddUserCell.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
@@ -1412,6 +1450,7 @@
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
 				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
+				138468DE2815F467007986AC /* DetailLook.swift in Sources */,
 				138468C62815E75C007986AC /* InviteService.swift in Sources */,
 				2B58B8BB2815B614006A4D99 /* SettingsProtocols.swift in Sources */,
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
@@ -1419,6 +1458,7 @@
 				2B58B8CA2815CD04006A4D99 /* InvitePresenter.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */,
+				138468D52815F32D007986AC /* WardrobeDetailInteractor.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				138468C12815E69C007986AC /* MyInvitesRouter.swift in Sources */,
 				6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */,
@@ -1446,12 +1486,16 @@
 				6BC52757280110140019BE5D /* LookViewController.swift in Sources */,
 				6BC52758280110140019BE5D /* LookTableViewCellViewModel.swift in Sources */,
 				6BC282CD2815E5F600B73F97 /* AllItemsModel.swift in Sources */,
+				138468DB2815F32D007986AC /* WardrobeDetailViewController.swift in Sources */,
 				6BC282C32815E5B100B73F97 /* AllItemsTableViewCellViewModel.swift in Sources */,
 				6BC52754280110140019BE5D /* LookPresenter.swift in Sources */,
 				6BC282CA2815E5DB00B73F97 /* AllItems.swift in Sources */,
 				2B58B8C12815B9CB006A4D99 /* SettingsService.swift in Sources */,
+				138468D62815F32D007986AC /* WardrobeDetailProtocols.swift in Sources */,
+				138468D42815F32D007986AC /* DetailViewCell.swift in Sources */,
 				6BC52760280110140019BE5D /* LookInteractor.swift in Sources */,
 				2B58B8C32815BDC2006A4D99 /* ResponseEditString.swift in Sources */,
+				138468DC2815F32D007986AC /* WardrobeDetailRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
