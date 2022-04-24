@@ -133,6 +133,7 @@
 		6BC282F82816055400B73F97 /* CreateLookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282F12816055400B73F97 /* CreateLookCollectionViewCell.swift */; };
 		6BC282F92816055400B73F97 /* CreateLookTableViewCellPresetner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282F32816055400B73F97 /* CreateLookTableViewCellPresetner.swift */; };
 		6BC282FA2816055400B73F97 /* CreateLookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282F52816055400B73F97 /* CreateLookTableViewCell.swift */; };
+		6BC282FD2816062200B73F97 /* CreateLookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282FC2816062200B73F97 /* CreateLookPresenter.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -285,6 +286,7 @@
 		6BC282F12816055400B73F97 /* CreateLookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookCollectionViewCell.swift; sourceTree = "<group>"; };
 		6BC282F32816055400B73F97 /* CreateLookTableViewCellPresetner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookTableViewCellPresetner.swift; sourceTree = "<group>"; };
 		6BC282F52816055400B73F97 /* CreateLookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookTableViewCell.swift; sourceTree = "<group>"; };
+		6BC282FC2816062200B73F97 /* CreateLookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookPresenter.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -1062,6 +1064,7 @@
 		6BC282E62816050E00B73F97 /* CreateLook */ = {
 			isa = PBXGroup;
 			children = (
+				6BC282FB2816062200B73F97 /* Presenter */,
 				6BC282EA2816055400B73F97 /* View */,
 				6BC282E72816051900B73F97 /* Protocols */,
 			);
@@ -1134,6 +1137,14 @@
 				6BC282F52816055400B73F97 /* CreateLookTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6BC282FB2816062200B73F97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282FC2816062200B73F97 /* CreateLookPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		6BC52732280105050019BE5D /* Constants */ = {
@@ -1543,6 +1554,7 @@
 				6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */,
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
 				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				6BC282FD2816062200B73F97 /* CreateLookPresenter.swift in Sources */,
 				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
 				138468DE2815F467007986AC /* DetailLook.swift in Sources */,
 				138468C62815E75C007986AC /* InviteService.swift in Sources */,
