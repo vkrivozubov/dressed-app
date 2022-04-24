@@ -3,9 +3,17 @@ import PinLayout
 
 final class AllItemsTableViewCell: UITableViewCell {
 
-    private weak var sectionNameLabel: UILabel!
+    private let sectionNameLabel = UILabel()
+    private let itemCollectionView: UICollectionView = {
+        let flowLayout = UICollectionViewFlowLayout()
 
-    private weak var itemCollectionView: UICollectionView!
+        flowLayout.scrollDirection = .horizontal
+
+         return UICollectionView(
+            frame: .zero,
+            collectionViewLayout: flowLayout
+        )
+    }()
 
     var output: AllItemsTableViewCellPresenter?
 
@@ -39,9 +47,6 @@ final class AllItemsTableViewCell: UITableViewCell {
     }
 
     private func setupSectionNameLabel() {
-        let label = UILabel()
-
-        sectionNameLabel = label
         contentView.addSubview(sectionNameLabel)
 
         sectionNameLabel.font = UIFont(name: "DMSans-Bold", size: 25)
@@ -50,14 +55,6 @@ final class AllItemsTableViewCell: UITableViewCell {
     }
 
     private func setupCollectionView() {
-        let flowLayout = UICollectionViewFlowLayout()
-
-        flowLayout.scrollDirection = .horizontal
-
-        let collectionView = UICollectionView(frame: .zero,
-                                              collectionViewLayout: flowLayout)
-
-        itemCollectionView = collectionView
         contentView.addSubview(itemCollectionView)
 
         itemCollectionView.delegate = self

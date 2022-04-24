@@ -4,17 +4,12 @@ import PinLayout
 final class AllItemsViewController: UIViewController {
     var output: AllItemsViewOutput?
 
-    private weak var backgroundView: UIView!
-
-    private weak var titleLabel: UILabel!
-
-    private weak var backToLookButton: UIButton!
-
-    private weak var confirmButton: UIButton!
-
-    private weak var allItemsTableView: UITableView!
-
-    private weak var noItemsLabel: UILabel!
+    private let backgroundView = UIView()
+    private let titleLabel = UILabel()
+    private let backToLookButton = UIButton()
+    private let confirmButton = UIButton()
+    private let allItemsTableView = UITableView()
+    private let noItemsLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,18 +45,12 @@ final class AllItemsViewController: UIViewController {
     }
 
     private func setupBackgroundView() {
-        let background = UIView()
-
-        backgroundView = background
         view.addSubview(backgroundView)
 
         backgroundView.backgroundColor = GlobalColors.mainBlueScreen
     }
 
     private func setupTitleLabel() {
-        let label = UILabel()
-
-        titleLabel = label
         backgroundView.addSubview(titleLabel)
 
         titleLabel.font = UIFont(name: "DMSans-Bold", size: 25)
@@ -74,9 +63,6 @@ final class AllItemsViewController: UIViewController {
     }
 
     private func setupBackToLookButton() {
-        let button = UIButton()
-
-        backToLookButton = button
         backgroundView.addSubview(backToLookButton)
 
         backToLookButton.setImage(UIImage(systemName: "chevron.backward",
@@ -89,14 +75,14 @@ final class AllItemsViewController: UIViewController {
     }
 
     private func setupConfirmButton() {
-        let button = UIButton()
-
-        confirmButton = button
         backgroundView.addSubview(confirmButton)
 
-        confirmButton.setImage(UIImage(systemName: "checkmark",
-                                        withConfiguration: UIImage.SymbolConfiguration(weight: .bold)),
-                                        for: .normal)
+        confirmButton.setImage(
+            UIImage(
+                systemName: "checkmark",
+                withConfiguration: UIImage.SymbolConfiguration(weight: .bold)),
+                for: .normal
+        )
         confirmButton.tintColor = GlobalColors.backgroundColor
         confirmButton.contentVerticalAlignment = .fill
         confirmButton.contentHorizontalAlignment = .fill
@@ -104,10 +90,7 @@ final class AllItemsViewController: UIViewController {
     }
 
     private func setupLookTableView() {
-        let tableView = UITableView()
-
-        allItemsTableView = tableView
-        view.addSubview(tableView)
+        view.addSubview(allItemsTableView)
 
         allItemsTableView.register(AllItemsTableViewCell.self, forCellReuseIdentifier: "AllItemsTableViewCell")
 
@@ -117,25 +100,26 @@ final class AllItemsViewController: UIViewController {
         allItemsTableView.showsVerticalScrollIndicator = false
         allItemsTableView.showsHorizontalScrollIndicator = false
         allItemsTableView.separatorStyle = .none
-        allItemsTableView.contentInset = UIEdgeInsets(top: 10,
-                                                  left: 0,
-                                                  bottom: 0,
-                                                  right: 0)
+        allItemsTableView.contentInset = UIEdgeInsets(
+            top: 10,
+            left: 0,
+            bottom: 0,
+            right: 0
+        )
         allItemsTableView.setContentOffset(CGPoint(x: .zero, y: -10), animated: true)
         allItemsTableView.backgroundColor = .white
 
         let refreshControl = UIRefreshControl()
 
-        refreshControl.addTarget(self,
-                                 action: #selector(didRefreshRequested),
-                                 for: .valueChanged)
+        refreshControl.addTarget(
+            self,
+            action: #selector(didRefreshRequested),
+            for: .valueChanged
+        )
         allItemsTableView.refreshControl = refreshControl
     }
 
     private func setupNoItemsLabel() {
-        let label = UILabel()
-
-        noItemsLabel = label
         view.addSubview(noItemsLabel)
 
         noItemsLabel.font = UIFont(name: "DMSans-Bold", size: 25)

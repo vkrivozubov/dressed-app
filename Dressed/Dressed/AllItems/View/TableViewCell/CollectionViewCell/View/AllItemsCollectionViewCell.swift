@@ -3,7 +3,7 @@ import PinLayout
 
 final class AllItemsCollectionViewCell: WardrobeCell {
 
-    private weak var stateButton: UIButton!
+    private let stateButton = UIButton()
 
     var output: AllItemsCollectionViewCellPresenter?
 
@@ -30,9 +30,6 @@ final class AllItemsCollectionViewCell: WardrobeCell {
     }
 
     private func setupDeleteMarkImageView() {
-        let button = UIButton()
-
-        stateButton = button
         imageView.addSubview(stateButton)
 
         stateButton.setImage(UIImage(systemName: "plus",
