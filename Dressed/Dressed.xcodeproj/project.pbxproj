@@ -29,7 +29,6 @@
 		138468C42815E735007986AC /* InviteRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C32815E735007986AC /* InviteRaw.swift */; };
 		138468C62815E75C007986AC /* InviteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138468C52815E75C007986AC /* InviteService.swift */; };
 		13900AFA2801DBD30045A6F2 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AF92801DBD30045A6F2 /* MainScreenContainer.swift */; };
->>>>>>> 72e4144 (CU-29g5qqv - pvxproj)
 		13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFC2801DBD90045A6F2 /* MainScreenInteractor.swift */; };
 		13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900AFE2801DBD90045A6F2 /* WardrobeData.swift */; };
 		13900B0A2801DBDA0045A6F2 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B002801DBD90045A6F2 /* MainScreenPresenter.swift */; };
