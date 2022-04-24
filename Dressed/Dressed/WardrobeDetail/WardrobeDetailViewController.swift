@@ -4,12 +4,12 @@ import PinLayout
 final class WardrobeDetailViewController: UIViewController {
 	var output: WardrobeDetailViewOutput?
 
-    private weak var headerView: UIView!
-    private weak var titleLabel: UILabel!
-    private weak var backButton: UIButton!
-    private weak var actionButton: UIButton!
-    private weak var collectionView: UICollectionView!
-    private weak var dropDownTableView: DropDownView!
+    private var headerView: UIView!
+    private var titleLabel: UILabel!
+    private var backButton: UIButton!
+    private var actionButton: UIButton!
+    private var collectionView: UICollectionView!
+    private var dropDownTableView = DropDownView(frame: .zero)
     private var tapOnMainViewGestureRecognizer: UITapGestureRecognizer!
     private var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer!
     private let refreshControl = UIRefreshControl()
@@ -71,8 +71,6 @@ final class WardrobeDetailViewController: UIViewController {
         let viewHeader = UIView(frame: .zero)
         headerView = viewHeader
         headerView.backgroundColor = GlobalColors.mainBlueScreen
-//        headerView.dropShadow()
-//        headerView.roundLowerCorners(40)
         view.addSubview(headerView)
     }
 
