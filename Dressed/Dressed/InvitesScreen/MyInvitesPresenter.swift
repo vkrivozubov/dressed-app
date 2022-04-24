@@ -4,7 +4,7 @@ import UIKit
 final class MyInvitesPresenter {
 	weak var view: MyInvitesViewInput?
 
-	private let router: MyInvitesRouterInput
+	private let router: MyInvitesRouter
 	private let interactor: MyInvitesInteractorInput
 
     private var invites: [MyInvitesData] = [] {
@@ -23,7 +23,7 @@ final class MyInvitesPresenter {
 
     private var tappedWardobe: IndexPath?
 
-    init(router: MyInvitesRouterInput, interactor: MyInvitesInteractorInput) {
+    init(router: MyInvitesRouter, interactor: MyInvitesInteractorInput) {
         self.router = router
         self.interactor = interactor
     }

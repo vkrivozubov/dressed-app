@@ -5,7 +5,7 @@ final class WardrobeUsersInteractor {
 	weak var output: WardrobeUsersInteractorOutput?
 
     private var wardrobeService: WardrobeService = .init()
-    
+
     private func handleError(with error: NetworkError) {
         switch error {
         case .deletingOwner:
