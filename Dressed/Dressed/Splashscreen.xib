@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,25 +14,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wardrobe" translatesAutoresizingMaskIntoConstraints="NO" id="FSs-gb-ehd">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dresser" translatesAutoresizingMaskIntoConstraints="NO" id="FSs-gb-ehd">
+                    <rect key="frame" x="49.5" y="373" width="315" height="296"/>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="FSs-gb-ehd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DfD-n6-ygQ"/>
-                <constraint firstAttribute="bottom" secondItem="FSs-gb-ehd" secondAttribute="bottom" id="WOg-rm-BLB"/>
-                <constraint firstItem="FSs-gb-ehd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dXX-ra-TQP"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FSs-gb-ehd" secondAttribute="trailing" id="nE1-wK-Whk"/>
+                <constraint firstItem="FSs-gb-ehd" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="1.15" id="Bw6-pC-oOS"/>
+                <constraint firstItem="FSs-gb-ehd" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.33" id="XMZ-oe-MHE"/>
+                <constraint firstItem="FSs-gb-ehd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.76" id="iui-E7-A5Z"/>
+                <constraint firstItem="FSs-gb-ehd" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="t6Z-3u-HZi"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </view>
     </objects>
     <resources>
-        <image name="wardrobe" width="562.5" height="1218"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="dresser" width="590" height="584"/>
     </resources>
 </document>

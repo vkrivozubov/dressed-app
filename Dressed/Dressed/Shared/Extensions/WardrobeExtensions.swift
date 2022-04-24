@@ -47,3 +47,29 @@ extension UIView {
         self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
 }
+
+// MARK: Stirng
+extension String {
+    func isValidString() -> Bool {
+        if self.contains(" ") {
+            return false
+        }
+        let  myCharSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+        let output: String = self.trimmingCharacters(in: myCharSet.inverted)
+        let isValid: Bool = (self == output)
+        return isValid
+    }
+}
+
+// MARK: UIImage
+extension UIImage {
+
+    // MARK: Make image opacity
+    func alpha(_ value: CGFloat) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage ?? UIImage()
+    }
+}

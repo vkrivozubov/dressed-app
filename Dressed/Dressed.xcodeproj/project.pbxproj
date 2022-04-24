@@ -19,7 +19,7 @@
 		13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B112801DE690045A6F2 /* AddWardrobeCell.swift */; };
 		13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B152801DF1E0045A6F2 /* WardrobeService.swift */; };
 		2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */; };
-		2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F627EFAFFB00765112 /* ViewController.swift */; };
+		2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */; };
 		2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */; };
 		2B8CF10727EFB37700765112 /* Splashscreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8CF10627EFB37700765112 /* Splashscreen.xib */; };
 		2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04DF327F8CFA400499828 /* LoginContainer.swift */; };
@@ -46,6 +46,21 @@
 		2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E372800BF3D00499828 /* RegisterRouter.swift */; };
 		2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E392800BF7A00499828 /* RegisterViewController.swift */; };
 		6B66AAD42801EF67000FFA99 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1727F8DA0100499828 /* Result.swift */; };
+		2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */; };
+		2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E402800CA6300499828 /* MainTabBar.swift */; };
+		2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E422800CA8600499828 /* MainTabBarContainer.swift */; };
+		2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E462800CBCF00499828 /* AllClothesContainer.swift */; };
+		2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */; };
+		2BA04E4F2801BE5700499828 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */; };
+		2BA04E512801BE6000499828 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E502801BE6000499828 /* DMSans-Medium.ttf */; };
+		2BA04E532801BE6700499828 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E522801BE6700499828 /* DMSans-Regular.ttf */; };
+		6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */; };
+		6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */; };
+		6B66AADE2803C00B000FFA99 /* NewItemScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */; };
+		6B66AAE12803C176000FFA99 /* NewItemScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE02803C176000FFA99 /* NewItemScreenRouter.swift */; };
+		6B66AAE42803C22D000FFA99 /* NewItemScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE32803C22D000FFA99 /* NewItemScreenInteractor.swift */; };
+		6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE52803C249000FFA99 /* UploadService.swift */; };
+		6B66AAE92803C393000FFA99 /* NewItemScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAE82803C393000FFA99 /* NewItemScreenContainer.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -85,7 +100,6 @@
 		2B8CF0EF27EFAFFB00765112 /* Dressed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dressed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B8CF0F627EFAFFB00765112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8CF10027EFAFFE00765112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B8CF10627EFB37700765112 /* Splashscreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Splashscreen.xib; sourceTree = "<group>"; };
@@ -111,6 +125,21 @@
 		2BA04E352800BEF000499828 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		2BA04E372800BF3D00499828 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		2BA04E392800BF7A00499828 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2BA04E402800CA6300499828 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		2BA04E422800CA8600499828 /* MainTabBarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarContainer.swift; sourceTree = "<group>"; };
+		2BA04E462800CBCF00499828 /* AllClothesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClothesContainer.swift; sourceTree = "<group>"; };
+		2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenContainer.swift; sourceTree = "<group>"; };
+		2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		2BA04E502801BE6000499828 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		2BA04E522801BE6700499828 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenProtocols.swift; sourceTree = "<group>"; };
+		6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenViewController.swift; sourceTree = "<group>"; };
+		6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenPresenter.swift; sourceTree = "<group>"; };
+		6B66AAE02803C176000FFA99 /* NewItemScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenRouter.swift; sourceTree = "<group>"; };
+		6B66AAE32803C22D000FFA99 /* NewItemScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenInteractor.swift; sourceTree = "<group>"; };
+		6B66AAE52803C249000FFA99 /* UploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadService.swift; sourceTree = "<group>"; };
+		6B66AAE82803C393000FFA99 /* NewItemScreenContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenContainer.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -239,15 +268,17 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				6B66AAD52803BD56000FFA99 /* NewItem */,
+				2BA04E482800CC8E00499828 /* Wardrobe */,
+				2BA04E442800CBAF00499828 /* AllClothes */,
+				2BA04E3E2800CA4600499828 /* TabBar */,
+				2BA04E3B2800C70600499828 /* Application */,
 				6BC52735280110140019BE5D /* Look */,
 				13900AF72801DBB40045A6F2 /* Wardrobe */,
 				2BA04E252800BDB900499828 /* Register */,
 				2BA04E1E27F9F09000499828 /* Shared */,
 				2BA04DEB27F8CF2500499828 /* Login */,
 				2BA04E0427F8D61300499828 /* Services */,
-				2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */,
-				2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */,
-				2B8CF0F627EFAFFB00765112 /* ViewController.swift */,
 				2B8CF0FB27EFAFFE00765112 /* Assets.xcassets */,
 				2B8CF10027EFAFFE00765112 /* Info.plist */,
 				2B8CF10627EFB37700765112 /* Splashscreen.xib */,
@@ -398,6 +429,7 @@
 		2BA04E1E27F9F09000499828 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BA04E4D2801BDF500499828 /* Fonts */,
 				6BC5276A280112A60019BE5D /* Components */,
 				6BC52732280105050019BE5D /* Constants */,
 				2BA04E2227F9F1CE00499828 /* Extensions */,
@@ -488,6 +520,136 @@
 			isa = PBXGroup;
 			children = (
 				2BA04E2D2800BE2C00499828 /* RegisterContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04E3B2800C70600499828 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2B8CF0F427EFAFFB00765112 /* SceneDelegate.swift */,
+				2B8CF0F227EFAFFB00765112 /* AppDelegate.swift */,
+				2BA04E3C2800C92C00499828 /* SplashScreenViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2BA04E3E2800CA4600499828 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E3F2800CA5700499828 /* Container */,
+				2BA04E402800CA6300499828 /* MainTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2BA04E3F2800CA5700499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E422800CA8600499828 /* MainTabBarContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04E442800CBAF00499828 /* AllClothes */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E452800CBB800499828 /* Container */,
+			);
+			path = AllClothes;
+			sourceTree = "<group>";
+		};
+		2BA04E452800CBB800499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E462800CBCF00499828 /* AllClothesContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04E482800CC8E00499828 /* Wardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E4A2800CCA000499828 /* Container */,
+			);
+			path = Wardrobe;
+			sourceTree = "<group>";
+		};
+		2BA04E4A2800CCA000499828 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E4B2800CCB000499828 /* MainScreenContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BA04E4D2801BDF500499828 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E522801BE6700499828 /* DMSans-Regular.ttf */,
+				2BA04E502801BE6000499828 /* DMSans-Medium.ttf */,
+				2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6B66AAD52803BD56000FFA99 /* NewItem */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAD92803BD81000FFA99 /* View */,
+				6B66AAE22803C22D000FFA99 /* Interactor */,
+				6B66AADF2803C176000FFA99 /* Router */,
+				6B66AADC2803C00A000FFA99 /* Presenter */,
+				6B66AAE72803C393000FFA99 /* Container */,
+				6B66AAD62803BD6E000FFA99 /* Protocols */,
+			);
+			path = NewItem;
+			sourceTree = "<group>";
+		};
+		6B66AAD62803BD6E000FFA99 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6B66AAD92803BD81000FFA99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B66AADC2803C00A000FFA99 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6B66AADF2803C176000FFA99 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAE02803C176000FFA99 /* NewItemScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6B66AAE22803C22D000FFA99 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAE32803C22D000FFA99 /* NewItemScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6B66AAE72803C393000FFA99 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				6B66AAE82803C393000FFA99 /* NewItemScreenContainer.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -655,6 +817,7 @@
 				6BC52763280110450019BE5D /* RawModels */,
 				6BC52768280111280019BE5D /* LookService.swift */,
 				13900B152801DF1E0045A6F2 /* WardrobeService.swift */,
+				6B66AAE52803C249000FFA99 /* UploadService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -705,6 +868,7 @@
 				2B8CF0EB27EFAFFB00765112 /* Sources */,
 				2B8CF0EC27EFAFFB00765112 /* Frameworks */,
 				2B8CF0ED27EFAFFB00765112 /* Resources */,
+				2B60909C2801FC6E0031B8E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -763,33 +927,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA04E532801BE6700499828 /* DMSans-Regular.ttf in Resources */,
 				2B8CF10727EFB37700765112 /* Splashscreen.xib in Resources */,
+				2BA04E512801BE6000499828 /* DMSans-Medium.ttf in Resources */,
+				2BA04E4F2801BE5700499828 /* DMSans-Bold.ttf in Resources */,
 				2B8CF0FC27EFAFFE00765112 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B60909C2801FC6E0031B8E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFT_LINT=\"swiftlint\"\n\nif which ${SWIFT_LINT} >/dev/null; then\n${SWIFT_LINT} --fix\n${SWIFT_LINT} --config .swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, 'brew install swiftlint' or download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B8CF0EB27EFAFFB00765112 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA04E412800CA6300499828 /* MainTabBar.swift in Sources */,
 				6BC52765280110660019BE5D /* Look.swift in Sources */,
-				2B8CF0F727EFAFFB00765112 /* ViewController.swift in Sources */,
+				6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */,
 				13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */,
 				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
 				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
 				6BC52755280110140019BE5D /* LookModels.swift in Sources */,
+				6B66AAE92803C393000FFA99 /* NewItemScreenContainer.swift in Sources */,
 				6BC5275B280110140019BE5D /* ItemCollectionViewCell.swift in Sources */,
 				6BC52759280110140019BE5D /* ItemCollectionViewCellViewModel.swift in Sources */,
 				6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */,
+				6B66AAE12803C176000FFA99 /* NewItemScreenRouter.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				13900B0C2801DBDA0045A6F2 /* MainScreenViewController.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
 				6BC5276F280112BB0019BE5D /* DropTableCell.swift in Sources */,
+				6B66AAE42803C22D000FFA99 /* NewItemScreenInteractor.swift in Sources */,
 				13900B122801DE690045A6F2 /* AddWardrobeCell.swift in Sources */,
 				6BC5275C280110140019BE5D /* LookTableViewCellPresenter.swift in Sources */,
 				13900B0D2801DBDA0045A6F2 /* MainScreenProtocols.swift in Sources */,
@@ -800,6 +991,7 @@
 				2BA04DFE27F8D0DE00499828 /* LoginModels.swift in Sources */,
 				6BC52769280111280019BE5D /* LookService.swift in Sources */,
 				6BC52761280110140019BE5D /* LookRouter.swift in Sources */,
+				6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
 				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
@@ -814,12 +1006,21 @@
 				13900B102801DDB90045A6F2 /* Wardrobe.swift in Sources */,
 				6BC5275A280110140019BE5D /* ItemCollectionVIewCellPresenter.swift in Sources */,
 				6BC52767280110870019BE5D /* Item.swift in Sources */,
+				6B66AADE2803C00B000FFA99 /* NewItemScreenPresenter.swift in Sources */,
 				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
+				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
+				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
+				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
+				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
+				2B8CF0F527EFAFFB00765112 /* SceneDelegate.swift in Sources */,
+				2BA04E472800CBCF00499828 /* AllClothesContainer.swift in Sources */,
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
 				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
+				6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */,
+				2BA04E4C2800CCB000499828 /* MainScreenContainer.swift in Sources */,
 				2BA04E3A2800BF7A00499828 /* RegisterViewController.swift in Sources */,
 				6B66AAD42801EF67000FFA99 /* Result.swift in Sources */,
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,

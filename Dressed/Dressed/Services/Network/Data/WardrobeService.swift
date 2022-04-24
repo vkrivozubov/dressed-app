@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 final class WardrobeService: NetworkService {
-    
+
     func deleteWardrobe(with id: Int,
                         completion: @escaping (SingleResult<NetworkError>) -> Void) {
         guard let login = getUserLogin() else { return }
@@ -48,7 +48,7 @@ final class WardrobeService: NetworkService {
             }
         }
     }
-    
+
     func getUserWardrobes(completion: @escaping (Result<[WardrobeRaw], NetworkError>) -> Void) {
 
         guard let login = getUserLogin() else { return }

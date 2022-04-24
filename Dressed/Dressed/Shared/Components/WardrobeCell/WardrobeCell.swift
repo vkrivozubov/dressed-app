@@ -3,7 +3,7 @@ import PinLayout
 
 class WardrobeCell: UICollectionViewCell {
     static let identifier = "WardrobeCell"
-    
+
     // MARK: - Public properties
     var imageView = UIImageView()
     var titleLable = UILabel()
@@ -17,7 +17,7 @@ class WardrobeCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK: - Public methods
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -26,7 +26,6 @@ class WardrobeCell: UICollectionViewCell {
         setupTitleLabelLayout()
     }
 
-    
     // MARK: - Private methods
     private func setupViews() {
         setupMainView()

@@ -5,7 +5,7 @@ final class MainScreenInteractor {
 	weak var output: MainScreenInteractorOutput?
 
     private let wardrobeService = WardrobeService()
-    
+
     private func handleError(with error: NetworkError) {
         switch error {
         case .networkNotReachable:

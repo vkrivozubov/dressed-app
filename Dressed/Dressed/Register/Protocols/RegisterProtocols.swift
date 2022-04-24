@@ -9,10 +9,7 @@ protocol RegisterViewInput: AnyObject {
 
     func getUserImage() -> Data?
 
-    func showAlert(
-        title: String,
-        message: String
-    )
+    func showAlert(title: String, message: String)
 
     func setCheckBoxChecked()
 
@@ -33,12 +30,13 @@ protocol RegisterViewOutput: AnyObject {
     func userDidSetImage(imageData: Data?)
 
     func didTapView()
+
+    func didTapConditionsLabel()
 }
 
 protocol RegisterInteractorInput: AnyObject {
     func register(
         login: String,
-        fio: String,
         password: String,
         imageData: Data?
     )
@@ -49,10 +47,7 @@ protocol RegisterInteractorInput: AnyObject {
 }
 
 protocol RegisterInteractorOutput: AnyObject {
-    func showAlert(
-        title: String,
-        message: String
-    )
+    func showAlert(title: String, message: String)
 
     func userSuccesfullyRegistered()
 
@@ -63,4 +58,6 @@ protocol RegisterRouterInput: AnyObject {
     func showLoginScreen()
 
     func showWardrobeScreen(model: RegisterData)
+
+    func showTermsAndConditions()
 }
