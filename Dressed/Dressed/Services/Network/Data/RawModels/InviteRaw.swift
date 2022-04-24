@@ -1,10 +1,3 @@
-//
-//  InviteRaw.swift
-//  Dressed
-//
-//  Created by  Alexandr Zakharov on 24.04.2022.
-//
-
 import Foundation
 
 struct InviteRaw: Decodable {

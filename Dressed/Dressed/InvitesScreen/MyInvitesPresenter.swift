@@ -1,11 +1,3 @@
-//
-//  MyInvitesPresenter.swift
-//  Wardrobe
-//
-//  Created by  Alexandr Zakharov on 28.12.2020.
-//  
-//
-
 import Foundation
 import UIKit
 
