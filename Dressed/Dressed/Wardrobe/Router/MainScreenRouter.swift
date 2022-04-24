@@ -13,12 +13,14 @@ extension MainScreenRouter: MainScreenRouterInput {
     }
 
     func showDetailWardrope(id: Int, name: String, creatorLogin: String) {
-        // TODO: Add show detail wardrobe creeation
-//        let vc = WardrobeDetailContainer.assemble(with: WardrobeDetailContext(
-//                                                    wardrobeId: id,
-//                                                    wardrobeName: name,
-//                                                    creatorLogin: creatorLogin)).viewController
-//        viewController?.navigationController?.pushViewController(vc, animated: true)
+        let vc = WardrobeDetailContainer.assemble(
+            with: WardrobeDetailContext(
+                wardrobeId: id,
+                wardrobeName: name,
+                creatorLogin: creatorLogin
+            )
+        ).viewController
+        viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 
     func showSettings(login: String, name: String, imageUrl: String) {
@@ -33,8 +35,7 @@ extension MainScreenRouter: MainScreenRouterInput {
     }
 
     func showAddWardobeScreen(for user: String) {
-        // TODO: Add wardrobe screen creeation
-//        let vc = CreateWardrobeContainer.assemble(with: CreateWardrobeContext(login: user)).viewController
-//        viewController?.navigationController?.pushViewController(vc, animated: true)
+        let vc = CreateWardrobeContainer.assemble(with: CreateWardrobeContext(login: user)).viewController
+        viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }
