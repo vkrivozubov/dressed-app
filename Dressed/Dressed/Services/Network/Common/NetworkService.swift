@@ -90,6 +90,8 @@ extension NetworkService {
 
         static let loginKey: String = "login"
 
+        static let userNameKey: String = "username"
+
         static let passwordKey: String = "password"
 
         static let imageURLKey: String = "imageURL"
