@@ -6,10 +6,8 @@ final class WardrobeDetailRouter {
 
 extension WardrobeDetailRouter: WardrobeDetailRouterInput {
     func showEditLook(with lookId: Int) {
-        // TODO: CreateLookContainer
-//        let lookVc = EditLookContainer.assemble(with: EditLookContext(lookID: lookId)).viewController
-//
-//        viewController?.navigationController?.pushViewController(lookVc, animated: true)
+        let lookVc = EditLookContainer.assemble(with: EditLookContext(lookID: lookId)).viewController
+        viewController?.navigationController?.pushViewController(lookVc, animated: true)
     }
 
     func showLookScreen(with lookId: Int, creatorLogin: String) {
@@ -30,11 +28,10 @@ extension WardrobeDetailRouter: WardrobeDetailRouterInput {
     }
 
     func showCreateLookScreen(wardrobeId: Int, creatorLogin: String) {
-        // TODO: CreateLookContainer
-//        let createLookVC = CreateLookContainer.assemble(with: CreateLookContext(wardrobeID: wardrobeId, creatorLogin: creatorLogin)).viewController
-//
-//        createLookVC.modalPresentationStyle = .fullScreen
-//
-//        viewController?.navigationController?.pushViewController(createLookVC, animated: true)
+        let createLookVC = CreateLookContainer.assemble(with: CreateLookContext(wardrobeID: wardrobeId, creatorLogin: creatorLogin)).viewController
+
+        createLookVC.modalPresentationStyle = .fullScreen
+
+        viewController?.navigationController?.pushViewController(createLookVC, animated: true)
     }
 }

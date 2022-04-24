@@ -13,3 +13,13 @@ struct LookRaw: Decodable {
         case items = "items"
     }
 }
+
+struct LookMetadataRaw: Decodable {
+    let name: String
+    let imageURL: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case name = "look_name"
+        case imageURL = "image_url"
+    }
+}

@@ -101,6 +101,13 @@
 		2BA04E4F2801BE5700499828 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */; };
 		2BA04E512801BE6000499828 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E502801BE6000499828 /* DMSans-Medium.ttf */; };
 		2BA04E532801BE6700499828 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA04E522801BE6700499828 /* DMSans-Regular.ttf */; };
+		2BF61B0D28160FF20075D3EE /* EditLookContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B0C28160FF20075D3EE /* EditLookContainer.swift */; };
+		2BF61B0F281610030075D3EE /* EditLookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B0E281610030075D3EE /* EditLookInteractor.swift */; };
+		2BF61B112816102A0075D3EE /* EditLookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B102816102A0075D3EE /* EditLookPresenter.swift */; };
+		2BF61B13281610490075D3EE /* EditLookProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B12281610490075D3EE /* EditLookProtocols.swift */; };
+		2BF61B162816107C0075D3EE /* EditLookModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B152816107C0075D3EE /* EditLookModels.swift */; };
+		2BF61B18281610C90075D3EE /* EditLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B17281610C90075D3EE /* EditLookViewController.swift */; };
+		2BF61B1A281610F40075D3EE /* EditLookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B19281610F40075D3EE /* EditLookRouter.swift */; };
 		6B66AAD42801EF67000FFA99 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1727F8DA0100499828 /* Result.swift */; };
 		6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */; };
 		6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */; };
@@ -267,6 +274,13 @@
 		2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
 		2BA04E502801BE6000499828 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
 		2BA04E522801BE6700499828 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		2BF61B0C28160FF20075D3EE /* EditLookContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookContainer.swift; sourceTree = "<group>"; };
+		2BF61B0E281610030075D3EE /* EditLookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookInteractor.swift; sourceTree = "<group>"; };
+		2BF61B102816102A0075D3EE /* EditLookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookPresenter.swift; sourceTree = "<group>"; };
+		2BF61B12281610490075D3EE /* EditLookProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookProtocols.swift; sourceTree = "<group>"; };
+		2BF61B152816107C0075D3EE /* EditLookModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookModels.swift; sourceTree = "<group>"; };
+		2BF61B17281610C90075D3EE /* EditLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookViewController.swift; sourceTree = "<group>"; };
+		2BF61B19281610F40075D3EE /* EditLookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookRouter.swift; sourceTree = "<group>"; };
 		6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenProtocols.swift; sourceTree = "<group>"; };
 		6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenViewController.swift; sourceTree = "<group>"; };
 		6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenPresenter.swift; sourceTree = "<group>"; };
@@ -545,6 +559,7 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				2BF61B0528160F7C0075D3EE /* EditLook */,
 				6BC282E62816050E00B73F97 /* CreateLook */,
 				2B58B8D12815F34F006A4D99 /* CreateWardrobe */,
 				138468C72815F30A007986AC /* WardrobeDetail */,
@@ -876,6 +891,76 @@
 				2BA04E4E2801BE5700499828 /* DMSans-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2BF61B0528160F7C0075D3EE /* EditLook */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B14281610700075D3EE /* Models */,
+				2BF61B0B28160FC90075D3EE /* View */,
+				2BF61B0A28160FBD0075D3EE /* Router */,
+				2BF61B0928160FB20075D3EE /* Protocols */,
+				2BF61B0828160FA90075D3EE /* Presenter */,
+				2BF61B0728160FA30075D3EE /* Interactor */,
+				2BF61B0628160F9E0075D3EE /* Container */,
+			);
+			path = EditLook;
+			sourceTree = "<group>";
+		};
+		2BF61B0628160F9E0075D3EE /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B0C28160FF20075D3EE /* EditLookContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BF61B0728160FA30075D3EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B0E281610030075D3EE /* EditLookInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2BF61B0828160FA90075D3EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B102816102A0075D3EE /* EditLookPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2BF61B0928160FB20075D3EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B12281610490075D3EE /* EditLookProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2BF61B0A28160FBD0075D3EE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B19281610F40075D3EE /* EditLookRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2BF61B0B28160FC90075D3EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B17281610C90075D3EE /* EditLookViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BF61B14281610700075D3EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B152816107C0075D3EE /* EditLookModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6B66AAD52803BD56000FFA99 /* NewItem */ = {
@@ -1571,6 +1656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B58B8DD2815F4D3006A4D99 /* CreateWardrobeRouter.swift in Sources */,
+				2BF61B0F281610030075D3EE /* EditLookInteractor.swift in Sources */,
 				6BC282E12815EA6E00B73F97 /* RegisterPresenter.swift in Sources */,
 				6BC282E02815EA6900B73F97 /* RegisterInteractor.swift in Sources */,
 				6BC282DF2815EA6400B73F97 /* MainScreenContainer.swift in Sources */,
@@ -1597,6 +1683,7 @@
 				6BC52755280110140019BE5D /* LookModels.swift in Sources */,
 				6B66AAE92803C393000FFA99 /* NewItemScreenContainer.swift in Sources */,
 				138468D72815F32D007986AC /* WardrobeDetailPresenter.swift in Sources */,
+				2BF61B0D28160FF20075D3EE /* EditLookContainer.swift in Sources */,
 				6BC5275B280110140019BE5D /* ItemCollectionViewCell.swift in Sources */,
 				2B58B8DB2815F4A8006A4D99 /* CreateWardrobeProtocols.swift in Sources */,
 				6BC52759280110140019BE5D /* ItemCollectionViewCellViewModel.swift in Sources */,
@@ -1638,6 +1725,7 @@
 				6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
+				2BF61B112816102A0075D3EE /* EditLookPresenter.swift in Sources */,
 				6BC283002816065400B73F97 /* CreateLookInteractor.swift in Sources */,
 				2B58B8CE2815CD37006A4D99 /* InviteRouter.swift in Sources */,
 				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
@@ -1662,7 +1750,9 @@
 				6B66AADE2803C00B000FFA99 /* NewItemScreenPresenter.swift in Sources */,
 				138468C22815E69C007986AC /* MyInvitesInteractor.swift in Sources */,
 				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
+				2BF61B1A281610F40075D3EE /* EditLookRouter.swift in Sources */,
 				6BC282B12815E58C00B73F97 /* AllItemsProtocols.swift in Sources */,
+				2BF61B162816107C0075D3EE /* EditLookModels.swift in Sources */,
 				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
 				6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */,
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
@@ -1695,12 +1785,14 @@
 				2B58B8CC2815CD17006A4D99 /* InviteProtocols.swift in Sources */,
 				6BC5275F280110140019BE5D /* LookProtocols.swift in Sources */,
 				6BC282C22815E5B100B73F97 /* AllItemsViewController.swift in Sources */,
+				2BF61B18281610C90075D3EE /* EditLookViewController.swift in Sources */,
 				13900B162801DF1E0045A6F2 /* WardrobeService.swift in Sources */,
 				2B58B8DF2815F4F0006A4D99 /* CreateWardrobeViewController.swift in Sources */,
 				6BC283152816075F00B73F97 /* SetupLookContainer.swift in Sources */,
 				6BC282C42815E5B100B73F97 /* AllItemsCollectionViewCellViewModel.swift in Sources */,
 				6BC5275D280110140019BE5D /* LookTableViewCell.swift in Sources */,
 				138468BB2815E69C007986AC /* MyInvitesPresenter.swift in Sources */,
+				2BF61B13281610490075D3EE /* EditLookProtocols.swift in Sources */,
 				1384689E2815D5CD007986AC /* CreatorCell.swift in Sources */,
 				1384689F2815D5CD007986AC /* WardrobeUsersCell.swift in Sources */,
 				138468AA2815D5F5007986AC /* WardrobeUsersProtocols.swift in Sources */,
