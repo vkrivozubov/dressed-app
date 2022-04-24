@@ -82,6 +82,7 @@
 		6BC282CD2815E5F600B73F97 /* AllItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282CC2815E5F600B73F97 /* AllItemsModel.swift */; };
 		6BC282D02815E63300B73F97 /* AllItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282CF2815E63300B73F97 /* AllItemsPresenter.swift */; };
 		6BC282D52815E69D00B73F97 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282D42815E69D00B73F97 /* ItemsService.swift */; };
+		6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -182,6 +183,7 @@
 		6BC282CC2815E5F600B73F97 /* AllItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsModel.swift; sourceTree = "<group>"; };
 		6BC282CF2815E63300B73F97 /* AllItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsPresenter.swift; sourceTree = "<group>"; };
 		6BC282D42815E69D00B73F97 /* ItemsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsService.swift; sourceTree = "<group>"; };
+		6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllItemsInteractor.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -723,6 +725,7 @@
 		6BC282AE2815E57E00B73F97 /* AllItems */ = {
 			isa = PBXGroup;
 			children = (
+				6BC282D62815E74B00B73F97 /* Interactor */,
 				6BC282CE2815E63300B73F97 /* Presenter */,
 				6BC282CB2815E5F600B73F97 /* Models */,
 				6BC282B22815E5B100B73F97 /* View */,
@@ -831,6 +834,14 @@
 				6BC282CF2815E63300B73F97 /* AllItemsPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6BC282D62815E74B00B73F97 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282D72815E74B00B73F97 /* AllItemsInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		6BC52732280105050019BE5D /* Constants */ = {
@@ -1202,6 +1213,7 @@
 				2BA04E2E2800BE2C00499828 /* RegisterContainer.swift in Sources */,
 				6BC282B12815E58C00B73F97 /* AllItemsProtocols.swift in Sources */,
 				2BA04E3D2800C92C00499828 /* SplashScreenViewController.swift in Sources */,
+				6BC282D82815E74B00B73F97 /* AllItemsInteractor.swift in Sources */,
 				2BA04E302800BE6000499828 /* RegisterInteractor.swift in Sources */,
 				2BA04E342800BECE00499828 /* RegisterPresenter.swift in Sources */,
 				2BA04E432800CA8600499828 /* MainTabBarContainer.swift in Sources */,
