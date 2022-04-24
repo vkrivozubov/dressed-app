@@ -313,7 +313,7 @@ extension WardrobeDetailViewController: DropDownViewDelegate {
     func didPersonTap() {
         output?.didPersonTap()
     }
-    
+
     func didEditButtonTap() {
         output?.didEditButtonTap()
     }

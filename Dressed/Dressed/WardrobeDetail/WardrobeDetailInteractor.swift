@@ -5,7 +5,7 @@ final class WardrobeDetailInteractor {
 	weak var output: WardrobeDetailInteractorOutput?
 
     private let lookService = LookService()
-    
+
     private func handleLook(with lookRaw: [WardrobeDetailLookRaw]) {
         let wardobes: [WardrobeDetailData] = lookRaw.map({ WardrobeDetailData(with: $0) })
         output?.didReceive(with: wardobes)

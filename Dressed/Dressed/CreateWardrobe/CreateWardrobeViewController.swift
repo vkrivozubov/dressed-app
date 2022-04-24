@@ -2,14 +2,14 @@ import UIKit
 import PinLayout
 
 final class CreateWardrobeViewController: UIViewController, UINavigationControllerDelegate {
-    private weak var headerView: UIView!
-    private weak var pageTitle: UILabel!
-    private weak var backButton: UIButton!
-    private weak var wardrobeNameTextField: UITextField!
-    private weak var imageButton: UIButton!
-    private weak var imageView: UIImageView!
-    private weak var addButton: UIButton!
-    private weak var imagePickButton: UIButton!
+    private var headerView: UIView!
+    private var pageTitle: UILabel!
+    private var backButton: UIButton!
+    private var wardrobeNameTextField: UITextField!
+    private var imageButton: UIButton!
+    private var imageView: UIImageView!
+    private var addButton: UIButton!
+    private var imagePickButton: UIButton!
     private var tapOnMainViewGestureRecognizer: UITapGestureRecognizer!
     private var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer!
     private let pickerController: UIImagePickerController = UIImagePickerController()
@@ -82,7 +82,6 @@ extension CreateWardrobeViewController {
         self.view.backgroundColor = GlobalColors.backgroundColor
     }
 
-    // Back Button
     private func setupBackButton() {
         let button = UIButton()
         self.backButton = button
@@ -105,7 +104,6 @@ extension CreateWardrobeViewController {
             .left(3%)
     }
 
-    // Header View
     private func setupHeaderView() {
         let view = UIView()
         self.headerView = view
@@ -123,7 +121,6 @@ extension CreateWardrobeViewController {
         headerView.dropShadow()
     }
 
-    // Title label
     private func setupPageTitle() {
         let label = UILabel()
         self.pageTitle = label
@@ -143,7 +140,6 @@ extension CreateWardrobeViewController {
             .height(10%)
     }
 
-    // Item name text field
     private func setupWardrobeNameTextField() {
         let textField = UITextField.customTextField(placeholder: "Название гардероба")
 
@@ -161,7 +157,6 @@ extension CreateWardrobeViewController {
             .height(17%)
     }
 
-    // image Button
     private func setupImageButton() {
         let button = UIButton()
         self.imageButton = button
@@ -179,7 +174,6 @@ extension CreateWardrobeViewController {
 
     }
 
-    // image View
     private func setupImageView() {
         let view = UIImageView()
         self.imageView = view
@@ -204,7 +198,6 @@ extension CreateWardrobeViewController {
         imageView.layer.cornerRadius = size / 2
     }
 
-    // image pick button
     private func setupImagePickButton() {
         let button = UIButton()
         self.imagePickButton = button
@@ -233,7 +226,6 @@ extension CreateWardrobeViewController {
 
     }
 
-    // add Button
     private func setupAddButton() {
         let button = UIButton()
         self.addButton = button
@@ -347,8 +339,6 @@ extension CreateWardrobeViewController: UIImagePickerControllerDelegate {
             }
             if let imgData = img.jpegData(compressionQuality: 0.1) {
                 output?.didImageLoaded(image: imgData)
-                // imageView.imageEdgeInsets = UIEdgeInsets()// UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-                // imageView.setImage(img, for: .normal)
                 imageButton.isHidden = true
                 imageView.image = img
                 imageView.contentMode = .scaleToFill
