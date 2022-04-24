@@ -134,6 +134,7 @@
 		6BC282F92816055400B73F97 /* CreateLookTableViewCellPresetner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282F32816055400B73F97 /* CreateLookTableViewCellPresetner.swift */; };
 		6BC282FA2816055400B73F97 /* CreateLookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282F52816055400B73F97 /* CreateLookTableViewCell.swift */; };
 		6BC282FD2816062200B73F97 /* CreateLookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282FC2816062200B73F97 /* CreateLookPresenter.swift */; };
+		6BC283002816065400B73F97 /* CreateLookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC282FF2816065400B73F97 /* CreateLookInteractor.swift */; };
 		6BC526F22800C8710019BE5D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BC526F12800C8710019BE5D /* Kingfisher */; };
 		6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5272E280104F00019BE5D /* WardrobeCell.swift */; };
 		6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52733280105050019BE5D /* GlobalConstants.swift */; };
@@ -287,6 +288,7 @@
 		6BC282F32816055400B73F97 /* CreateLookTableViewCellPresetner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookTableViewCellPresetner.swift; sourceTree = "<group>"; };
 		6BC282F52816055400B73F97 /* CreateLookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookTableViewCell.swift; sourceTree = "<group>"; };
 		6BC282FC2816062200B73F97 /* CreateLookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookPresenter.swift; sourceTree = "<group>"; };
+		6BC282FF2816065400B73F97 /* CreateLookInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLookInteractor.swift; sourceTree = "<group>"; };
 		6BC5272E280104F00019BE5D /* WardrobeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeCell.swift; sourceTree = "<group>"; };
 		6BC52733280105050019BE5D /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6BC52737280110140019BE5D /* LookPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookPresenter.swift; sourceTree = "<group>"; };
@@ -1064,6 +1066,7 @@
 		6BC282E62816050E00B73F97 /* CreateLook */ = {
 			isa = PBXGroup;
 			children = (
+				6BC282FE2816065400B73F97 /* Interactor */,
 				6BC282FB2816062200B73F97 /* Presenter */,
 				6BC282EA2816055400B73F97 /* View */,
 				6BC282E72816051900B73F97 /* Protocols */,
@@ -1145,6 +1148,14 @@
 				6BC282FC2816062200B73F97 /* CreateLookPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6BC282FE2816065400B73F97 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6BC282FF2816065400B73F97 /* CreateLookInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		6BC52732280105050019BE5D /* Constants */ = {
@@ -1528,6 +1539,7 @@
 				6B66AAE62803C249000FFA99 /* UploadService.swift in Sources */,
 				2BA04DFC27F8D0A000499828 /* LoginRouter.swift in Sources */,
 				6BC52730280104F00019BE5D /* WardrobeCell.swift in Sources */,
+				6BC283002816065400B73F97 /* CreateLookInteractor.swift in Sources */,
 				2B58B8CE2815CD37006A4D99 /* InviteRouter.swift in Sources */,
 				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
 				6BC282F62816055400B73F97 /* CreateLookViewController.swift in Sources */,
