@@ -2,13 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>API_KEY</key>
+	<string>r0ssinsky-postavb-z@chet-plz</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>API_KEY</key>
-	<string>r0ssinsky-postavb-z@chet-plz</string>
+	<key>PROD_HOST</key>
+	<string>http://134.0.117.132:3000/</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>DMSans-Bold.ttf</string>
@@ -32,9 +34,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>PROD_HOST</key>
-	<string>http://134.0.117.132:3000/</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Камера будет использоваться для добавления фотографий одежды в приложение для составления наборов из них.</string>
 </dict>
 </plist>
