@@ -1,26 +1,21 @@
 import UIKit
 
 protocol DropDownViewDelegate: AnyObject {
-    func didPersonTap()
-    func didEditButtonTap()
+    func didFirstTap()
+    func didSecondTap()
+
+    var topTitle: String { get }
+    var topImage: UIImage { get }
+    var bottomTitle: String { get }
+    var bottomImage: UIImage { get }
 }
 
 enum DropDownMenuSections: Int, CaseIterable {
-    case  persons = 0, edit
-
-    var info: (String?, UIImage?) {
-        switch self {
-        case .persons:
-            return ("Пользователи", UIImage(systemName: "person.3.fill"))
-        case .edit:
-            return ("Редактировать", UIImage(systemName: "square.and.pencil"))
-        }
-    }
+    case first = 0, second = 1
 }
 
 class DropDownView: UIView {
     private var dropTable: UITableView!
-
     weak var delegate: DropDownViewDelegate?
 
     override init(frame: CGRect) {
@@ -77,7 +72,7 @@ class DropDownView: UIView {
 
 extension DropDownView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        DropDownMenuSections.allCases.count
+        2
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,13 +80,18 @@ extension DropDownView: UITableViewDelegate, UITableViewDataSource {
                                                        for: indexPath) as? DropTableCell
         else { return UITableViewCell() }
 
-        guard let data = DropDownMenuSections(rawValue: indexPath.row) else {
+        guard let delegate = delegate else {
             return cell
         }
 
-        guard let icon = data.info.1, let label = data.info.0 else { return cell }
-
-        cell.configureCell(icon: icon, label: label)
+        switch indexPath.row {
+        case 0:
+            cell.configureCell(icon: delegate.topImage, label: delegate.topTitle)
+        case 1:
+            cell.configureCell(icon: delegate.bottomImage, label: delegate.bottomTitle)
+        default:
+            break
+        }
         return cell
     }
 
@@ -101,10 +101,10 @@ extension DropDownView: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch DropDownMenuSections(rawValue: indexPath.row) {
-        case .persons:
-            delegate?.didPersonTap()
-        case .edit:
-            delegate?.didEditButtonTap()
+        case .first:
+            delegate?.didFirstTap()
+        case .second:
+            delegate?.didSecondTap()
         default:
             break
         }
