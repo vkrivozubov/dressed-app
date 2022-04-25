@@ -8,7 +8,7 @@ final class AllClothesViewController: UIViewController {
     private let pageTitle = UILabel()
     private let emptyLabel = UILabel()
     private let categoriesTableView = UITableView.customTableView()
-    private let dropMenuView = DropDownView(frame: .zero)
+    private let dropMenuView = DropDownView()
     private let screenBounds = UIScreen.main.bounds
     private var tapOnMainViewGestureRecognizer: UITapGestureRecognizer!
     private var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer!
@@ -123,10 +123,14 @@ extension AllClothesViewController {
     }
 
     private func layoutEditButton() {
-        moreButton.setImage(UIImage(named: "more",
-                                        in: Bundle.main,
-                                        with: UIImage.SymbolConfiguration(weight: .bold)),
-                                        for: .normal)
+//        moreButton.setImage(UIImage(systemName: "ladybug.fill",
+//                                        in: Bundle.main,
+//                                        with: UIImage.SymbolConfiguration(weight: .bold)),
+//                                        for: .normal)
+        moreButton.setImage(
+            UIImage(systemName: "ladybug.fill"),
+            for: .normal
+        )
         moreButton.tintColor = GlobalColors.backgroundColor
         moreButton.contentVerticalAlignment = .fill
         moreButton.contentHorizontalAlignment = .fill
