@@ -1,10 +1,3 @@
-//
-//  WardrobeUserData.swift
-//  Wardrobe
-//
-//  Created by  Alexandr Zakharov on 31.12.2020.
-//
-
 import Foundation
 
 class WardrobeUserData {
