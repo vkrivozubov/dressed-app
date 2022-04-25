@@ -123,12 +123,8 @@ extension AllClothesViewController {
     }
 
     private func layoutEditButton() {
-//        moreButton.setImage(UIImage(systemName: "ladybug.fill",
-//                                        in: Bundle.main,
-//                                        with: UIImage.SymbolConfiguration(weight: .bold)),
-//                                        for: .normal)
         moreButton.setImage(
-            UIImage(systemName: "ladybug.fill"),
+            UIImage(systemName: "square.and.pencil"),
             for: .normal
         )
         moreButton.tintColor = GlobalColors.backgroundColor
@@ -355,10 +351,10 @@ extension AllClothesViewController: AllClothesViewInput {
         self.state = state
         switch state {
         case .edit:
-            moreButton.setImage(UIImage(named: "more",
-                                         in: Bundle.main,
-                                         with: UIImage.SymbolConfiguration(weight: .bold)),
-                                         for: .normal)
+            moreButton.setImage(
+                UIImage(systemName: "square.and.pencil"),
+                for: .normal
+            )
             moreButton.removeTarget(self, action: #selector(didTapEditButton), for: .touchUpInside)
             moreButton.addTarget(self, action: #selector(didTapMoreButton), for: .touchUpInside)
         case .accept:
