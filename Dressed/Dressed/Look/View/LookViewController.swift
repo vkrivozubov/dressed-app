@@ -99,10 +99,10 @@ final class LookViewController: UIViewController {
     private func setupLookParamsButton() {
         backgroundView.addSubview(lookParamsButton)
 
-        lookParamsButton.setImage(UIImage(named: "more",
-                                        in: Bundle.main,
-                                        with: UIImage.SymbolConfiguration(weight: .bold)),
-                                        for: .normal)
+        lookParamsButton.setImage(
+            UIImage(systemName: "square.and.pencil"),
+            for: .normal
+        )
         lookParamsButton.tintColor = GlobalColors.backgroundColor
         lookParamsButton.contentVerticalAlignment = .fill
         lookParamsButton.contentHorizontalAlignment = .fill
@@ -273,10 +273,10 @@ extension LookViewController: LookViewInput {
     }
 
     func hideEditLayout() {
-        lookParamsButton.setImage(UIImage(named: "more",
-                                        in: Bundle.main,
-                                        with: UIImage.SymbolConfiguration(weight: .bold)),
-                                        for: .normal)
+        lookParamsButton.setImage(
+            UIImage(systemName: "square.and.pencil"),
+            for: .normal
+        )
     }
 
     func setLookIsEditing(isEditing: Bool) {

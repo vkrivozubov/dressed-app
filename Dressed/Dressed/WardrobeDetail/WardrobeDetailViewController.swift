@@ -106,7 +106,7 @@ final class WardrobeDetailViewController: UIViewController {
         actionButton = btn
         let config = UIImage.SymbolConfiguration(pointSize: 15, weight: .semibold)
         actionButton.setPreferredSymbolConfiguration(config, forImageIn: .normal)
-        actionButton.setImage(UIImage(named: "more"), for: .normal)
+        actionButton.setImage(UIImage(systemName: "square.and.pencil"), for: .normal)
         actionButton.tintColor = GlobalColors.backgroundColor
         actionButton.contentVerticalAlignment = .fill
         actionButton.contentHorizontalAlignment = .fill
@@ -348,7 +348,7 @@ extension WardrobeDetailViewController: WardrobeDetailViewInput {
     func changeEditButton(state: EditButtonState) {
         switch state {
         case .edit:
-            actionButton.setImage(UIImage(named: "more"), for: .normal)
+            actionButton.setImage(UIImage(systemName: "square.and.pencil"), for: .normal)
         case .accept:
             actionButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
         }

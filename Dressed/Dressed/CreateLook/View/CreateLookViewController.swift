@@ -2,7 +2,7 @@ import UIKit
 import PinLayout
 
 final class CreateLookViewController: UIViewController {
-    weak var output: CreateLookViewOutput?
+    var output: CreateLookViewOutput?
 
     private let backgroundView = UIView()
     private let titleLabel = UILabel()
