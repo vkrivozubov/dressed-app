@@ -370,11 +370,27 @@ extension AllClothesViewController: AllClothesViewInput {
 }
 
 extension AllClothesViewController: DropDownViewDelegate {
-    func didPersonTap() {
+    var topTitle: String {
+        "Создать категорию"
+    }
+
+    var topImage: UIImage {
+        UIImage(systemName: "plus.circle") ?? UIImage()
+    }
+
+    var bottomTitle: String {
+        "Редактировать"
+    }
+
+    var bottomImage: UIImage {
+        UIImage(systemName: "square.and.pencil") ?? UIImage()
+    }
+
+    func didFirstTap() {
         output?.didTapNewCategoryButton()
     }
 
-    func didEditButtonTap() {
+    func didSecondTap() {
         output?.didTapEditButton()
     }
 
