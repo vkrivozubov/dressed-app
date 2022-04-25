@@ -33,16 +33,14 @@ final class MainTabBarContainer {
     }
 
     private static func prepareAllClothesScreen(context: AllClothesContext) -> UINavigationController {
-        /*
         let container = AllClothesContainer.assemble(with: context)
         let tabBarItem = UITabBarItem(title: Constants.AllClothesBarItem.title,
                                       image: Constants.AllClothesBarItem.image,
                                       tag: Constants.AllClothesBarItem.tag)
 
         container.viewController.tabBarItem = tabBarItem
-        */
 
-        let navigationVC = UINavigationController(rootViewController: UIViewController())
+        let navigationVC = UINavigationController(rootViewController: container.viewController)
 
         navigationVC.navigationBar.isHidden = true
 
@@ -64,7 +62,7 @@ extension MainTabBarContainer {
 
         struct AllClothesBarItem {
             static let title: String = "Мои вещи"
-            static let image = UIImage(systemName: "ladybug.fill")
+            static let image = UIImage(systemName: "tshirt.fill")
             static let tag: Int = 1
         }
 

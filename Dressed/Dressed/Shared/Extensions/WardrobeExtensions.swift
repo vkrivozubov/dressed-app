@@ -73,3 +73,16 @@ extension UIImage {
         return newImage ?? UIImage()
     }
 }
+
+// MARK: UITableView
+extension UITableView {
+    static func customTableView() -> UITableView {
+        let tableView = UITableView()
+        tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
+        tableView.clipsToBounds = true
+        return tableView
+    }
+}

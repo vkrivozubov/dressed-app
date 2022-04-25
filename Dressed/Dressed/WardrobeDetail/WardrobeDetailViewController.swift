@@ -9,7 +9,7 @@ final class WardrobeDetailViewController: UIViewController {
     private var backButton: UIButton!
     private var actionButton: UIButton!
     private var collectionView: UICollectionView!
-    private var dropDownTableView = DropDownView(frame: .zero)
+    private var dropDownTableView = DropDownView()
     private var tapOnMainViewGestureRecognizer: UITapGestureRecognizer!
     private var tapOnHeaderViewGestureRecognizer: UITapGestureRecognizer!
     private let refreshControl = UIRefreshControl()
@@ -308,11 +308,27 @@ final class WardrobeDetailViewController: UIViewController {
 }
 
 extension WardrobeDetailViewController: DropDownViewDelegate {
-    func didPersonTap() {
+    var topTitle: String {
+        "Пользователи"
+    }
+
+    var topImage: UIImage {
+        UIImage(systemName: "person.3.fill") ?? UIImage()
+    }
+
+    var bottomTitle: String {
+        "Редактировать"
+    }
+
+    var bottomImage: UIImage {
+        UIImage(systemName: "square.and.pencil") ?? UIImage()
+    }
+
+    func didFirstTap() {
         output?.didPersonTap()
     }
 
-    func didEditButtonTap() {
+    func didSecondTap() {
         output?.didEditButtonTap()
     }
 }
