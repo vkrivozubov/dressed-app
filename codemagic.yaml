@@ -1,6 +1,8 @@
 workflows:
     dressed-workflow:
         name: dressed-ios-client
+        environment:
+            xcode: 12.2.1
         triggering:
             events:
               - push
