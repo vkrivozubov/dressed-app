@@ -10,6 +10,12 @@ extension LookRouter: LookRouterInput {
     }
 
     func showAllItemsScreen(lookID: Int, ownerLogin: String) {
-        // FIXME: - Implement this after completing All Itmes View
+        let allItemsVC = AllItemsContainer.assemble(
+            with: AllItemsContext(lookID: lookID, ownerLogin: ownerLogin)
+        ).viewController
+
+        allItemsVC.modalPresentationStyle = .fullScreen
+
+        viewController?.navigationController?.pushViewController(allItemsVC, animated: true)
     }
 }
