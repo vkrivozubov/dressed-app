@@ -108,6 +108,20 @@
 		2BF61B18281610C90075D3EE /* EditLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B17281610C90075D3EE /* EditLookViewController.swift */; };
 		2BF61B1A281610F40075D3EE /* EditLookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B19281610F40075D3EE /* EditLookRouter.swift */; };
 		2BF61B1C281615440075D3EE /* MainScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B1B281615440075D3EE /* MainScreenContainer.swift */; };
+		2BF61B2628161B090075D3EE /* EditWardrobeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B2528161B090075D3EE /* EditWardrobeContainer.swift */; };
+		2BF61B2828161B260075D3EE /* EditWardrobeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B2728161B260075D3EE /* EditWardrobeInteractor.swift */; };
+		2BF61B2A28161B3E0075D3EE /* EditWardrobeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B2928161B3E0075D3EE /* EditWardrobeModels.swift */; };
+		2BF61B2C28161B570075D3EE /* EditWardrobePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B2B28161B570075D3EE /* EditWardrobePresenter.swift */; };
+		2BF61B2E28161B710075D3EE /* EditWardrobeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B2D28161B710075D3EE /* EditWardrobeProtocols.swift */; };
+		2BF61B3028161B8E0075D3EE /* EditWardrobeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B2F28161B8E0075D3EE /* EditWardrobeRouter.swift */; };
+		2BF61B3228161BB70075D3EE /* EditWardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B3128161BB70075D3EE /* EditWardrobeViewController.swift */; };
+		2BF61B3C281621E30075D3EE /* EditItemProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B3B281621E30075D3EE /* EditItemProtocols.swift */; };
+		2BF61B3E281621F80075D3EE /* EditItemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B3D281621F80075D3EE /* EditItemModels.swift */; };
+		2BF61B40281622150075D3EE /* EditItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B3F281622150075D3EE /* EditItemsViewController.swift */; };
+		2BF61B422816222E0075D3EE /* EditItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B412816222E0075D3EE /* EditItemPresenter.swift */; };
+		2BF61B44281622440075D3EE /* EditItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B43281622440075D3EE /* EditItemInteractor.swift */; };
+		2BF61B462816224C0075D3EE /* EditItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B452816224C0075D3EE /* EditItemRouter.swift */; };
+		2BF61B482816227D0075D3EE /* EditItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF61B472816227D0075D3EE /* EditItemContainer.swift */; };
 		6B66AAD42801EF67000FFA99 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA04E1727F8DA0100499828 /* Result.swift */; };
 		6B66AAD82803BD6E000FFA99 /* NewItemScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */; };
 		6B66AADB2803BD81000FFA99 /* NewItemScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */; };
@@ -288,6 +302,20 @@
 		2BF61B17281610C90075D3EE /* EditLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookViewController.swift; sourceTree = "<group>"; };
 		2BF61B19281610F40075D3EE /* EditLookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLookRouter.swift; sourceTree = "<group>"; };
 		2BF61B1B281615440075D3EE /* MainScreenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenContainer.swift; sourceTree = "<group>"; };
+		2BF61B2528161B090075D3EE /* EditWardrobeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobeContainer.swift; sourceTree = "<group>"; };
+		2BF61B2728161B260075D3EE /* EditWardrobeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobeInteractor.swift; sourceTree = "<group>"; };
+		2BF61B2928161B3E0075D3EE /* EditWardrobeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobeModels.swift; sourceTree = "<group>"; };
+		2BF61B2B28161B570075D3EE /* EditWardrobePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobePresenter.swift; sourceTree = "<group>"; };
+		2BF61B2D28161B710075D3EE /* EditWardrobeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobeProtocols.swift; sourceTree = "<group>"; };
+		2BF61B2F28161B8E0075D3EE /* EditWardrobeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobeRouter.swift; sourceTree = "<group>"; };
+		2BF61B3128161BB70075D3EE /* EditWardrobeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWardrobeViewController.swift; sourceTree = "<group>"; };
+		2BF61B3B281621E30075D3EE /* EditItemProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemProtocols.swift; sourceTree = "<group>"; };
+		2BF61B3D281621F80075D3EE /* EditItemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemModels.swift; sourceTree = "<group>"; };
+		2BF61B3F281622150075D3EE /* EditItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemsViewController.swift; sourceTree = "<group>"; };
+		2BF61B412816222E0075D3EE /* EditItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemPresenter.swift; sourceTree = "<group>"; };
+		2BF61B43281622440075D3EE /* EditItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemInteractor.swift; sourceTree = "<group>"; };
+		2BF61B452816224C0075D3EE /* EditItemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemRouter.swift; sourceTree = "<group>"; };
+		2BF61B472816227D0075D3EE /* EditItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemContainer.swift; sourceTree = "<group>"; };
 		6B66AAD72803BD6E000FFA99 /* NewItemScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenProtocols.swift; sourceTree = "<group>"; };
 		6B66AADA2803BD81000FFA99 /* NewItemScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenViewController.swift; sourceTree = "<group>"; };
 		6B66AADD2803C00A000FFA99 /* NewItemScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemScreenPresenter.swift; sourceTree = "<group>"; };
@@ -574,6 +602,8 @@
 		2B8CF0F127EFAFFB00765112 /* Dressed */ = {
 			isa = PBXGroup;
 			children = (
+				2BF61B33281621810075D3EE /* EditItem */,
+				2BF61B1D28161A520075D3EE /* EditWardrobe */,
 				2BF61B0528160F7C0075D3EE /* EditLook */,
 				6BC282E62816050E00B73F97 /* CreateLook */,
 				2B58B8D12815F34F006A4D99 /* CreateWardrobe */,
@@ -965,6 +995,146 @@
 				2BF61B152816107C0075D3EE /* EditLookModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2BF61B1D28161A520075D3EE /* EditWardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2428161AF60075D3EE /* View */,
+				2BF61B2328161AF20075D3EE /* Router */,
+				2BF61B2228161AEB0075D3EE /* Protocols */,
+				2BF61B2128161AE60075D3EE /* Presenter */,
+				2BF61B2028161ADA0075D3EE /* Models */,
+				2BF61B1F28161A890075D3EE /* Interactor */,
+				2BF61B1E28161A830075D3EE /* Container */,
+			);
+			path = EditWardrobe;
+			sourceTree = "<group>";
+		};
+		2BF61B1E28161A830075D3EE /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2528161B090075D3EE /* EditWardrobeContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BF61B1F28161A890075D3EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2728161B260075D3EE /* EditWardrobeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2BF61B2028161ADA0075D3EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2928161B3E0075D3EE /* EditWardrobeModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BF61B2128161AE60075D3EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2B28161B570075D3EE /* EditWardrobePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2BF61B2228161AEB0075D3EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2D28161B710075D3EE /* EditWardrobeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2BF61B2328161AF20075D3EE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B2F28161B8E0075D3EE /* EditWardrobeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2BF61B2428161AF60075D3EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B3128161BB70075D3EE /* EditWardrobeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BF61B33281621810075D3EE /* EditItem */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B3A281621C90075D3EE /* Protocols */,
+				2BF61B39281621C00075D3EE /* Models */,
+				2BF61B38281621BB0075D3EE /* View */,
+				2BF61B37281621B40075D3EE /* Presenter */,
+				2BF61B36281621AA0075D3EE /* Interactor */,
+				2BF61B35281621A30075D3EE /* Router */,
+				2BF61B342816219F0075D3EE /* Container */,
+			);
+			path = EditItem;
+			sourceTree = "<group>";
+		};
+		2BF61B342816219F0075D3EE /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B472816227D0075D3EE /* EditItemContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		2BF61B35281621A30075D3EE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B452816224C0075D3EE /* EditItemRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2BF61B36281621AA0075D3EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B43281622440075D3EE /* EditItemInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2BF61B37281621B40075D3EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B412816222E0075D3EE /* EditItemPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2BF61B38281621BB0075D3EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B3F281622150075D3EE /* EditItemsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BF61B39281621C00075D3EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B3D281621F80075D3EE /* EditItemModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BF61B3A281621C90075D3EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BF61B3B281621E30075D3EE /* EditItemProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		6B66AAD52803BD56000FFA99 /* NewItem */ = {
@@ -1669,6 +1839,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B58B8DD2815F4D3006A4D99 /* CreateWardrobeRouter.swift in Sources */,
+				2BF61B40281622150075D3EE /* EditItemsViewController.swift in Sources */,
 				2BF61B0F281610030075D3EE /* EditLookInteractor.swift in Sources */,
 				6BC282E12815EA6E00B73F97 /* RegisterPresenter.swift in Sources */,
 				6BC282E02815EA6900B73F97 /* RegisterInteractor.swift in Sources */,
@@ -1689,8 +1860,10 @@
 				6BC282D52815E69D00B73F97 /* ItemsService.swift in Sources */,
 				6BC283162816075F00B73F97 /* SetupLookViewController.swift in Sources */,
 				138468D32815F32D007986AC /* WardrobeDetailData.swift in Sources */,
+				2BF61B2A28161B3E0075D3EE /* EditWardrobeModels.swift in Sources */,
 				138468BD2815E69C007986AC /* MyInvitesCell.swift in Sources */,
 				13900B0B2801DBDA0045A6F2 /* MainScreenCell.swift in Sources */,
+				2BF61B3C281621E30075D3EE /* EditItemProtocols.swift in Sources */,
 				13900B082801DBDA0045A6F2 /* MainScreenInteractor.swift in Sources */,
 				2BA04E2027F9F0A000499828 /* Colors.swift in Sources */,
 				138468AE2815D603007986AC /* WardrobeUsersViewController.swift in Sources */,
@@ -1705,15 +1878,18 @@
 				138468A62815D5ED007986AC /* WardrobeUsersInteractor.swift in Sources */,
 				6BC52734280105050019BE5D /* GlobalConstants.swift in Sources */,
 				6BC28306281606B700B73F97 /* CreateLookContainer.swift in Sources */,
+				2BF61B3228161BB70075D3EE /* EditWardrobeViewController.swift in Sources */,
 				6B66AAE12803C176000FFA99 /* NewItemScreenRouter.swift in Sources */,
 				2BA04DFA27F8D07C00499828 /* LoginProtocols.swift in Sources */,
 				13900B0C2801DBDA0045A6F2 /* MainScreenViewController.swift in Sources */,
 				138468D82815F32D007986AC /* WardrobeDetailContainer.swift in Sources */,
+				2BF61B462816224C0075D3EE /* EditItemRouter.swift in Sources */,
 				138468BC2815E69C007986AC /* MyInvitesViewController.swift in Sources */,
 				138468A02815D5CD007986AC /* AddUserCell.swift in Sources */,
 				2B8CF0F327EFAFFB00765112 /* AppDelegate.swift in Sources */,
 				2BA04DF827F8D02B00499828 /* LoginInteractor.swift in Sources */,
 				6BC2831B28160FBB00B73F97 /* AllClothesProtocols.swift in Sources */,
+				2BF61B422816222E0075D3EE /* EditItemPresenter.swift in Sources */,
 				138468AC2815D5FF007986AC /* WardrobeUsersRouter.swift in Sources */,
 				2BA04E0027F8D14300499828 /* LoginPresenter.swift in Sources */,
 				6BC283272816114600B73F97 /* AllClothesContainer.swift in Sources */,
@@ -1749,6 +1925,7 @@
 				2B58B8CE2815CD37006A4D99 /* InviteRouter.swift in Sources */,
 				13900B092801DBDA0045A6F2 /* WardrobeData.swift in Sources */,
 				6BC282F62816055400B73F97 /* CreateLookViewController.swift in Sources */,
+				2BF61B3E281621F80075D3EE /* EditItemModels.swift in Sources */,
 				138468C42815E735007986AC /* InviteRaw.swift in Sources */,
 				2BA04DF427F8CFA400499828 /* LoginContainer.swift in Sources */,
 				6BC283172816075F00B73F97 /* SetupLookProtocols.swift in Sources */,
@@ -1783,10 +1960,12 @@
 				13900B0E2801DBDA0045A6F2 /* MainScreenRouter.swift in Sources */,
 				2B58B8BD2815B64A006A4D99 /* SettingsRouter.swift in Sources */,
 				2B58B8CA2815CD04006A4D99 /* InvitePresenter.swift in Sources */,
+				2BF61B3028161B8E0075D3EE /* EditWardrobeRouter.swift in Sources */,
 				6BC282E92816051900B73F97 /* CreateLookProtocols.swift in Sources */,
 				2BA04E382800BF3D00499828 /* RegisterRouter.swift in Sources */,
 				6BC282DB2815E77500B73F97 /* AllItemsRouter.swift in Sources */,
 				138468D52815F32D007986AC /* WardrobeDetailInteractor.swift in Sources */,
+				2BF61B2C28161B570075D3EE /* EditWardrobePresenter.swift in Sources */,
 				2BA04E1A27F8DA2600499828 /* Errors.swift in Sources */,
 				138468C12815E69C007986AC /* MyInvitesRouter.swift in Sources */,
 				6BC283182816075F00B73F97 /* SetupLookInteractor.swift in Sources */,
@@ -1801,6 +1980,9 @@
 				2BA04E0F27F8D7FD00499828 /* NetworkProtocols.swift in Sources */,
 				2BA04E2427F9F1E500499828 /* WardrobeExtensions.swift in Sources */,
 				2B58B8CC2815CD17006A4D99 /* InviteProtocols.swift in Sources */,
+				2BF61B44281622440075D3EE /* EditItemInteractor.swift in Sources */,
+				2BF61B482816227D0075D3EE /* EditItemContainer.swift in Sources */,
+				2BF61B2828161B260075D3EE /* EditWardrobeInteractor.swift in Sources */,
 				6BC5275F280110140019BE5D /* LookProtocols.swift in Sources */,
 				6BC282C22815E5B100B73F97 /* AllItemsViewController.swift in Sources */,
 				2BF61B18281610C90075D3EE /* EditLookViewController.swift in Sources */,
@@ -1822,6 +2004,7 @@
 				6BC282CD2815E5F600B73F97 /* AllItemsModel.swift in Sources */,
 				138468DB2815F32D007986AC /* WardrobeDetailViewController.swift in Sources */,
 				6BC283192816075F00B73F97 /* SetupLookRouter.swift in Sources */,
+				2BF61B2628161B090075D3EE /* EditWardrobeContainer.swift in Sources */,
 				6BC282C32815E5B100B73F97 /* AllItemsTableViewCellViewModel.swift in Sources */,
 				6BC52754280110140019BE5D /* LookPresenter.swift in Sources */,
 				6BC282CA2815E5DB00B73F97 /* AllItems.swift in Sources */,
@@ -1830,6 +2013,7 @@
 				138468D62815F32D007986AC /* WardrobeDetailProtocols.swift in Sources */,
 				138468D42815F32D007986AC /* DetailViewCell.swift in Sources */,
 				6BC52760280110140019BE5D /* LookInteractor.swift in Sources */,
+				2BF61B2E28161B710075D3EE /* EditWardrobeProtocols.swift in Sources */,
 				2B58B8C32815BDC2006A4D99 /* ResponseEditString.swift in Sources */,
 				138468DC2815F32D007986AC /* WardrobeDetailRouter.swift in Sources */,
 			);

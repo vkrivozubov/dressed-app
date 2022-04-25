@@ -6,10 +6,8 @@ final class MainScreenRouter {
 
 extension MainScreenRouter: MainScreenRouterInput {
     func showEditWardrobe(with wardrobeId: Int) {
-        // TODO: Add edit wardrobe creeation
-//        let lookVc = EditWardrobeContainer.assemble(with: EditWardrobeContext(wardrobeID: wardrobeId)).viewController
-
-//        viewController?.navigationController?.pushViewController(lookVc, animated: true)
+        let lookVc = EditWardrobeContainer.assemble(with: EditWardrobeContext(wardrobeID: wardrobeId)).viewController
+        viewController?.navigationController?.pushViewController(lookVc, animated: true)
     }
 
     func showDetailWardrope(id: Int, name: String, creatorLogin: String) {
