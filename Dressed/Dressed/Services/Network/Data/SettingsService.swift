@@ -2,6 +2,11 @@ import Alamofire
 import Foundation
 
 final class SettingsService: NetworkService {
+    
+    /// send request to change user login
+    /// - Parameters:
+    ///   - newLogin: new user login
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func changeUserLogin(
         with newLogin: String,
         completion: @escaping (SingleResult<NetworkError>) -> Void
@@ -56,6 +61,11 @@ final class SettingsService: NetworkService {
         }
     }
 
+    
+    /// send request to update user password
+    /// - Parameters:
+    ///   - password: user password
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func changePassword(
         password: String,
         completion: @escaping (SingleResult<NetworkError>) -> Void
@@ -110,6 +120,11 @@ final class SettingsService: NetworkService {
         }
     }
 
+    
+    /// send request to update user avatar photo
+    /// - Parameters:
+    ///   - newPhotoData: blob representing new image
+    ///   - completion: called on `.main` queue, when network request completes. Represents new image url or reason caused request failure
     func changePhoto(
         newPhotoData: Data,
         completion: @escaping (Result<ResponseEditString, NetworkError>) -> Void
@@ -153,6 +168,11 @@ final class SettingsService: NetworkService {
         }
     }
 
+    
+    /// send request to change username
+    /// - Parameters:
+    ///   - newName: new username
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func changeName(
         newName: String,
         completion: @escaping (SingleResult<NetworkError>) -> Void
@@ -207,6 +227,9 @@ final class SettingsService: NetworkService {
         }
     }
 
+    
+    /// update username in userdefaults
+    /// - Parameter newName: new username
     func setNewUserName(newName: String) {
         UserDefaults.standard.setValue(newName, forKey: Constants.userNameKey)
     }
