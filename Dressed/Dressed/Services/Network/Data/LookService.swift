@@ -3,11 +3,11 @@ import Alamofire
 
 /// Network service, provides metheods to work with look entity
 final class LookService: NetworkService {
-    
+
     /// request look info from server
     /// - Parameters:
     ///   - id: raw id of look
-    ///   - completion: called on background tread, when network request completes
+    ///   - completion: called on `.main` queue, when network request completes
     func getAllLookClothes(
         with id: Int,
         completion: @escaping (Result<LookRaw, NetworkError>) -> Void
@@ -53,12 +53,12 @@ final class LookService: NetworkService {
             completion(result)
         }
     }
-    
+
     /// send request to server to remove some item from look
     /// - Parameters:
     ///   - lookID: raw id of look, you delete item from
     ///   - itemID: raw id of item, you're deleting
-    ///   - completion: called on background tread, when network request completes. Response contains optional error, represents the network error, if something went wrong
+    ///   - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func deleteItemFromLook(
         lookID: Int,
         itemID: Int,
@@ -106,13 +106,13 @@ final class LookService: NetworkService {
             }
         }
     }
-    
+
     /// Edit some look data, except item content
     /// - Parameters:
     ///   - lookID: raw id of look, you're editing
     ///   - name: new name of this look
     ///   - imageData: blob, representong new image
-    ///   - completion: called on background tread, when network request completes. Response contains optional error, represents the network error, if something went wrong
+    ///   - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func updateLookMetadata(
         lookID: Int,
         name: String?,
@@ -177,11 +177,11 @@ final class LookService: NetworkService {
             completion(result)
         }
     }
-    
+
     /// Get some look metadata, to make UI representation of look card
     /// - Parameters:
     ///   - lookID: raw id of look
-    ///   - completion: called on background tread, when network request completes. Represents look metadata or reason caused request failure
+    ///   - completion: called on `.main` queue, when network request completes. Represents look metadata or reason caused request failure
     func getLookMetadata(
         lookID: Int,
         completion: @escaping (Result<LookMetadataRaw, NetworkError>) -> Void
@@ -230,12 +230,11 @@ final class LookService: NetworkService {
         }
     }
 
-    
     /// update look with new items
     /// - Parameters:
     ///   - lookID: raw id of look you updateing
     ///   - itemIDs: array of raw item id's, that new look consists of
-    ///   - completion: called on background tread, when network request completes. Response contains optional error, represents the network error, if something went wrong
+    ///   - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func updateLook(
         lookID: Int,
         itemIDs: [Int],
@@ -288,11 +287,10 @@ final class LookService: NetworkService {
         }
     }
 
-    
     /// send request to server to delete look
     /// - Parameters:
     ///   - lookId: raw id of look you deleting
-    ///   - completion: called on background tread, when network request completes. Response contains optional error, represents the network error, if something went wrong
+    ///   - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func deleteLook(
         lookId: Int,
         completion: @escaping (SingleResult<NetworkError>) -> Void
@@ -339,11 +337,10 @@ final class LookService: NetworkService {
         }
     }
 
-    
     /// get looks stored in wardrobe
     /// - Parameters:
     ///   - wardrobeId: raw id of wardrobe you're searching looks for
-    ///   - completion: called on background tread, when network request completes. Represents looks stored in wardrobe or reason caused request failure
+    ///   - completion: called on `.main` queue, when network request completes. Represents looks stored in wardrobe or reason caused request failure
     func getLooks(
         for wardrobeId: Int,
         completion: @escaping (Result<[WardrobeDetailLookRaw], NetworkError>) -> Void
@@ -390,14 +387,13 @@ final class LookService: NetworkService {
         }
     }
 
-    
     /// send request to create new look
     /// - Parameters:
     ///   - wardrobeID: raw id of wardrobe, you creating look in
     ///   - name: name of new look
     ///   - imageData: blob representing image of look preview card
     ///   - choosedItems: items that stored in this look
-    ///   - completion: called on background tread, when network request completes. Response contains optional error, represents the network error, if something went wrong
+    ///   - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func createLook(
         wardrobeID: Int,
         name: String,
