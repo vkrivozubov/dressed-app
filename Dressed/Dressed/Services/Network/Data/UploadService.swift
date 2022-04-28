@@ -3,6 +3,14 @@ import Alamofire
 
 final class UploadService: NetworkService {
 
+    
+    /// send request to upload new item
+    /// - Parameters:
+    ///   - userLogin: login of user, adding item
+    ///   - name: name of new item
+    ///   - category: category of new item
+    ///   - imageData: blob representing image of uploading item
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func newItem(
         userLogin: String,
         name: String,
