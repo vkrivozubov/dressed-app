@@ -2,9 +2,15 @@ import Foundation
 import Alamofire
 
 final class WardrobeService: NetworkService {
-
-    func deleteWardrobe(with id: Int,
-                        completion: @escaping (SingleResult<NetworkError>) -> Void) {
+    
+    /// send request to delete wardrobe
+    /// - Parameters:
+    ///   - id: raw id of wardrobe you deleting
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
+    func deleteWardrobe(
+        with id: Int,
+        completion: @escaping (SingleResult<NetworkError>) -> Void)
+    {
         guard let login = getUserLogin() else { return }
         let url = getBaseURL()
             + "deleteWardrobe?wardrobe_id=\(id)&apikey=\(getApiKey())&login=\(login)"
@@ -49,8 +55,13 @@ final class WardrobeService: NetworkService {
         }
     }
 
-    func getUserWardrobes(completion: @escaping (Result<[WardrobeRaw], NetworkError>) -> Void) {
+    
+    /// send request to get all user wadrobes
+    /// - Parameter completion: called on `.main` queue, when network request completes. Represents list of raw wardrobe data or reason caused request failure
 
+    func getUserWardrobes(
+        completion: @escaping (Result<[WardrobeRaw], NetworkError>) -> Void)
+    {
         guard let login = getUserLogin() else { return }
         let url = getBaseURL() + "getWardrobes?login=\(login)&apikey=\(getApiKey())"
 
@@ -80,6 +91,12 @@ final class WardrobeService: NetworkService {
         }
     }
 
+    
+    /// send request to some user to join wardrobe
+    /// - Parameters:
+    ///   - login: login of user you inviting
+    ///   - wardobeId: raw id of wardrobe
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func addUserToWardrobe(
             with login: String,
             wardobeId: Int,
@@ -130,6 +147,12 @@ final class WardrobeService: NetworkService {
             }
         }
 
+    
+    /// send request to delete user from wardrobe
+    /// - Parameters:
+    ///   - wardrobeId: raw id of wardrobe
+    ///   - login: login of user you deleting from wadrobe
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func deleteUserFromWardrobe(
         wardrobeId: Int,
         login: String,
@@ -175,8 +198,15 @@ final class WardrobeService: NetworkService {
         }
     }
 
-    func getWardroeUsers(with wardrobeId: Int,
-                         completion: @escaping (Result<[WardrobeUserRaw], NetworkError>) -> Void) {
+    
+    /// send request to get all users that could edit this wadrobe
+    /// - Parameters:
+    ///   - wardrobeId: raw id of wadrobe
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Represents list of raw wardrobe users or reason caused request failure
+    func getWardroeUsers(
+        with wardrobeId: Int,
+        completion: @escaping (Result<[WardrobeUserRaw], NetworkError>) -> Void)
+    {
         let url = getBaseURL() + "getWardrobeUsers"
         + "?wardrobe_id=" + "\(wardrobeId)"
         + "&apikey=\(getApiKey())"
@@ -217,6 +247,13 @@ final class WardrobeService: NetworkService {
         }
     }
 
+    
+    /// send request to create new wardrobe
+    /// - Parameters:
+    ///   - name: wardrobe name
+    ///   - description: wardrobe description `beta`
+    ///   - imageData: blob image represents image will be displayed on wardrobe preview card
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func addWardrobe(
         name: String,
         description: String,
@@ -283,6 +320,11 @@ final class WardrobeService: NetworkService {
         })
     }
 
+    
+    /// send request to get wardrobe meta
+    /// - Parameters:
+    ///   - wardrobeID: raw id of wardrobe
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Represents  raw wardrobe metadata(name, image, description) or reason caused request failure
     func getWardrobeMetadata(
         wardrobeID: Int,
         completion: @escaping (Result<WardrobeMetadataRaw, NetworkError>) -> Void
@@ -331,6 +373,13 @@ final class WardrobeService: NetworkService {
         }
     }
 
+    
+    /// send request to edit wadrobe meta(image, name)
+    /// - Parameters:
+    ///   - wardrobeID: raw id of wardrobe you editing
+    ///   - name: new wardrobe name
+    ///   - imageData: blob image represents image will be displayed on wardrobe preview card
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func updateWardrobeMetadata(
         wardrobeID: Int,
         name: String?,
