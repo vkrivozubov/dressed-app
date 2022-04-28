@@ -2,6 +2,11 @@ import Alamofire
 import Foundation
 
 final class ItemsService: NetworkService {
+    
+    /// send request to get info about all items, user uploaded
+    /// - Parameters:
+    ///   - login: user login
+    ///   - completion: called on `.main` queue, when network request completes. Represents all items of user or reason caused request failure
     func getAllItems(
         for login: String,
         completion: @escaping (Result<AllItemsRaw, NetworkError>) -> Void) {
@@ -47,6 +52,11 @@ final class ItemsService: NetworkService {
         }
     }
 
+    
+    /// send request to remove item from wardrobe
+    /// - Parameters:
+    ///   - id: raw id of item, you deleting
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func removeItem(
          id: Int,
          completion: @escaping (SingleResult<NetworkError>) -> Void) {
@@ -90,6 +100,11 @@ final class ItemsService: NetworkService {
          }
      }
 
+    
+    /// send request to get editable info about item
+    /// - Parameters:
+    ///   - id: raw id of item, you searching for
+    ///   - completion: called on `.main` queue, when network request completes. Represents editable item data or reason caused request failure
     func getItem(
         id: Int,
         completion: @escaping (Result<EditItemRaw, NetworkError>) -> Void
@@ -134,6 +149,13 @@ final class ItemsService: NetworkService {
         }
     }
 
+    
+    /// send request to update item name or image.
+    /// - Parameters:
+    ///   - id: raw id of item you updating
+    ///   - name: new name of item you updateing
+    ///   - imageData: new image data of item you updateing
+    ///   - completion: - completion: called on `.main` queue, when network request completes. Response contains optional error, represents the network error, if something went wrong
     func updateItem(
         id: Int,
         name: String?,
